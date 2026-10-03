@@ -19,17 +19,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Locate and Execute arXiv Radar
-        run: |
-          echo "=== Files in repository ==="
-          ls -la
-          PY_FILE=$(find . -name "*arxiv*.py" -o -name "*.py" | head -n 1)
-          echo "Found Python script: $PY_FILE"
-          if [ -z "$PY_FILE" ]; then
-            echo "ERROR: No python file found in repo!"
-            exit 1
-          fi
-          python3 "$PY_FILE" "autonomous agent" "multi-agent" "memory"
+      - name: Execute arXiv Radar
+        run: python3 ./arxiv_agent_radar.py "autonomous agent" "multi-agent" "memory"
 
       - name: Commit and Push Report
         run: |
