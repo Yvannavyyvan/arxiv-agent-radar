@@ -20,7 +20,9 @@ jobs:
           python-version: '3.11'
 
       - name: Execute arXiv Radar
-        run: python3 ./arxiv_agent_radar.py "autonomous agent" "multi-agent" "memory"
+        run: |
+          python3 -c "import os, shutil; f = [x for x in os.listdir('.') if 'arxiv' in x.lower()][0]; shutil.copy(f, 'clean_radar.py')"
+          python3 clean_radar.py "autonomous agent" "multi-agent" "memory"
 
       - name: Commit and Push Report
         run: |
