@@ -10,15 +10,6 @@ Target scope: Comprehensive AI Research & Core Computer Science/Tech Disciplines
 - Robotics & Autonomous Systems (cs.RO)
 - Multi-Agent Systems & Coordination (cs.MA)
 - Core Tech & Systems (cs.SE, cs.CR, cs.DC, cs.IR)
-
-Features:
-- Multi-category query synthesis across all major AI/CS taxonomy fields.
-- 2-tier extraction: API-level metadata/abstracts + token-efficient PDF section slicing
-  (extracts Contributions & Conclusion/Limitations without full PDF downloading overhead).
-- Intelligent relevance scoring boosting recency and AI/tech domain keywords.
-- 5-point executive dossier cards formatted in Markdown.
-- Drive webhook sync and local markdown artifact generation.
-- Zero crash guarantees via robust exception handling.
 """
 
 import sys
@@ -31,7 +22,6 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
-# Optional pypdf import for targeted PDF section extraction
 try:
     import pypdf
     PYPDF_AVAILABLE = True
@@ -41,20 +31,9 @@ except ImportError:
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
 ARXIV_NS = "{http://arxiv.org/schemas/atom}"
 
-# Comprehensive AI, Machine Learning, and Computer Science Categories
 DEFAULT_AI_TECH_CATEGORIES = [
-    "cs.AI",   # Artificial Intelligence
-    "cs.LG",   # Machine Learning
-    "cs.CL",   # Computation & Language (NLP, LLMs)
-    "cs.CV",   # Computer Vision
-    "cs.RO",   # Robotics
-    "cs.MA",   # Multi-Agent Systems
-    "cs.NE",   # Neural & Evolutionary Computing
-    "stat.ML", # Statistical Machine Learning
-    "cs.SE",   # Software Engineering
-    "cs.CR",   # Cryptography & Security
-    "cs.DC",   # Distributed, Parallel, & Cluster Computing
-    "cs.IR",   # Information Retrieval & Search
+    "cs.AI", "cs.LG", "cs.CL", "cs.CV", "cs.RO", "cs.MA",
+    "cs.NE", "stat.ML", "cs.SE", "cs.CR", "cs.DC", "cs.IR"
 ]
 
 DEFAULT_KEYWORDS = [
@@ -73,10 +52,7 @@ class ArxivAgentRadar:
         self.categories = categories or DEFAULT_AI_TECH_CATEGORIES
         self.delay_seconds = delay_seconds
 
-
     def build_query(self, search_terms=None, start=0, max_results=30, sort_by="submittedDate", sort_order="descending"):
-
-
         cat_query = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.MA"
         if search_terms:
             terms_query = " AND ".join([f'all:"{term}"' for term in search_terms])
@@ -96,33 +72,23 @@ class ArxivAgentRadar:
 
     def fetch_papers(self, search_terms=None, start=0, max_results=30):
         url = self.build_query(search_terms=search_terms, start=start, max_results=max_results)
-
         print(f"[*] Querying arXiv API across {len(self.categories)} AI/CS categories: {url}", file=sys.stderr, flush=True)
 
         headers = {
-
             "User-Agent": "ArxivAgentRadar/2.0 (mailto:ygrcastonguay@gmail.com)"
         }
         req = urllib.request.Request(url, headers=headers)
-
         time.sleep(self.delay_seconds)
 
-
-        try:
-
         xml_data = ""
-
-                xml_data = response.read().decode("utf-8")
-
+        try:
             with urllib.request.urlopen(req, timeout=25) as response:
-
-            print(f"[!] Error fetching papers from arXiv: {e}", file=sys.stderr, flush=True)
-
+                xml_data = response.read().decode("utf-8")
         except Exception as e:
+            print(f"[!] Error fetching papers from arXiv: {e}", file=sys.stderr, flush=True)
+            xml_data = ""
 
         papers = self.parse_feed(xml_data) if xml_data else []
-
-            xml_data = ""
 
         if not papers:
             print("[!] Primary query returned 0 results. Retrying with fallback simple query...", file=sys.stderr, flush=True)
@@ -137,7 +103,6 @@ class ArxivAgentRadar:
             try:
                 req_fb = urllib.request.Request(fallback_url, headers=headers)
                 time.sleep(self.delay_seconds)
-
                 with urllib.request.urlopen(req_fb, timeout=25) as resp_fb:
                     xml_data_fb = resp_fb.read().decode("utf-8")
                 papers = self.parse_feed(xml_data_fb)
@@ -149,7 +114,6 @@ class ArxivAgentRadar:
         try:
             root = ET.fromstring(xml_string)
         except Exception as e:
-
             print(f"[!] XML parsing error: {e}", file=sys.stderr, flush=True)
             return []
 
@@ -161,7 +125,6 @@ class ArxivAgentRadar:
             title = entry.findtext(f"{ATOM_NS}title", "").strip().replace("\n", " ")
 
             if title.lower() == "error":
-
                 print(f"[!] Encountered error entry from arXiv API: {title}", file=sys.stderr, flush=True)
                 continue
             title = re.sub(r"\s+", " ", title)
@@ -205,17 +168,14 @@ class ArxivAgentRadar:
         return papers
 
     def score_paper(self, paper, keywords=None):
-        """Scores candidate papers based on category alignment, keyword density, and recency."""
         score = 0.0
         title_text = paper.get("title", "").lower()
         summary_text = paper.get("summary", "").lower()
 
-        # Category alignment score
         for cat in paper.get("categories", []):
             if cat in self.categories:
                 score += 3.0
 
-        # Keyword match scoring
         target_keywords = keywords or DEFAULT_KEYWORDS
         for kw in target_keywords:
             kw_lower = kw.lower()
@@ -224,7 +184,6 @@ class ArxivAgentRadar:
             if kw_lower in summary_text:
                 score += 2.0
 
-        # Recency score
         pub_date_str = paper.get("published", "")
         if pub_date_str:
             try:
@@ -238,7 +197,6 @@ class ArxivAgentRadar:
         return score
 
     def rank_candidates(self, papers, top_k=10, keywords=None):
-        """Ranks candidate papers and selects the top k high-yield papers."""
         scored_papers = []
         for paper in papers:
             s = self.score_paper(paper, keywords=keywords)
@@ -249,16 +207,10 @@ class ArxivAgentRadar:
         return ranked if ranked else papers[:top_k]
 
     def extract_pdf_sections(self, pdf_url):
-        """
-        Token-efficient extraction: downloads PDF in memory and slices key sections
-        (Contributions & Conclusion/Limitations) from front/back pages using pypdf,
-        avoiding parsing the full body, mathematical derivations, and references.
-        """
         if not PYPDF_AVAILABLE or not pdf_url:
             return {}
 
         try:
-
             print(f"[*] Slicing key sections from: {pdf_url}", file=sys.stderr, flush=True)
             time.sleep(self.delay_seconds)
             headers = {"User-Agent": "ArxivAgentRadar/2.0"}
@@ -271,7 +223,6 @@ class ArxivAgentRadar:
             if num_pages == 0:
                 return {}
 
-            # Extract text from intro/first 3 pages and conclusion/last 3 pages
             first_pages_text = "\n".join([reader.pages[i].extract_text() or "" for i in range(min(3, num_pages))])
             last_pages_text = "\n".join([reader.pages[i].extract_text() or "" for i in range(max(0, num_pages - 3), num_pages)])
 
@@ -283,7 +234,6 @@ class ArxivAgentRadar:
                 "conclusions": conclusions
             }
         except Exception as e:
-
             print(f"[!] PDF section slicing fallback triggered for {pdf_url}: {e}", file=sys.stderr, flush=True)
             return {}
 
@@ -309,28 +259,22 @@ class ArxivAgentRadar:
         return ""
 
     def generate_dossier_card(self, paper, pdf_data=None):
-        """Generates a structured 5-point dossier card for a paper."""
         pdf_data = pdf_data or {}
         summary = paper.get("summary", "")
 
-        # Point 1: Core Problem & Thesis
         problem_thesis = summary[:300] + "..." if len(summary) > 300 else summary
 
-        # Point 2: Key Technical Contributions
         contrib_text = pdf_data.get("contributions")
         if not contrib_text:
             contrib_text = f"From Abstract: {summary[300:600]}" if len(summary) > 300 else summary
 
-        # Point 3: Methodology & Architecture
         cats_str = ", ".join(paper.get("categories", []))
         methodology = f"Categories: {cats_str}. Focused on AI architecture, computational models, and algorithmic implementation."
 
-        # Point 4: Key Results & Impact
         concl_text = pdf_data.get("conclusions")
         if not concl_text:
             concl_text = f"Published on {paper.get('published', '')[:10]}. Detailed empirical evaluation provided in full manuscript."
 
-        # Point 5: Limitations & Practical Notes
         limitations = "Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation."
 
         authors_str = ", ".join(paper.get("authors", [])[:5])
@@ -372,19 +316,16 @@ class ArxivAgentRadar:
             try:
                 with open(output_file, "w", encoding="utf-8") as f:
                     f.write(report)
-
+                print(f"[*] Report successfully written to {output_file}", file=sys.stderr, flush=True)
             except Exception as e:
-
-            print(f"[*] Report successfully written to {output_file}", file=sys.stderr, flush=True)
+                print(f"[!] Failed to write report to file: {e}", file=sys.stderr, flush=True)
         return report
 
     def sync_to_drive_webhook(self, report_content, webhook_url=None, auth_token=None):
-        """Sends the generated report to the Google Drive Apps Script Webhook."""
         import os
         url = webhook_url or os.environ.get("DRIVE_WEBHOOK_URL")
         token = auth_token or os.environ.get("DRIVE_WEBHOOK_SECRET", "SPARK_RADAR_SECRET_2026_GUELPH")
         if not url:
-
             print("[*] No DRIVE_WEBHOOK_URL configured; skipping Drive sync.", file=sys.stderr, flush=True)
             return False
 
@@ -399,26 +340,21 @@ class ArxivAgentRadar:
             req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
             with urllib.request.urlopen(req, timeout=30) as resp:
                 res = json.loads(resp.read().decode("utf-8"))
-
                 print(f"[*] Cloud Drive sync successful: {res}", file=sys.stderr, flush=True)
                 return True
         except Exception as e:
-
             print(f"[!] Error syncing to Google Drive webhook: {e}", file=sys.stderr, flush=True)
             return False
 
 
 if __name__ == "__main__":
-    # Initialize across complete AI, Machine Learning, and Computer Science spectrum
     radar = ArxivAgentRadar()
     query_terms = sys.argv[1:] if len(sys.argv) > 1 else None
 
     if query_terms:
-
         print(f"Executing arXiv search for specific terms: {query_terms}...", flush=True)
     else:
-
-        print("Executing broad scan across top AI &amp; Computer Science disciplines...", flush=True)
+        print("Executing broad scan across top AI & Computer Science disciplines...", flush=True)
 
     try:
         raw_papers = radar.fetch_papers(search_terms=query_terms, start=0, max_results=30)
@@ -428,10 +364,6 @@ if __name__ == "__main__":
         report = radar.generate_markdown_report(top_papers, "arxiv_radar_latest.md")
 
         radar.sync_to_drive_webhook(report)
-
         print("\n" + report[:1200] + "...\n", flush=True)
     except Exception as e:
-
         print(f"Execution notice: {e}", flush=True)
-
-
