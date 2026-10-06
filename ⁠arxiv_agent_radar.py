@@ -45,14 +45,14 @@ DEFAULT_KEYWORDS = [
 
 
 class ArxivAgentRadar:
-    BASE_URL = "http://export.arxiv.org/api/query"
+    BASE_URL = "https://export.arxiv.org/api/query"
 
     def __init__(self, categories=None, delay_seconds=3.0):
         self.categories = categories or DEFAULT_AI_TECH_CATEGORIES
         self.delay_seconds = delay_seconds
 
     def build_query(self, search_terms=None, start=0, max_results=30, sort_by="submittedDate", sort_order="descending"):
-        cat_query = " OR ".join([f"cat:{cat}" for cat in self.categories])
+        cat_query = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO OR cat:cs.MA OR cat:stat.ML"
         if search_terms:
             terms_query = " AND ".join([f'all:"{term}"' for term in search_terms])
             full_query = f"({cat_query}) AND ({terms_query})"
@@ -70,10 +70,10 @@ class ArxivAgentRadar:
 
     def fetch_papers(self, search_terms=None, start=0, max_results=30):
         url = self.build_query(search_terms=search_terms, start=start, max_results=max_results)
-        print(f"[*] Querying arXiv API across {len(self.categories)} AI/CS categories: {url}", file=sys.stderr)
+        print(f"[*] Querying arXiv API across AI/CS categories: {url}", file=sys.stderr)
 
         headers = {
-            "User-Agent": "ArxivAgentRadar/2.0 (GovernedAgentEcosystem; Guelph, Ontario, Canada)"
+            "User-Agent": "ArxivAgentRadar/2.0 (mailto:ygrcastonguay@gmail.com)"
         }
         req = urllib.request.Request(url, headers=headers)
         time.sleep(self.delay_seconds)
@@ -99,6 +99,11 @@ class ArxivAgentRadar:
         for entry in entries:
             id_url = entry.findtext(f"{ATOM_NS}id", "").strip()
             title = entry.findtext(f"{ATOM_NS}title", "").strip().replace("\n", " ")
+
+            if title.lower() == "error":
+                print(f"[!] Encountered error entry from arXiv API: {title}", file=sys.stderr)
+                continue
+
             title = re.sub(r"\s+", " ", title)
             summary = entry.findtext(f"{ATOM_NS}summary", "").strip().replace("\n", " ")
             summary = re.sub(r"\s+", " ", summary)
@@ -174,7 +179,9 @@ class ArxivAgentRadar:
             s = self.score_paper(paper, keywords=keywords)
             scored_papers.append((s, paper))
         scored_papers.sort(key=lambda x: x[0], reverse=True)
-        return [paper for score, paper in scored_papers[:top_k]]
+
+        ranked = [paper for score, paper in scored_papers[:top_k] if score > 0]
+        return ranked if ranked else papers[:top_k]
 
     def extract_pdf_sections(self, pdf_url):
         if not PYPDF_AVAILABLE or not pdf_url:
