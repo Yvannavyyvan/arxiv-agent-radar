@@ -27,7 +27,17 @@ jobs:
           DRIVE_WEBHOOK_URL: ${{ secrets.DRIVE_WEBHOOK_URL }}
           DRIVE_WEBHOOK_SECRET: ${{ secrets.DRIVE_WEBHOOK_SECRET }}
         run: |
-          python arxiv_agent_radar.py
+          echo "=== Directory contents ==="
+          ls -la
+          SCRIPT_FILE=$(ls arxiv*.py* 2>/dev/null | head -n 1)
+          if [ -n "$SCRIPT_FILE" ]; then
+            echo "Executing: $SCRIPT_FILE"
+            python3 "$SCRIPT_FILE"
+          else
+            echo "Searching all python files:"
+            find . -name "*.py"
+            python3 *.py
+          fi
 
       - name: Commit latest digest to repo
         run: |
