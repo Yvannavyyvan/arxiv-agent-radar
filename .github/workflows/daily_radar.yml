@@ -1,0 +1,38 @@
+name: Daily arXiv Radar
+
+on:
+  schedule:
+    # Runs daily at 12:00 UTC (8:00 AM EDT / Guelph time)
+    - cron: '0 12 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from phone
+
+jobs:
+  run-radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pypdf
+
+      - name: Execute arXiv Radar
+        env:
+          DRIVE_WEBHOOK_URL: ${{ secrets.DRIVE_WEBHOOK_URL }}
+          DRIVE_WEBHOOK_SECRET: ${{ secrets.DRIVE_WEBHOOK_SECRET }}
+        run: |
+          python arxiv_agent_radar.py
+
+      - name: Commit latest digest to repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update daily arXiv digest [skip ci]" || exit 0
+          git push
