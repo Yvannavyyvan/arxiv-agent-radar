@@ -27,17 +27,9 @@ jobs:
           DRIVE_WEBHOOK_URL: ${{ secrets.DRIVE_WEBHOOK_URL }}
           DRIVE_WEBHOOK_SECRET: ${{ secrets.DRIVE_WEBHOOK_SECRET }}
         run: |
-          echo "=== Directory contents ==="
-          ls -la
-          SCRIPT_FILE=$(ls arxiv*.py* 2>/dev/null | head -n 1)
-          if [ -n "$SCRIPT_FILE" ]; then
-            echo "Executing: $SCRIPT_FILE"
-            python3 "$SCRIPT_FILE"
-          else
-            echo "Searching all python files:"
-            find . -name "*.py"
-            python3 *.py
-          fi
+          TARGET_FILE=$(find . -maxdepth 1 -type f ! -name "*.md" ! -name ".*" | head -n 1)
+          echo "Executing script: $TARGET_FILE"
+          python3 "$TARGET_FILE"
 
       - name: Commit latest digest to repo
         run: |
