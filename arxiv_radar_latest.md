@@ -1,181 +1,144 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-10-07 18:14:26 UTC
+**Generated:** 2026-10-08 18:15:54 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?](http://arxiv.org/abs/2610.08775v1)
-**arXiv ID:** `2610.08775v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08775v1) | **Published:** 2026-10-06
-**Authors:** Ankit Sonthalia, Haritz Puerto, Alexander Rubinstein, Martin Gubri, Seong Joon Oh
+### [Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models](http://arxiv.org/abs/2610.10478v1)
+**arXiv ID:** `2610.10478v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10478v1) | **Published:** 2026-10-07
+**Authors:** Tan Yu, Alexander Bukharin, Khushi Bhardwaj, Jennifer Williams, Zirui Liu et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language models (LLMs) can solve many narrow tasks, but querying them separately for millions of related instances can be prohibitively expensive. Can LLM agents autonomously create cheaper solutions for such workloads? We call this ability "bottling": the ability to turn general capabilities ...
-2. **Key Technical Contributions:** From Abstract: into task-specific solutions that balance answer quality and amortised cost. We introduce BOTTLED, a benchmark in which agents receive an entire unlabelled workload and must complete it under fixed time, compute and LLM API budgets. Agents choose their own approach, such as training a small model or
-3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: many base checkpoints cannot reliably produce the well-formed ...
+2. **Key Technical Contributions:** From Abstract: tool invocation required to complete a task end-to-end. Single-shot or short-horizon tasks avoid these tool-calling failures by collapsing a multi-step interaction into a fixed prompt and a single patch, but they sidestep the core capability we care about: maintaining coherent state over many tool-u
+3. **Methodology & Architecture:** Categories: cs.AI, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning](http://arxiv.org/abs/2610.08761v1)
-**arXiv ID:** `2610.08761v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08761v1) | **Published:** 2026-10-06
-**Authors:** Zewei Zhou, Rachel Luo, Yulong Cao, Chaowei Xiao, Chensheng Peng et al.
+### [SciExam for ENSO: Can AI Agents Build Climate Models?](http://arxiv.org/abs/2610.10513v1)
+**arXiv ID:** `2610.10513v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10513v1) | **Published:** 2026-10-07
+**Authors:** Yinling Zhang, Langchen Liu, Dongbin Xiu, Xueyan Zou, Xu Kuang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute i...
-2. **Key Technical Contributions:** From Abstract: n embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improv
-3. **Methodology & Architecture:** Categories: cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Future Work
-While the judge evaluation set evolves with the policy to capture newly exposed failure patterns, the current
-framework retains a fixed policy evaluation set as a consistent anchor for measuring improvement across
-iterations. Future work could preserve a fixed held-out test set for comparable reporting while introducing an
-adaptive policy evaluation set that co-evolves with the policy and judge to provide increasingly informative
-signals for failure discovery and curriculum construction. The framework also still relies on reasoning-annotated
-data: although the reference-free VeriFine-Judge can filter low-quality reasoning during training, the reference
-reasoning used for policy evaluation remains human-verified. A natural extens
+1. **Core Problem & Thesis:** Language-model agents are increasingly asked to carry out open-ended scientific research, yet their results are usually graded against a known answer, a rubric, or a language-model reviewer, none of which can tell whether a new scientific model is valid. The AI Science Exam for El Nino-Southern Osci...
+2. **Key Technical Contributions:** From Abstract: llation (SciExam for ENSO) is a benchmark in which agents build low-order stochastic models of ENSO, the dominant mode of interannual climate variability, from real observations. Within a six-hour budget, agents process the observations, write their own diagnostics, which are then frozen, and develo
+3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, physics.ao-ph. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model](http://arxiv.org/abs/2610.08773v1)
-**arXiv ID:** `2610.08773v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08773v1) | **Published:** 2026-10-06
-**Authors:** Sarim Hashmi, Mukul Ranjan, Kshitij Mishra, Mikhail Kuznetsov, Praneeth Vepakomma et al.
+### [Decoupling Exploration from Optimization in RLVR](http://arxiv.org/abs/2610.10536v1)
+**arXiv ID:** `2610.10536v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10536v1) | **Published:** 2026-10-07
+**Authors:** Saif Punjwani, Micah Goldblum
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Web agents complete user requests by reading and acting on pages that third parties write, so an instruction planted on a page can redirect the agent away from the user's goal. The agent cannot simply ignore the page, because the page also holds the values and controls the task requires. Current def...
-2. **Key Technical Contributions:** CONTRIBUTIONS
-1. ADVSIM2REAL, a two-stage framework that co-evolves a task curriculum, an injection adver-
-sary, and a web agent inside a frozen web world model, so that both tasks and attacks track the
-current agent.
-2. The success-flip reward, which replays an accepted clean run to the injection step and credits
-the adversary only when the continuation fails, so that failures the agent makes on its own earn
-nothing.
-3. A benchmark of 150 form-filling web tasks in five skill strata, with protected fields and forbidden
-controls, a reactive adversary that chooses when and what to inject, and a deterministic browser
-check of the submitted form; we release it with all checkpoints and trajectories.
-4. Evidence that the curriculum stage buys cap
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Modern language models undergo reinforcement learning with verifiable rewards (RLVR) on top of already-trained checkpoints. A key promise of RLVR is the discovery of new reasoning strategies. In principle, a model can sample novel ideas absent from its prior training data. In practice, however, augm...
+2. **Key Technical Contributions:** From Abstract: enting RLVR with strong novelty incentives has seen limited success and can degrade model quality. Because verifiable rewards supervise only a narrow slice of the model's knowledge and behavior, such degradations are difficult to recover from. Instead, we decouple exploration from optimization in a 
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas](http://arxiv.org/abs/2610.08781v1)
-**arXiv ID:** `2610.08781v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08781v1) | **Published:** 2026-10-06
-**Authors:** Ziyu Chen, Yilun Zhao, Jiashuo Sun, Yiling Ma, Manasi Patwardhan et al.
+### [EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory](http://arxiv.org/abs/2610.10533v1)
+**arXiv ID:** `2610.10533v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10533v1) | **Published:** 2026-10-07
+**Authors:** Hongru Cai, Ran Wei, Wenjie Wang, Chengfa Wu, Ning Song et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Scientific research often begins by synthesizing ideas from a set of related papers to identify gaps and formulate new directions. However, training language models to perform this form of literature-grounded ideation remains challenging, as existing approaches based on prompting or feedback lack st...
-2. **Key Technical Contributions:** contributions
-build on prior work [Jurgens et al., 2018, Lo et al., 2020]. Specifically, we assemble a corpus of approximately
-14K papers spanning machine learning and natural science. Leveraging LLMs, we first extract the core intellectual
-contribution of each work, then retrospectively trace its most influential prior studies, and further reverse-engineer
-the implicit anchor linking foundational literature to subsequent research innovations. By exploiting the inherent
-provenance structure of academic publications, this pipeline produces high-quality structured training signals, and a
-study with the original authors confirms that the mined prior works closely reflect the literature they credit for their
-ideas.
-To determine whether anchor-d
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Conditional memory architectures such as DeepSeek Engram use input n-grams to look up learned embeddings, expanding the capacity of large language models (LLMs) with limited additional computation. Beyond model scaling, this architecture has demonstrated the potential to decouple factual knowledge s...
+2. **Key Technical Contributions:** From Abstract: torage from general-purpose computation, offering a promising route to updating factual knowledge while keeping the Transformer backbone fixed. Realizing this potential is challenging because different expressions of a fact may activate different n-gram embeddings, while updating shared embeddings c
+3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Sherpa: Teaching LLMs to Teach Adaptively](http://arxiv.org/abs/2610.08778v1)
-**arXiv ID:** `2610.08778v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08778v1) | **Published:** 2026-10-06
-**Authors:** Weixian Xu, Yanzhe Zhang, Zora Zhiruo Wang, Changyu Chen, Diyi Yang
+### [Label-free cell counting and viability prediction with brightfield imaging and deep learning](http://arxiv.org/abs/2610.10473v1)
+**arXiv ID:** `2610.10473v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10473v1) | **Published:** 2026-10-07
+**Authors:** Amir Reza Vazifeh, Christian Zeigler, Sornanathan Meyyappan, Richard Jeske, Jason W. Fleischer
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language models (LLMs) have become increasingly capable problem solvers, but being able to solve a problem is not the same as being able to teach it. Existing approaches to training LLMs as teachers rely on demonstrations, preference data, or predefined pedagogical criteria that specify what g...
-2. **Key Technical Contributions:** From Abstract: ood teaching looks like. However, these signals are often not grounded in individual student learning outcomes, where effective teaching strategies can vary substantially across learners. To address this, we introduce Sherpa, a multi-turn reinforcement learning framework that instantiates multiple s
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Cell viability assessment is a core requirement in cell culture systems, with critical applications in biopharmaceutical manufacturing and drug development. Conventionally, it is measured by adding membrane-impermeable dyes to a sample (a process called staining), which allows compromised cell membr...
+2. **Key Technical Contributions:** From Abstract: anes to be distinguished from intact ones. However, staining has several limitations: (a) chemical agents can perturb normal cellular processes of the cells being measured, (b) it is often ambiguous to assign viability to individual cells whose membrane integrity is only partially compromised. (c) p
+3. **Methodology & Architecture:** Categories: cs.CV, q-bio.CB. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [DepthWorld: 3D World Model for Robot Manipulation](http://arxiv.org/abs/2610.08780v1)
-**arXiv ID:** `2610.08780v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08780v1) | **Published:** 2026-10-06
-**Authors:** Jai Bardhan, Josef Sivic, Vladimir Petrik
+### [Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](http://arxiv.org/abs/2610.10479v1)
+**arXiv ID:** `2610.10479v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10479v1) | **Published:** 2026-10-07
+**Authors:** Yihan Li, Yating Feng, Shengjiu Sun, Jianing Chen, Hao Ren et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look...
-2. **Key Technical Contributions:** contributions:
-1.We introduce a calibration pipelinefor recovering metric depth and accurate multi-view ex-
-trinsics from any multi-view stereo teleoperation collection with a known URDF. The pipeline
-combines learned stereo depth with a joint factor graph optimization that pools all episodes of
-the same physical robot to recover its shared kinematic parameters (joint offsets, hand-eye cal-
-ibration) alongside per-scene extrinsics. Applied to DROID [18], this yieldsDROID-3D—a
-calibrated 3D corpus providing dense metric depth and recalibrated multi-view extrinsics for
-over 70,000 episodes.
-2.We train DepthWorld, a Stable Video Diffusion-based world model that jointly predicts multi-
-view RGB and depth via spatial latent tiling that leaves th
+1. **Core Problem & Thesis:** A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR)...
+2. **Key Technical Contributions:** From Abstract: , a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-r
+3. **Methodology & Architecture:** Categories: cs.RO, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Long-WAM: Scaling the Context of World-Action Models](http://arxiv.org/abs/2610.10528v1)
+**arXiv ID:** `2610.10528v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10528v1) | **Published:** 2026-10-07
+**Authors:** Wei Huang, Bohan Zhang, Chenzhi Liu, Isabella Liu, Shuai Yang et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that ...
+2. **Key Technical Contributions:** From Abstract: access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action 
 3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study](http://arxiv.org/abs/2610.08771v1)
-**arXiv ID:** `2610.08771v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08771v1) | **Published:** 2026-10-06
-**Authors:** Dimitrios Nikou, Nikolaos Kekatos, Sophia Petridou, Stylianos Basagiannis
+### [RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing](http://arxiv.org/abs/2610.10507v1)
+**arXiv ID:** `2610.10507v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10507v1) | **Published:** 2026-10-07
+**Authors:** Yilun Hao, Krishna Sayana, Isabella Ye, James S Ren, Sukhdeep Sodhi et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** An autonomous system that asks for a privileged physical action is usually gated on integrity evidence: a platform proves what it is running, and the request is granted or refused on that basis. Such a gate is normally treated as a predicate, yet the evidence behind it has an age, the decision that ...
-2. **Key Technical Contributions:** From Abstract: consumes it has a latency, and the physical system that waits for it has a deadline. We formulate mission-aware attestation as a runtime assurance contract that holds only when integrity is valid, the evidence is fresh enough, and the decision completes inside a budget derived from the current physi
-3. **Methodology & Architecture:** Categories: cs.CR, cs.RO, eess.SY. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, ...
+2. **Key Technical Contributions:** From Abstract: in many tasks, the evidence required for a solution is not explicitly present in any single source item. Instead, it must be derived through filtering, aggregation, or computation across multiple source items. In this work, we introduce RECAST (Routing Evidence through Computation, Access, and Synth
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](http://arxiv.org/abs/2610.10498v1)
+**arXiv ID:** `2610.10498v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10498v1) | **Published:** 2026-10-07
+**Authors:** Python Song, Zhixuan Liang, Kelsey Fu, Mengdi Wang, Junfeng Yang et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic ha...
+2. **Key Technical Contributions:** From Abstract: rnesses can adapt around the model, but current self-evolving harnesses use robot trials inefficiently when deciding which code and skill changes to pursue. We introduce EmbodiedRSI, a self-evolving agentic harness that autonomously decides where to explore next and turns the resulting physical inte
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** Conclusion
-Integrity evidence is normally treated as a predicate, and it is not one. It is
-generated at a moment, it ages, the decision that consumes it costs time, and
-the physical process that waits for that decision has a horizon. We formulated
-mission-aware attestation as a contract over those three quantities, showed that
-the resulting four outcomes separate failures a binary gate reports identically
-or not at all, and showed that the two margins interact: below a threshold on
-the freshness bound, lateness is unobservable because every late decision is also
-stale.
-On a hardware-in-the-loop platform in which a simulator supplies the physi-
-cal state and a TPM-backed roadside unit supplies the evidence, combining the
-two yields a region 
+EmbodiedRSI shows that a self-evolving agentic harness can gain lasting value from each physical trial by
+using the outcome to select the next experiment, refine code and skills together, and retain experience for
+later adaptation. Across simulated benchmarks and real-robot tasks, EmbodiedRSI improves generalization
+and learning efficiency, and transfers the simulation-evolved harness to physical execution. More broadly,
+continual robot learning can take place in the harness around a frozen robot foundation model when physical
+evidence shapes both the next experiment and the knowledge carried into future tasks.
+Limitations.Code-as-policy and agentic harness methods learn executable behavior from physical trajectories
+without upda
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Reinforcement Learning with Conformal Action Sets: An Application to Sequential Recommendation](http://arxiv.org/abs/2610.08743v1)
-**arXiv ID:** `2610.08743v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08743v1) | **Published:** 2026-10-06
-**Authors:** Wenwen Si, Honghao Wei
+### [RoboJEPA: Scaling Robotic Latent World Models](http://arxiv.org/abs/2610.10515v1)
+**arXiv ID:** `2610.10515v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.10515v1) | **Published:** 2026-10-07
+**Authors:** Artem Zholus, Nicolas Beltran-Velez, Jianhao Yuan, Sarath Chandar, Tushar Nagarajan et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Sequential recommenders typically use a fixed slate size even though the number of useful alternatives changes within a session. We propose Reinforcement Learning with Calibrated Pruning (RLCP), which adapts the retained action set using critic scores and an online threshold. The threshold is update...
-2. **Key Technical Contributions:** From Abstract: d from binary feedback indicating whether the set contains an action in a proxy target. We prove a deterministic bound on the observed proxy miss rate along adaptive trajectories. To quantify the effect of pruning on reward, we derive an exact decomposition of value loss into filtering and selection
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation](http://arxiv.org/abs/2610.08784v1)
-**arXiv ID:** `2610.08784v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08784v1) | **Published:** 2026-10-06
-**Authors:** Kun Song, Yiming Wang, Yilin Chen, Tianyi Ding, Jiaxin Tian et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Pretrained robotic policies can suffer substantial performance degradation under out-of-distribution (OOD) conditions encountered during deployment, motivating post-training through real-world interaction. However, reinforcement-learning (RL)-based post-training typically requires substantial enviro...
-2. **Key Technical Contributions:** From Abstract: nment interactions, a burden that is especially significant in manipulation, where each trial can be slow, costly, or destructive. Therefore, we present PEARS, a physics-prior-guided hybrid RL framework for sample-efficient online adaptation of pretrained policies with tactile feedback. After each e
-3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Neural Petri flows for chemical reactions](http://arxiv.org/abs/2610.08750v1)
-**arXiv ID:** `2610.08750v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.08750v1) | **Published:** 2026-10-06
-**Authors:** Jose Eduardo Escrig Molina, Daniel Probst
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Petri nets have been used to describe chemical processes such as reactions.They map well to chemistry: Places are the bonds between atoms and the free valence of each atom, a token is a unit of bond order, a transition forms or breaks a bond, the conserved quantities are the valence budgets of the a...
-2. **Key Technical Contributions:** From Abstract: toms, and the enabling rule is the valence rule. These semantics are not guaranteed by learned models of reactions or neural networks that are built on Petri nets that use the net as a scaffold for message passing. Here, we ask what architecture remains a Petri net for every value of its weights. We
-3. **Methodology & Architecture:** Categories: cs.LG, physics.chem-ph, q-bio.QM. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we pr...
+2. **Key Technical Contributions:** From Abstract: esent RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to pre
+3. **Methodology & Architecture:** Categories: cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-07. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
