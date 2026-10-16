@@ -1,154 +1,144 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-10-15 16:05:03 UTC
+**Generated:** 2026-10-16 15:53:05 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness](http://arxiv.org/abs/2610.20576v1)
-**arXiv ID:** `2610.20576v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20576v1) | **Published:** 2026-10-14
-**Authors:** Artin Tajdini, Manpreet Kaur, Peng Qi
+### [MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](http://arxiv.org/abs/2610.22344v1)
+**arXiv ID:** `2610.22344v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22344v1) | **Published:** 2026-10-15
+**Authors:** Shangheng Du, Jinxin Shi, Shuaiyu Zhang, Yiming Wu, Junpeng Zhao et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Post-training binds the competence of an LLM agent to the interface it was trained on. Semantics-preserving perturbations of that interface, such as renaming an action or changing the notation, leave the underlying task unchanged yet make the agent worse at it. Scoring each sample independently mean...
-2. **Key Technical Contributions:** From Abstract: s interface randomization only broadens this dependence from a single interface to the training interface distribution, so out-of-distribution perturbations still degrade the agent. We propose Cross-Interface Policy Regularization (CIPR), a self-supervised objective that replaces action names with u
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a pr...
+2. **Key Technical Contributions:** From Abstract: actical path toward this pursuit through complex orchestration that manages long-horizon experimentation, while recent MLE systems adopt model-directed interaction, allowing models to autonomously organize experiments and adapt optimization strategies based on execution feedback. However, feedback f
+3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition](http://arxiv.org/abs/2610.20560v1)
-**arXiv ID:** `2610.20560v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20560v1) | **Published:** 2026-10-14
-**Authors:** Weichen Lyu, Chong Xia, Mingyu Dong, Long Xu, Shengjun Zhang et al.
+### [LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](http://arxiv.org/abs/2610.22372v1)
+**arXiv ID:** `2610.22372v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22372v1) | **Published:** 2026-10-15
+**Authors:** Zhixu Li, Keqian Tang, Litian Gong, Jingyu Yao, Wenqian Zhang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** 3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion p...
-2. **Key Technical Contributions:** From Abstract: riors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive constru
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios](http://arxiv.org/abs/2610.20548v1)
-**arXiv ID:** `2610.20548v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20548v1) | **Published:** 2026-10-14
-**Authors:** Ali Zamani, Soroush Esfahanian, Erfan Shahabi, Mohammad Taher Pilehvar, Azadeh Shakery et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Understanding the social intelligence of large language models (LLMs) is increasingly important for applications involving human-AI interaction and multi-agent environments. Social intelligence comprises two aspects: cognitive intelligence, the ability to infer others' mental states, and behavioral ...
-2. **Key Technical Contributions:** From Abstract: intelligence, the ability to select appropriate social actions based on these inferences to achieve social goals. Persuasion provides a natural testbed in which both aspects are simultaneously at play, yet prior benchmarks typically evaluate them in isolation using synthetic scenarios. We introduce 
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.SI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion](http://arxiv.org/abs/2610.20606v1)
-**arXiv ID:** `2610.20606v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20606v1) | **Published:** 2026-10-14
-**Authors:** Huixuan Cheng, Bike Zhang, Shankar Sastry, Koushil Sreenath
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Recent advances in robot learning have driven rapid progress in humanoid control, enabling increasingly agile behaviors in the real world. However, humanoid control networks are typically obtained through conventional training procedures, while comparatively little attention has been given to direct...
-2. **Key Technical Contributions:** From Abstract: ly modeling the distribution of their learned weights and generating functional networks in weight space. In this work, we investigate whether high-performing humanoid control networks can be generatively modeled directly through their weights. We adopt a latent diffusion framework that couples a li
+1. **Core Problem & Thesis:** Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from ...
+2. **Key Technical Contributions:** From Abstract: preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM studies five questions: 1) how policies follow preferences in zero-shot settings; 2) how they learn single preferences from demonstrations; 3) how efficiently they acquire preferenc
 3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Co-Evolving Acting and Forecasting for Language Agents](http://arxiv.org/abs/2610.20597v1)
-**arXiv ID:** `2610.20597v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20597v1) | **Published:** 2026-10-14
-**Authors:** Haofei Yu, Yixing Chen, Yining Zhao, Xuyan Ye, Yuxiang Liu et al.
+### [GeoState: Learning View-Decoupled Geometry States for 3D World Modeling](http://arxiv.org/abs/2610.22343v1)
+**arXiv ID:** `2610.22343v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22343v1) | **Published:** 2026-10-15
+**Authors:** Hongchang Liu, Jian Liu, Yujuan Ding, Liang Peng, Xun Jiang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Training language agents is bottlenecked by the high cost of long-horizon rollouts, yet standard agentic reinforcement learning (RL) learns only from a terminal scalar reward, leaving the supervision in intermediate steps largely unused. Prior work exploits this supervision through value targets tha...
-2. **Key Technical Contributions:** From Abstract: t estimate per-step success probabilities or observation targets that fit environment response. Both are hard to construct well: (1) value targets come from the same single scalar signal for each step in the trajectory, and (2) observation targets, such as web pages and terminal logs, are long and n
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these features entangles scene dynamics with camera-induced variation, making the resulting state evolution...
+2. **Key Technical Contributions:** From Abstract:  harder to predict. We propose GeoState, a view-decoupled geometry representation for predictive 3D world modeling that separates scene-state evolution from camera-dependent observation. Specifically, a scene tokenizer aggregates multi-view GFM features into a view-decoupled scene state, which a geo
+3. **Methodology & Architecture:** Categories: cs.CV, cs.AI, cs.LG, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization](http://arxiv.org/abs/2610.20573v1)
-**arXiv ID:** `2610.20573v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20573v1) | **Published:** 2026-10-14
-**Authors:** Anna Mei, Michael R. Douglas
+### [3DCodeVerse: Exploring 3D Worlds as Code](http://arxiv.org/abs/2610.22341v1)
+**arXiv ID:** `2610.22341v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22341v1) | **Published:** 2026-10-15
+**Authors:** Yipeng Gao, Ziyao Zeng, Jinfa Huang, Yijiang Li, Haolin Xiong et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** We introduce a novel method for verifying Lean formalizations that goes beyond LLM-judged faithfulness. Unlike most verification methods, which rely on LLMs or trained models, our method combines LLM-based semantic review with mechanical numerical and vacuity checks, providing checkable feedback and...
-2. **Key Technical Contributions:** contributions:
-• Numerical and vacuity verification method(Section 3). We introduce numerical and
-vacuity checks on Lean statements, which are mechanical and provide checkable feedback
-on points of failure. As indicated by their names, a numerical check verifies numerical
-validity of a Lean statement, and a vacuity check looks for vacuous formalization, for
-example a tautological definition. So far, all verification in autoformalization relies on
-LLM judgements, and our method complements the ambiguity and arbitrariness of an LLM
-judge’s verdicts. Its feedback is tractable and informative, and passing these checks adds
-another layer of certainty about the correctness of a Lean statement.
-3. **Methodology & Architecture:** Categories: cs.LO, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable 3D code, a coding harness for spatial reasoning and automated verification, and practical guidance f...
+2. **Key Technical Contributions:** From Abstract: or 3D coding. First, we construct 3DCodeVerse-2M, a large-scale curated dataset of standalone 3D executable code. We build this corpus by collecting open-source data, converting specialized representations, and generating new programs with coding agents. Each program is packaged with the source file
+3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis](http://arxiv.org/abs/2610.20538v1)
-**arXiv ID:** `2610.20538v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20538v1) | **Published:** 2026-10-14
-**Authors:** Qiushi Sun, Jingyang Gong, Yang Liu, Qiaosheng Chen, Zhangyue Yin et al.
+### [Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?](http://arxiv.org/abs/2610.22333v1)
+**arXiv ID:** `2610.22333v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22333v1) | **Published:** 2026-10-15
+**Authors:** Trizal Garg, Sibayan Mitra, Arya Karanjkar, Advait Singh, Jagat Sesh Challa et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Multimodal code intelligence connects the symbolic world of programs with the visual world their execution creates. Interest in this capability is burgeoning, as models are increasingly asked to produce charts, webpages, animations, and semi-structured documents. Recently, proprietary models have pu...
-2. **Key Technical Contributions:** From Abstract: shed far ahead, producing interactive artifacts even from a text description or a screenshot alone. Yet their data and training remain closed, and open progress is held back by the quantity and quality of available data and by the pipelines and methods for producing it. Quality is the harder of the 
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.CV, cs.LG, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in real use. Existing work has studied evaluation awareness almost entirely in English, although models serve use...
+2. **Key Technical Contributions:** From Abstract: rs in many languages. Indic languages are spoken by over a billion people, yet evaluation awareness remains almost entirely unstudied in them. We test four instruction-tuned models from three families in five Indic languages alongside English. A set of cues varies whether the model is told that it i
+3. **Methodology & Architecture:** Categories: cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Price of Anarchy of First-Price Auctions in Agentic Markets](http://arxiv.org/abs/2610.20587v1)
-**arXiv ID:** `2610.20587v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20587v1) | **Published:** 2026-10-14
-**Authors:** Shubhendu Trivedi, Jacob Eisenstein, Alekh Agarwal, Ian Gemp, Michael Kaisers et al.
+### [DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models](http://arxiv.org/abs/2610.22356v1)
+**arXiv ID:** `2610.22356v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22356v1) | **Published:** 2026-10-15
+**Authors:** Han Su, Meng Tian, Tianyu Huang, Mingyu Gao, Lennox Wei et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** An agentic market is a decentralized serving-time market where AI agents bid to claim each user prompt. An agent's bid is based on its expected value for the prompt, which is the expectation of the reward for its response minus its inference costs. First-price auctions (FPAs), in which the highest b...
-2. **Key Technical Contributions:** From Abstract: idder pays its bid and receives the prompt, are a natural way to allocate prompts in such a market, since they are simple and transparent to run, and do not require central knowledge of private capabilities and costs. However, FPAs are not truthful: participants may bid less than their true value in
-3. **Methodology & Architecture:** Categories: cs.GT, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Vision-language models still struggle to understand 3D spatial relations across views and update spatial judgments as the observer moves. A common approach fuses 3D reconstruction features into visual tokens, but aligning these features with pretrained semantic representations remains challenging un...
+2. **Key Technical Contributions:** From Abstract: der limited spatial supervision. We propose DK-VLM with Dual-Kernel Attention, which computes attention from both a visual token's input position and its geometric position in the scene. A semantic kernel retains the pretrained model's native attention and positional encoding, while a separate geome
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks](http://arxiv.org/abs/2610.20544v1)
-**arXiv ID:** `2610.20544v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20544v1) | **Published:** 2026-10-14
-**Authors:** Haimanot Bitew Alemayehu, Simachew Melaku Ayalew, Chilotie Desalew Mengesha, Ayisheshim Almaw Bogale, Anteneh Birhan Yenew et al.
+### [FDE-Gym: The Last Mile of AI Delivery](http://arxiv.org/abs/2610.22350v1)
+**arXiv ID:** `2610.22350v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22350v1) | **Published:** 2026-10-15
+**Authors:** Dongxu Yang, Hongda Yan, Renxin Wang, Baoli Zhang, Haojia Zuo et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Potato is an important food-security crop in Ethiopia, but its production is affected by foliar diseases, particularly early blight and late blight. This study develops a lightweight convolutional neural network (CNN) to classify potato leaves into three categories: healthy, early blight, and late b...
-2. **Key Technical Contributions:** From Abstract: light. The proposed model was trained using 2,215 images from the PlantVillage dataset and evaluated on an independent field dataset containing 247 images collected from potato farms in Banja, Awi Zone, Ethiopia. On PlantVillage, the model achieved 99.04% training accuracy, 98.21% validation accurac
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Conclusion
-This study developed and evaluated a lightweight CNN for classification of potato leaves into
-healthy, early blight, and late blight categories. The proposed model achieved 98.66% test accu-
-racy on the selected PlantVillage test set and 90.28% accuracy on the independently collected
-Banja field dataset. The comparison experiments also examined VGG16 and MobileNetV2 in
-terms of performance and computational characteristics.
-The main contributions of the present study are as follows:
-1. Proposing an automated system for the detection of potato leaf diseases using a lightweight
-CNN.
-2. The proposed configuration recorded 98.66% PlantVillage test accuracy, while the com-
-parative experiment reports a 0.0268 validation loss for the p
+1. **Core Problem & Thesis:** Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constrai...
+2. **Key Technical Contributions:** From Abstract: nts. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with
+3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Limitations
+A simulated customer. Stakeholders are scripted so that results are reproducible. Real people are less predictable:
+they change their minds, answer a different question from the one asked, and may respond differently on the basis
+of previous interactions. The contact costs are set by the experts who wrote each scenario and are a model of the
+cost of stakeholder time, not a measurement of it.
+Sample size across levels. Levels L0 to L2 are reported on the 20 original tasks only, and for three of these the L2
+result is taken from the identical L3 task instruction. The drop from L0 to L1 is large relative to this sample; the
+differences among L1, L2, and L3 are not large, and we claim only that no large further drop is visible.
+No h
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [The Wealth of Agents: Scaling Agentic AI Across Developers](http://arxiv.org/abs/2610.20518v1)
-**arXiv ID:** `2610.20518v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.20518v1) | **Published:** 2026-10-14
-**Authors:** Austin W. Hanjie, Carlos E. Jimenez, Zirui Wang, Karthik Narasimhan
+### [Sim-to-Real Reinforcement Learning for Path-Safe Target Reaching in Robotic Harvesting of Hydroponic Lettuce](http://arxiv.org/abs/2610.22337v1)
+**arXiv ID:** `2610.22337v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22337v1) | **Published:** 2026-10-15
+**Authors:** Al Bashir, Partho Ghose, Yibin Wang, Robert G. Hardin, Joshua Peeples et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Today's agentic systems are typically designed, built, and deployed by single developers with full control over all participating agents. While this simplifies development, it limits the potential scale of agentic systems. We study multi-developer agentic systems (MDAs) which enable developers to co...
-2. **Key Technical Contributions:** From Abstract: llaboratively build agentic systems to push frontier capability beyond what any individual developer could achieve alone. We construct empirical and theoretical models of developers to compare MDAs with single-developer agentic systems (SDAs). On GAIA, a general assistant benchmark, a population of 
-3. **Methodology & Architecture:** Categories: cs.AI, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-14. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Robotic harvesting requires precise manipulation to ensure accurate positioning of the end-effector, especially in a constraint workspace. This study introduces the Path-Safe Approach Proximal Policy Optimization (PSA-PPO), a target-conditioned local reaching framework designed for robotic harvestin...
+2. **Key Technical Contributions:** From Abstract: g of nutrient film technique (NFT)-hydroponic lettuce in greenhouses. The proposed PSA-PPO preserves the standard clipped PPO objective while introducing a harvesting-oriented policy formulation that integrates target-conditioned observations, corridor-aware spatial constraints, trajectory-history-b
+3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents](http://arxiv.org/abs/2610.22331v1)
+**arXiv ID:** `2610.22331v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22331v1) | **Published:** 2026-10-15
+**Authors:** Siqi Chen, Zhengxi Lu, Yuchen Yan, Xingyu Wu, Qipeng Chen et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult. Outcome-based reinforcement learning provides only a single terminal reward shared across an entire trajectory. Recent p...
+2. **Key Technical Contributions:** From Abstract: rocess-supervision methods aim to assign credit at finer granularity, but they typically anchor credit to either surface-level trajectory states or model-internal signals, both of which become unreliable in deep search where observations are heterogeneous and retrieved contexts are long and noisy. W
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Designing Transformers for Continuous Diffusion Language Models](http://arxiv.org/abs/2610.22330v1)
+**arXiv ID:** `2610.22330v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.22330v1) | **Published:** 2026-10-15
+**Authors:** Weijian Luo, Yujian Chen, Hao Jiang, Guang Cheng, Tianyang Hu
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Continuous diffusion language models (CDLMs) offer an alternative approach to parallel language generation; however, most existing studies directly use transformer architectures from either causal large language models (LLMs) or Diffusion Transformers (DiTs) for image generation, which were not opti...
+2. **Key Technical Contributions:** From Abstract: mized for CDLMs. In this paper, we conduct a systematic study on Transformer architectures for CDLMs and introduce Language Diffusion Transformer (LangDiT), combining feature and query-key normalization, wider noise conditioning, likelihood-shortcut gradient routing and calibration, and confidence-g
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-15. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
