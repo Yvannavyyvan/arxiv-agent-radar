@@ -1,136 +1,136 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-10-20 10:28:47 UTC
+**Generated:** 2026-10-20 16:08:30 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Governed Memory: A Production Architecture for Multi-Agent Workflows](http://arxiv.org/abs/2603.17787v1)
-**arXiv ID:** `2603.17787v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2603.17787v1) | **Published:** 2026-03-18
-**Authors:** Hamed Taheri
+### [OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory](http://arxiv.org/abs/2610.26860v1)
+**arXiv ID:** `2610.26860v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26860v1) | **Published:** 2026-10-19
+**Authors:** Yu Zhou, Cheng-Fu Yang, Rui Sun, Di Wu, Sibo Peng et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Enterprise AI deploys dozens of autonomous agent nodes across workflows, each acting on the same entities with no shared memory and no common governance. We identify five structural challenges arising from this memory governance gap: memory silos across agent workflows; governance fragmentation acro...
-2. **Key Technical Contributions:** From Abstract: ss teams and tools; unstructured memories unusable by downstream systems; redundant context delivery in autonomous multi-step executions; and silent quality degradation without feedback loops. We present Governed Memory, a shared memory and governance layer addressing this gap through four mechanism
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-03-18. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only m...
+2. **Key Technical Contributions:** From Abstract: odest gains. Such tasks demand grounded perception, external knowledge, and numerical measurements obtained through heterogeneous tools, whose outputs must be made interpretable to the model and retained across reasoning steps. We introduce OpenVLHarness, a multimodal reasoning harness organized aro
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.CV, cs.LG, cs.MM. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Mesh Memory Protocol: Semantic Infrastructure for Multi-Agent LLM Systems](http://arxiv.org/abs/2604.19540v1)
-**arXiv ID:** `2604.19540v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2604.19540v1) | **Published:** 2026-04-21
-**Authors:** Hongwei Xu
+### [RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development](http://arxiv.org/abs/2610.26826v1)
+**arXiv ID:** `2610.26826v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26826v1) | **Published:** 2026-10-19
+**Authors:** Yuchi Wang, Rongyao Fang, Weihao Yu, Xilin Wei, Tiancheng Gu et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Teams of LLM agents increasingly collaborate on tasks spanning days or weeks: multi-day data-generation sprints where generator, reviewer, and auditor agents coordinate in real time on overlapping batches; specialists carrying findings forward across session restarts; product decisions compounding o...
-2. **Key Technical Contributions:** From Abstract: ver many review rounds. This requires agents to share, evaluate, and combine each other's cognitive state in real time across sessions. We call this cross-session agent-to-agent cognitive collaboration, distinct from parallel agent execution. To enable it, three problems must be solved together. (P1
-3. **Methodology & Architecture:** Categories: cs.MA, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-04-21. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage development, a practical and readily evaluable setting in which ...
+2. **Key Technical Contributions:** From Abstract: existing benchmarks remain largely idealized: they typically focus on reconstructing visual targets or generating webpages from textual instructions alone, overlooking the more common workflow of developing from visual examples. Specifically, we introduce RefCraft, a benchmark comprising 300 realist
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [AgenticSCR: An Autonomous Agentic Secure Code Review for Immature Vulnerabilities Detection](http://arxiv.org/abs/2601.19138v2)
-**arXiv ID:** `2601.19138v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2601.19138v2) | **Published:** 2026-01-27
-**Authors:** Wachiraphan Charoenwet, Kla Tantithamthavorn, Patanamon Thongtanunam, Hong Yi Lin, Minwoo Jeong et al.
+### [Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy](http://arxiv.org/abs/2610.26836v1)
+**arXiv ID:** `2610.26836v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26836v1) | **Published:** 2026-10-19
+**Authors:** Ke Zhang, Sahchit Chundur, Jerry Peprah Owusu, Mohammad Javad Abdolhosseini Qomi, Maziar Raissi
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Secure code review is critical during pre-integration, where Atlassian developers rely on lightweight analysis tools, while deep security assessment is deferred to later stages, delaying feedback and increasing remediation costs. Existing static analyzers are often noisy and struggle with context-de...
-2. **Key Technical Contributions:** From Abstract: pendent or partially manifested vulnerabilities, while static large language model (LLM) reviewers are constrained by context windows and lack tool interaction. Agentic AI, which combines LLMs with code navigation, shows promise; however, its effectiveness for early-stage secure code review remains 
-3. **Methodology & Architecture:** Categories: cs.CR, cs.AI, cs.LG, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-01-27. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](http://arxiv.org/abs/2606.08340v1)
-**arXiv ID:** `2606.08340v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2606.08340v1) | **Published:** 2026-06-06
-**Authors:** Kale-ab Abebe Tessera, Andras Szecsenyi, Cameron Barker, Alexander Rutherford, Davide Paglieri et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As language models are increasingly deployed as autonomous agents, they must coordinate with others over long horizons in open-ended interactive tasks. Yet existing evaluations rarely test these demands together, instead emphasising single-agent tasks, short interactions, or highly structured multi-...
-2. **Key Technical Contributions:** From Abstract: agent settings. We introduce $alem$, a JAX-based benchmark for open-ended multi-agent coordination built on Craftax-like dynamics. Alem embeds procedurally generated coordination tasks, soft specialisation, communication, and controllable coordination difficulty into a long-horizon survival world wi
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-06-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability](http://arxiv.org/abs/2610.04672v1)
-**arXiv ID:** `2610.04672v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.04672v1) | **Published:** 2026-10-03
-**Authors:** Qizhi Chu, Zekai Yu, Sijie Wen, Yang Liu, Chen Qian et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language models (LLMs) have progressively evolved into the core of autonomous agents. Building on this progress, LLM-based multi-agent systems (MAS) coordinate multiple agents into a synergistic team to accomplish complex tasks that exceed the capabilities of individual agents. The effectivene...
-2. **Key Technical Contributions:** From Abstract: ss of such systems depends not only on the agents themselves, but also on how collaboration mechanisms are designed and organized. Note that real-world collaboration is typically partially observable, where each agent can only access partial information about the environment due to physical or priva
+1. **Core Problem & Thesis:** LLM agents that compute the right answer can still answer wrongly. Agent harnesses increasingly keep long tool outputs out of the context window, saving them to files that the agent searches or reads on demand. We ask where this costs accuracy with a real scientific tool: PHREEQC, a widely used geoc...
+2. **Key Technical Contributions:** From Abstract: hemistry simulator from the USGS, whose reports reach 846.8k characters and whose determinism lets every printed value be traced. Agents use it to answer 158 execution-verified multiple-choice items. When agents read the simulator's report through a section index rather than in context, GPT-5.1 and 
 3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-03. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [VirusCascade: Hijacking Collaborative Reflection in LLM-Powered Recommender Agents](http://arxiv.org/abs/2609.38270v1)
-**arXiv ID:** `2609.38270v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2609.38270v1) | **Published:** 2026-09-29
-**Authors:** Yurong Hao, Wen Zhou, Guowei Guan, Tiantong Wu, Fuyao Zhang et al.
+### [WeAct: Dynamic Weight Switching as Agent Actions](http://arxiv.org/abs/2610.26847v1)
+**arXiv ID:** `2610.26847v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26847v1) | **Published:** 2026-10-19
+**Authors:** Rui Shi, Xunjian Yin, Jiacheng Sang, Zichuan Liu, Shuyan Zhou
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Advancing beyond traditional static scoring models, LLM-powered agentic recommender systems (LLM-ARS) instantiate users and items as autonomous agents, whose semantic states are dynamically refined through a recurrent process known as collaborative reflection. While this mechanism improves recommend...
-2. **Key Technical Contributions:** From Abstract: ation quality, it simultaneously introduces a systemic vulnerability: adversarial evidence injected into a single agent can be rationalised into a legitimate preference narrative, written back into memory, and propagated to other agents through interaction contexts. We term the local rationalisation
-3. **Methodology & Architecture:** Categories: cs.CR, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-09-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previously acquired ones, resulting in catastrophic forgetting. As a trajectory unfolds, different stages may require different capabilities, yet ...
+2. **Key Technical Contributions:** From Abstract: conventional joint training and static adapter merging maintain a fixed parameter configuration throughout execution. We introduce WeAct (Weight-level Internal Actions), which trains independent capability-specific LoRA adapters over a frozen backbone and adds adapter selection to the agent's action
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [From Single Chatbots to Governed Agent Ecosystems: An Agentic AI Pattern Catalogue and Orchestration Framework for Mission-Critical Hospital Information Management Systems](http://arxiv.org/abs/2608.07627v1)
-**arXiv ID:** `2608.07627v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2608.07627v1) | **Published:** 2026-08-07
-**Authors:** Manideep Dhar, Ritwik Singh, Sharat Chandra Kumar Manikonda
+### [Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](http://arxiv.org/abs/2610.26828v1)
+**arXiv ID:** `2610.26828v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26828v1) | **Published:** 2026-10-19
+**Authors:** Zhaoyang Wang, Qianhui Wu, Haorui Wang, Simon Yu, Baolin Peng et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Hospitals are racing to embed AI, while coping with the surge in adaptation of the technology in other industries, into the triage management, documentation, scheduling, and revenue-cycle workflows, yet most deployments remain as fragmented pilots that stall at the edge of production, exposing patie...
-2. **Key Technical Contributions:** From Abstract: nts and institutions to operational fragility, ungoverned risk, and mounting technical debt. At the same time, the global AI-in-healthcare market is projected to exceed nearly USD 1 trillion by 2034, according to the report of Fortune Business Insights, amplifying the financial consequences of archi
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-08-07. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM...
+2. **Key Technical Contributions:** From Abstract: ), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interaction interface, we construct executable environments that jointly support graphical user interfaces, 
+3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation](http://arxiv.org/abs/2605.29861v2)
-**arXiv ID:** `2605.29861v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2605.29861v2) | **Published:** 2026-05-28
-**Authors:** Chenghao Zhang, Guanting Dong, Yufan Liu, Tong Zhao, Xiaoxi Li et al.
+### [Manga2Animate: An Agentic Framework for Faithful Manga Animation with Script and Storyboard Planning](http://arxiv.org/abs/2610.26851v1)
+**arXiv ID:** `2610.26851v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26851v1) | **Published:** 2026-10-19
+**Authors:** Sheng-Wei Zhang, Hsi-An Chen, Yan-Ting Liou, Chih-Hsuan Chen, Shih-Chen Tseng et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large Language Models (LLMs) have advanced autonomous agents from deep search, which retrieves concise factual answers, to deep research, which synthesizes scattered evidence into long-form reports. However, verifiable multimodal deep research remains challenging due to open-ended synthesis without ...
-2. **Key Technical Contributions:** From Abstract: deterministic ground truth and the need to interleave textual arguments with visual evidence. We propose Ptah, a multi-agent harness for interleaved report generation. Ptah orchestrates the lifecycle from user query to rendered web report through planning, research, and writing stages, where special
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-05-28. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Adapting existing manga into coherent animation that stays faithful to the source is a valuable yet challenging task. Existing methods either access the manga mainly through text, losing its characters and art style, or feed manga pages directly into video generation models, which misinterpret the m...
+2. **Key Technical Contributions:** From Abstract: anga's structure and produce incorrect storylines. In this paper, we propose Manga2Animate, a multi-agent framework that grounds every stage of generation in the source manga. We decompose the task into two intermediate representations, an animation script and a visual storyboard. Each representatio
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [An Empirical Study of Multi-Agent Collaboration for Automated Research](http://arxiv.org/abs/2603.29632v2)
-**arXiv ID:** `2603.29632v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2603.29632v2) | **Published:** 2026-03-31
-**Authors:** Yang Shen, Zhenyi Yi, Ziyi Zhao, Lijun Sun, Dongyang Li et al.
+### [Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy](http://arxiv.org/abs/2610.26848v1)
+**arXiv ID:** `2610.26848v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26848v1) | **Published:** 2026-10-19
+**Authors:** Zekai Li, Jiayi Yu, Jinlu Zhang, Luyang Niu, Zekun Qi et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As AI agents evolve, the community is rapidly shifting from single Large Language Models (LLMs) to Multi-Agent Systems (MAS) to overcome cognitive bottlenecks in automated research. However, the optimal multi-agent coordination framework for these autonomous agents remains largely unexplored. In thi...
-2. **Key Technical Contributions:** From Abstract: s paper, we present a systematic empirical study investigating the comparative efficacy of distinct multi-agent structures for automated machine learning optimization. Utilizing a rigorously controlled, execution-based testbed equipped with Git worktree isolation and explicit global memory, we bench
-3. **Methodology & Architecture:** Categories: cs.MA, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-03-31. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** In this paper, we systematically investigate the mechanisms, scaling behavior, and generalization of physical Recursive self-improvement. We introduce PhysRSI-eval to quantify physical RSI through a five-axis metric: First-Attempt Performance, Efficiency, Success, Budget and Improvement from failure...
+2. **Key Technical Contributions:** From Abstract: . Different VLMs are evaluated on 18 manipulation tasks under a fixed interaction budget. The analysis of experimental results motivates the Physical Barrel Hypothesis: different capabilities may constrain different parts of improvement. The five-axis metrics also distinguish systems with close publ
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Security Considerations for Multi-agent Systems](http://arxiv.org/abs/2603.09002v2)
-**arXiv ID:** `2603.09002v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2603.09002v2) | **Published:** 2026-03-09
-**Authors:** Tam Nguyen, Moses Ndebugre, Dheeraj Arremsetty
+### [Reinforcement Learning with Visually Attributable On-Policy Self-Distillation](http://arxiv.org/abs/2610.26856v1)
+**arXiv ID:** `2610.26856v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26856v1) | **Published:** 2026-10-19
+**Authors:** Shiao Xie, Siyu Chen, Jianwei Lv, Xiandong Li, Yujin Wang
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Multi-agent artificial intelligence systems or MAS are systems of autonomous agents that exercise delegated tool authority, share persistent memory, and coordinate via inter-agent communication. MAS introduces qualitatively distinct security vulnerabilities from those documented for singular AI mode...
-2. **Key Technical Contributions:** From Abstract: ls. Existing security and governance frameworks were not designed for these emerging attack surfaces. This study systematically characterizes the threat landscape of MAS and quantitatively evaluates 16 security frameworks for AI against it. A four-phase methodology is proposed: constructing a deep t
-3. **Methodology & Architecture:** Categories: cs.CR, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-03-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Multimodal reinforcement learning with verifiable rewards (RLVR) provides reliable task-level supervision, yet offers limited guidance for localizing errors in visual reasoning. On-policy self-distillation (OPSD) complements this supervision with dense token-level corrections from a privileged teach...
+2. **Key Technical Contributions:** From Abstract: er equipped with an evidence-centered visual view. However, the resulting corrections may conflate visual evidence with non-visual shifts induced by linguistic priors, response style, or the privileged view itself. We formalize this phenomenon as privileged-correction contamination: a token-level co
+3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Train An Imaginative Agent](http://arxiv.org/abs/2610.26845v1)
+**arXiv ID:** `2610.26845v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26845v1) | **Published:** 2026-10-19
+**Authors:** Jiaxin Ge, Junyi Zhang, Tianning Chai, Hanjun Yoo, Chenyang Wang et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** A seemingly reasonable push in Sokoban can make the puzzle unsolvable. To avoid such mistakes, an agent has to anticipate the consequences of its actions before execution, especially when feedback from the real environment is sparse or actions are irreversible. We introduce Agentic Imagination (Agim...
+2. **Key Technical Contributions:** From Abstract: a), a training framework that trains an agent to imagine before acting, i.e. to be imaginative. Agima trains a single omni model to propose actions, generate images of their outcomes, and then reason over these imagined futures to decide what to execute in the real environment. Rather than committin
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry](http://arxiv.org/abs/2610.26829v1)
+**arXiv ID:** `2610.26829v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.26829v1) | **Published:** 2026-10-19
+**Authors:** Matt Turk, Brandon L. Neel, Diana M. Lopez, Zachary D. Smith, Grace N. Johnecheck et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Frontier agents retrieve structural metadata well and compute geometry from coordinates less reliably. We ask how much of a benchmark score reflects that gap and how much reflects the evaluation configuration around the model. We study ProteinGeoBench, a suite of 131 protein-structure tasks, using 4...
+2. **Key Technical Contributions:** From Abstract: ,249 rollouts from four frontier models and 4,486 further trials across 26 models. Three of the four frontier models fall within 0.031 of one another (0.785 to 0.816) with no difference between them resolved, while the fourth scores 0.707 and all three gaps to it exclude zero. Three of the four do b
+3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, q-bio.BM. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-19. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
