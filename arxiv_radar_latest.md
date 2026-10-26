@@ -1,152 +1,184 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-10-25 15:22:14 UTC
+**Generated:** 2026-10-26 18:01:58 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence](http://arxiv.org/abs/2610.31650v1)
-**arXiv ID:** `2610.31650v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31650v1) | **Published:** 2026-10-22
-**Authors:** Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu et al.
+### [RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms](http://arxiv.org/abs/2610.32971v1)
+**arXiv ID:** `2610.32971v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32971v1) | **Published:** 2026-10-23
+**Authors:** Xi Chen, Fengqi Hu, Zeyu Shen, Jiaying Xu, Shangding Gu et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \bench{}, an ...
-2. **Key Technical Contributions:** From Abstract: executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust RL algorithms offer a rich set of mechanisms and principles, yet two major barriers limit their broader potential: limited algorithm reusab...
+2. **Key Technical Contributions:** From Abstract: ility and an unclear empirical capability boundary. We introduce RobustRLlib, an algorithm-centric library and benchmark that addresses both challenges. It integrates 17 representative robust online, offline, and safe RL algorithms under a unified interface for substantially improved reusability, to
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning](http://arxiv.org/abs/2610.31656v1)
-**arXiv ID:** `2610.31656v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31656v1) | **Published:** 2026-10-22
-**Authors:** Ali Najar, Hosein Hasani, Amir Kooshan Fattah, Yasamin Rajabi, Mahdieh Soleymani Baghshah
+### [SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](http://arxiv.org/abs/2610.32978v1)
+**arXiv ID:** `2610.32978v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32978v1) | **Published:** 2026-10-23
+**Authors:** Yuhan Liu, Lianhui Qin, Shenji Wan
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from ...
-2. **Key Technical Contributions:** From Abstract: past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning. It decomposes the fast adaptation phase into two temporal scales: a causal neural memory performs fine-grained within-episode adaptation 
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning and object-level reasoning, but precise spatial grounding remains difficult. Visual generative models offer rich priors over plausible arrang...
+2. **Key Technical Contributions:** From Abstract: ements, yet their outputs require geometric reasoning to become physically valid 3D scenes. We introduce SceneBloom, an agentic framework that combines visual layout sampling with contract-guided 3D compilation. A hierarchical sampler uses diffusion priors to generate furniture arrangements within f
+3. **Methodology & Architecture:** Categories: cs.CV, cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Cost-Aware Abstention for LLM-Based IT Ticket Classification](http://arxiv.org/abs/2610.31657v1)
-**arXiv ID:** `2610.31657v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31657v1) | **Published:** 2026-10-22
-**Authors:** Sachin Gupta
+### [Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning](http://arxiv.org/abs/2610.32951v1)
+**arXiv ID:** `2610.32951v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32951v1) | **Published:** 2026-10-23
+**Authors:** Yijing Ke, Tianle Cai, Ruosong Wang
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then evaluate that frozen policy once on held-out test data. On a...
-2. **Key Technical Contributions:** From Abstract:  public 47,837-ticket, eight-class corpus, we compare four trained non-LLM classifiers with four large language models under zero- and few-shot prompting. Under the illustrative cost model (c_ok, c_triage, c_wrong) = (0, 1, 5), TF-IDF with logistic regression and a threshold of 0.60 selected on cali
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Reinforcement learning for large language models often uses separate systems for inference and training. Even with identical weights and BF16 tensors, implementation differences can make an intended on-policy update off-policy and destabilize training. Existing remedies align the entire inference an...
+2. **Key Technical Contributions:** From Abstract: d training stacks, change global precision, or modify the learning algorithm. We ask whether aligning selected parts of the execution stack can stabilize BF16 RL while other implementation differences remain. We align training-side rounding locations with inference in three regions---RoPE, SwiGLU, a
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](http://arxiv.org/abs/2610.32955v1)
+**arXiv ID:** `2610.32955v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32955v1) | **Published:** 2026-10-23
+**Authors:** Federico Lucca
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is rarely measured: the stored labels were written by the system itself. We present Foyer, a self-hosted personal inbox agent in daily use, and a...
+2. **Key Technical Contributions:** From Abstract:  measurement protocol (stratified sampling, frozen snapshots, thread-grouped splits, pre-registered hypotheses, human labels in the agent's review loop) that yields ground truth before any training. On 739 real Italian/English emails labelled by the owner (231 unbiased, 500 adversarially sampled), w
+3. **Methodology & Architecture:** Categories: cs.CL, cs.HC, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Limitations
+Single user, single inbox, two languages. What would not
+transfer to another user is clear from the components: the
+baseline’s weights (they encode this owner’s senders and
+vocabulary and must be retrained from that user’s labels),
+the contact graph (empty for a new user until contacts re-
+cur, which is why coverage, not accuracy, is the quantity
+to watch), the class priors (70–82%bassahere) and any
+confidence threshold. What should transfer is the protocol it-
+self, the zero-shot behaviour of the decision models, and the
+finding that the sender’s relationship is a graph property; the
+second inbox needed to test this is the obvious next study;
+the owner reviewed labels proposed by model annotators
+rather than labelling from scra
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations](http://arxiv.org/abs/2610.32891v1)
+**arXiv ID:** `2610.32891v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32891v1) | **Published:** 2026-10-23
+**Authors:** Sadra Emami, Benjamin Weigell, Mohammad Reza Mousavi, Gunel Jahangirova, Hugo Araujo et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Large Language Models (LLMs) are increasingly used to optimize code for performance. This practice often assumes that improvements in execution speed naturally translate into overall lower energy consumption. We challenge this assumption empirically by measuring whether performance-optimized code pr...
+2. **Key Technical Contributions:** From Abstract: oduced by LLM self-refinement pipelines is also energy-efficient relative to canonical human reference solutions, and whether the energy cost of the optimization process can be offset by subsequent execution-time savings. We evaluate 11 open-source models across four decoding configurations on all 1
+3. **Methodology & Architecture:** Categories: cs.SE, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** CONCLUSION
-We presented a reproducible empirical framework for asking
-whether automatic ticket routing is cost-preferred under stated
-assumptions. On one public corpus and primary illustrative
-(0,1,5)costs, a calibration-selected TF-IDF + LR policy
-reduces held-out modeled cost by 38.1 %; in a post-hoc 16-
-setting cost analysis, frozen calibration-selected policies beat
-both always-route and always-defer in 14 settings. The fixed
-break-even rule defers every ticket for seven prompted LLM
-conditions and routes only 19/1,000 for Haiku few-shot. Iso-
-tonic lowers ECE but generally does not improve correctness
-ranking. The result is a scoped deployment warning, not a
-universal ranking of model families. Separating prediction,
-confidence, reject
+This paper presented a systematic measurement study of
+the energy economics of LLM-based code self-optimization,
+covering inference and execution cost across 11 open-source
+models, four decoding configurations, and 1,000 EffiBench
+problems. The central question was whether performance-
+optimized code produced by LLM self-refinement is also
+energy-efficient relative to canonical solutions.
+Optimized code consumes more execution energy than the
+canonical reference in 42 of 44 model-variant pairs; the two
+exceptions achieve only marginal gains, with break-even points
+requiring millions of executions. Performance optimization
+and energy efficiency are not aligned even within the refine-
+ment trajectory: more than half of all configur
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3](http://arxiv.org/abs/2610.31624v1)
-**arXiv ID:** `2610.31624v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31624v1) | **Published:** 2026-10-22
-**Authors:** Barış Alparslan, Sandy Tanwisuth, Caleb Petterson
+### [DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection](http://arxiv.org/abs/2610.32969v1)
+**arXiv ID:** `2610.32969v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32969v1) | **Published:** 2026-10-23
+**Authors:** Amber Xie, Jiawei Fu, Xiaofeng Guo, Carmelo Sferrazza, Guanya Shi et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the ...
-2. **Key Technical Contributions:** From Abstract: first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-converge
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to...
+2. **Key Technical Contributions:** From Abstract:  collect, but their motions must be estimated and retargeted to the robot, and they do not directly provide robot actions. In this paper, we introduce DexPort, a portable data-collection interface for high-DoF robot hands. It uses the same hand hardware for collection and deployment, avoiding a hand
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** future work
+may explore extending them with additional skills learned in
+simulation, such as other in-hand manipulation skills, learned
+grasps, and more.
+ACKNOWLEDGMENT
+The authors would like to thank Keyshawn King and
+V olodymyr Behma for data collection and support, and
+Andrew Wright for initial hardware designs. We also thank
+Tingfan Wu, Anas Houssaini, Jensen Gao, and the FAR team
+for feedback and support.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2](http://arxiv.org/abs/2610.31636v1)
-**arXiv ID:** `2610.31636v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31636v1) | **Published:** 2026-10-22
-**Authors:** Marek Šuppa, Ivan Vykopal, Jaroslav Kopčan
+### [RynnUnify: Towards Unified Embodied Brain](http://arxiv.org/abs/2610.32965v1)
+**arXiv ID:** `2610.32965v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32965v1) | **Published:** 2026-10-23
+**Authors:** Minghao Zhu, Bohan Hou, Kun Xiang, Zixuan Wang, Yinzhou Tang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Multilingual pipelines such as FineWeb2 apply one recipe across a thousand languages, leaving the failure modes of individual languages unanticipated. We use an LLM once, as a corpus debugger rather than a classifier: a tool-using agent explores the corpus through a read-only, budgeted API and compi...
-2. **Key Technical Contributions:** From Abstract: les each finding into an executable test, which a native speaker then validates. On the 26.5M-document Slovak portion of FineWeb2, three runs costing \$2.21-\$2.84 each found seven findings over four phenomena. The largest is a machine-generated content farm of 1,408,437 documents (5.32%) that passe
-3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of t...
+2. **Key Technical Contributions:** From Abstract: he physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also
+3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning](http://arxiv.org/abs/2610.31667v1)
-**arXiv ID:** `2610.31667v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31667v1) | **Published:** 2026-10-22
-**Authors:** Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn
+### [Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms](http://arxiv.org/abs/2610.32945v1)
+**arXiv ID:** `2610.32945v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32945v1) | **Published:** 2026-10-23
+**Authors:** Yuhang Ji, Fasheng Xu, Tianjun Feng
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes th...
-2. **Key Technical Contributions:** From Abstract: e candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an i
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Large language model (LLM) platforms introducing advertising must decide how much capability ad revenue should fund and what consumers should pay to avoid ads. We study a monopolistic platform that jointly chooses costly response quality, advertising intensity, and subscription prices when advertisi...
+2. **Key Technical Contributions:** From Abstract: ng reduces user value but better service raises advertising returns. Three findings follow. First, when partly ad-supported and ad-free plans coexist, advertising can finance useful service for consumers who receive none under pure subscription. Lower effective quality in middle plans weakens the al
+3. **Methodology & Architecture:** Categories: econ.TH, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](http://arxiv.org/abs/2610.31670v1)
-**arXiv ID:** `2610.31670v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31670v1) | **Published:** 2026-10-22
-**Authors:** Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei
+### [ZENO: Nonlinear filtering with Zakai Equation Neural Operators](http://arxiv.org/abs/2610.32926v1)
+**arXiv ID:** `2610.32926v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32926v1) | **Published:** 2026-10-23
+**Authors:** Aaditya Prasad, Steven W. Flavell, Brian DePasquale
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, different modalities such as vision and language converge toward a...
-2. **Key Technical Contributions:** From Abstract:  shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To examine this, we propose Sensorimotor Alignment ($S^2$), a training-f
-3. **Methodology & Architecture:** Categories: cs.CV, cs.LG, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** State inference and parameter learning for nonlinear filters is a core computation for scientific machine learning with varied applications in engineering and neuroscience. The unnormalized filtering distribution is governed by the Zakai equation, a stochastic partial differential equation (SPDE) th...
+2. **Key Technical Contributions:** From Abstract: at combines the forward Kolmogorov operator (known as the Fokker-Planck equation) with observed likelihood updates. Although solving these high-dimensional SPDEs is often impossible analytically and intractable numerically, advances in operator learning and physics-informed machine learning have mad
+3. **Methodology & Architecture:** Categories: cs.LG, q-bio.NC. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [BrickWright: Agentic Creation of Physically Feasible Brick Builds](http://arxiv.org/abs/2610.31651v1)
-**arXiv ID:** `2610.31651v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31651v1) | **Published:** 2026-10-22
-**Authors:** Ava Pun, Kevin Dai, Sally Chen, Maxwell Jones, Ruixuan Liu et al.
+### [Yalda-Embedding: Open Development of a Competitive Persian Retrieval Model](http://arxiv.org/abs/2610.32933v1)
+**arXiv ID:** `2610.32933v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32933v1) | **Published:** 2026-10-23
+**Authors:** Yalda Taheri, Mohammad Hassan Heydari, Armon Rasooli
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for a...
-2. **Key Technical Contributions:** From Abstract: ssembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or im
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [GigaBench: Benchmarking Learnable Representations for Gigapixel Image Compression and Super-Resolution](http://arxiv.org/abs/2610.31644v1)
-**arXiv ID:** `2610.31644v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31644v1) | **Published:** 2026-10-22
-**Authors:** Matteo Fusconi, Alex Costanzino, Pierluigi Zama Ramirez, Luigi Di Stefano
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Learnable Representations (LRs) can fit parametric families of functions to diverse kinds of signals. These emergent neural-native data formats are gathering interest in the scientific community due to their compactness, resolution-agnosticism and amenability to direct neural processing. On the othe...
-2. **Key Technical Contributions:** From Abstract: r hand, gigapixel images are becoming increasingly widespread across a variety of scientific, cultural, and industrial domains. In this paper, we present GigaBench, the first benchmark and experimental evaluation focused on deploying LRs with gigapixel imagery. GigaBench includes images collected, a
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation](http://arxiv.org/abs/2610.31639v1)
-**arXiv ID:** `2610.31639v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.31639v1) | **Published:** 2026-10-22
-**Authors:** Gabriele Dominici, Teague McMillan, Fazl Barez, Marc Langheinrich, Martin Gjoreski
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling ...
-2. **Key Technical Contributions:** our contributions:
-1We use the term “causal” throughout this work to denote strict procedural dependence (i.e., subsequent
-reasoning steps are strictly conditioned on the related prior steps) rather than formal statistical causal inference
-or structural causal models. This scoping is stated in full in
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-22. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Despite advances in multilingual text representations, effective dense retrieval for Persian remains constrained by the limited availability of language-specific training resources and compact embedding models. We present Yalda Embedding, a 595.8-million-parameter Persian retrieval model adapted fro...
+2. **Key Technical Contributions:** From Abstract: m Qwen3-Embedding-0.6B using more than one million query-document pairs. On eight Persian retrieval tasks from FaMTEB, the model achieves the highest macro-average among the evaluated 0.6B models, scoring 0.5488 and outperforming Qwen3-Embedding-0.6B and F2LLM-v2-0.6B on every task. It also approach
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** CONCLUSION
+We introduced YALDA-EMBEDDING, an openly developed
+Persian retrieval model adapted from Qwen3-Embedding-
+0.6B on more than one million query–document pairs. On
+eight FaMTEB retrieval tasks, it achieves the highest mean
+among the evaluated 0.6B models (0.5488) and outperforms
+both same-scale decoder-based baselines on every task. It
+approaches Qwen3-Embedding-4B, winning on four tasks and
+tying on one, with a macro-average gap of 0.0075.
+The two-stage ablation documents the progression from
+contrastive training to relational distillation. The final distilled
+model improves every task over the non-distilled recipe and
+raises its mean from 0.4813 to 0.5488 while retaining the
+same inference architecture. By releasing weights, traini
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
