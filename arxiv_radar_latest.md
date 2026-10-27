@@ -1,184 +1,157 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-10-26 18:01:58 UTC
+**Generated:** 2026-10-27 17:10:38 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms](http://arxiv.org/abs/2610.32971v1)
-**arXiv ID:** `2610.32971v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32971v1) | **Published:** 2026-10-23
-**Authors:** Xi Chen, Fengqi Hu, Zeyu Shen, Jiaying Xu, Shangding Gu et al.
+### [Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution](http://arxiv.org/abs/2610.35733v1)
+**arXiv ID:** `2610.35733v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35733v1) | **Published:** 2026-10-26
+**Authors:** Zhenshuo Zhang, Ruoxuan Xiong, Hongyang R. Zhang
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust RL algorithms offer a rich set of mechanisms and principles, yet two major barriers limit their broader potential: limited algorithm reusab...
-2. **Key Technical Contributions:** From Abstract: ility and an unclear empirical capability boundary. We introduce RobustRLlib, an algorithm-centric library and benchmark that addresses both challenges. It integrates 17 representative robust online, offline, and safe RL algorithms under a unified interface for substantially improved reusability, to
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Multi-objective reinforcement learning is a fundamental problem for modern AI, with applications spanning post-training, reasoning models, and robotic control. A central challenge is to learn policies that balance competing objectives, such as helpfulness versus honesty in safety and alignment, or s...
+2. **Key Technical Contributions:** From Abstract: peed versus energy in robotics. The optimal policy can vary sharply with objective-weighting combinations, and the extent of this variation depends crucially on the degree of conflict among objectives, making per-preference policy learning sample-inefficient. In this paper, we introduce objective-co
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.MA, cs.RO, stat.ML. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](http://arxiv.org/abs/2610.32978v1)
-**arXiv ID:** `2610.32978v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32978v1) | **Published:** 2026-10-23
-**Authors:** Yuhan Liu, Lianhui Qin, Shenji Wan
+### [Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents](http://arxiv.org/abs/2610.35767v1)
+**arXiv ID:** `2610.35767v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35767v1) | **Published:** 2026-10-26
+**Authors:** Tingzhu Bi, Xun Zhang, Jinglin Li, Ping Wang, Meng Ma
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning and object-level reasoning, but precise spatial grounding remains difficult. Visual generative models offer rich priors over plausible arrang...
-2. **Key Technical Contributions:** From Abstract: ements, yet their outputs require geometric reasoning to become physically valid 3D scenes. We introduce SceneBloom, an agentic framework that combines visual layout sampling with contract-guided 3D compilation. A hierarchical sampler uses diffusion priors to generate furniture arrangements within f
-3. **Methodology & Architecture:** Categories: cs.CV, cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Root cause analysis (RCA) of microservice failures has attracted many LLM agents whose investigation is hand-crafted, through standard operating procedures, fixed stages and role agents. Each is evaluated on its own data against few baselines, so it is unknown whether this design beats letting a cap...
+2. **Key Technical Contributions:** From Abstract: able model investigate on its own. We compare three simple harnesses that prescribe none of the model's calls (one call over an evidence package, a SQL agent and the Codex coding agent) with five published LLM RCA agents and with statistical and causal methods on RCAtlas, 90 validated cases from eig
+3. **Methodology & Architecture:** Categories: cs.AI, cs.DC, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning](http://arxiv.org/abs/2610.32951v1)
-**arXiv ID:** `2610.32951v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32951v1) | **Published:** 2026-10-23
-**Authors:** Yijing Ke, Tianle Cai, Ruosong Wang
+### [Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent](http://arxiv.org/abs/2610.35817v1)
+**arXiv ID:** `2610.35817v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35817v1) | **Published:** 2026-10-26
+**Authors:** Benjamin Pikus, Daniel Saunders, Mircea Mironenco, Salman Mohammadi, Mathew Mathew et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Reinforcement learning for large language models often uses separate systems for inference and training. Even with identical weights and BF16 tensors, implementation differences can make an intended on-policy update off-policy and destabilize training. Existing remedies align the entire inference an...
-2. **Key Technical Contributions:** From Abstract: d training stacks, change global precision, or modify the learning algorithm. We ask whether aligning selected parts of the execution stack can stabilize BF16 RL while other implementation differences remain. We align training-side rounding locations with inference in three regions---RoPE, SwiGLU, a
-3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** A robot policy needs to understand what a task is asking for in a scene, and how to move the robot to accomplish that task. To achieve these two skills, we introduce Zero-real Agent Policy (ZAP), a recipe that teaches a small off-the-shelf vision-language model to control a robot via a simple tool h...
+2. **Key Technical Contributions:** From Abstract: arness. We use a pretrained 27B parameter model to bootstrap world understanding and reasoning, followed by supervised fine-tuning and GRPO on simple simulated tasks to teach it how to move the robot. Without any real-world robot data during training, ZAP reaches 96.7% success on real-world tasks, m
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.CV, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox](http://arxiv.org/abs/2610.32955v1)
-**arXiv ID:** `2610.32955v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32955v1) | **Published:** 2026-10-23
-**Authors:** Federico Lucca
+### [A Unified Arena for LLM Agents across Diverse Eurogame](http://arxiv.org/abs/2610.35773v1)
+**arXiv ID:** `2610.35773v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35773v1) | **Published:** 2026-10-26
+**Authors:** Fengrui Zhang, Xiang Li, Ruomeng Ding, Jiayi Yuan, Yuchen Huang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is rarely measured: the stored labels were written by the system itself. We present Foyer, a self-hosted personal inbox agent in daily use, and a...
-2. **Key Technical Contributions:** From Abstract:  measurement protocol (stratified sampling, frozen snapshots, thread-grouped splits, pre-registered hypotheses, human labels in the agent's review loop) that yields ground truth before any training. On 739 real Italian/English emails labelled by the owner (231 unbiased, 500 adversarially sampled), w
-3. **Methodology & Architecture:** Categories: cs.CL, cs.HC, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Limitations
-Single user, single inbox, two languages. What would not
-transfer to another user is clear from the components: the
-baseline’s weights (they encode this owner’s senders and
-vocabulary and must be retrained from that user’s labels),
-the contact graph (empty for a new user until contacts re-
-cur, which is why coverage, not accuracy, is the quantity
-to watch), the class priors (70–82%bassahere) and any
-confidence threshold. What should transfer is the protocol it-
-self, the zero-shot behaviour of the decision models, and the
-finding that the sender’s relationship is a graph property; the
-second inbox needed to test this is the obvious next study;
-the owner reviewed labels proposed by model annotators
-rather than labelling from scra
+1. **Core Problem & Thesis:** Interactive environments offer a practical way to evaluate large language model (LLM) agents, and competitive games extend this evaluation to decisions shaped by competing goals and other agents' choices. Yet existing evaluations confined to individual games or execution frameworks leave unclear whi...
+2. **Key Technical Contributions:** From Abstract: ch competitive advantages persist across settings. We introduce DECE (Diverse Eurogame Competitive Environments), a unified arena spanning ten Eurogames with shared interfaces and evaluation protocols. These games combine lasting strategic commitments, competition over shared resources, and multiple
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations](http://arxiv.org/abs/2610.32891v1)
-**arXiv ID:** `2610.32891v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32891v1) | **Published:** 2026-10-23
-**Authors:** Sadra Emami, Benjamin Weigell, Mohammad Reza Mousavi, Gunel Jahangirova, Hugo Araujo et al.
+### [Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy](http://arxiv.org/abs/2610.35832v1)
+**arXiv ID:** `2610.35832v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35832v1) | **Published:** 2026-10-26
+**Authors:** Yifei Yao, Yude Zou, Guanbo Jiao, Xing Gao, Ning Gao et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large Language Models (LLMs) are increasingly used to optimize code for performance. This practice often assumes that improvements in execution speed naturally translate into overall lower energy consumption. We challenge this assumption empirically by measuring whether performance-optimized code pr...
-2. **Key Technical Contributions:** From Abstract: oduced by LLM self-refinement pipelines is also energy-efficient relative to canonical human reference solutions, and whether the energy cost of the optimization process can be offset by subsequent execution-time savings. We evaluate 11 open-source models across four decoding configurations on all 1
-3. **Methodology & Architecture:** Categories: cs.SE, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Frontier multimodal large language models (MLLMs) can control robots without robot-specific training, but how their capabilities compare and interact with post-trained vision-language-action (VLA) and world action model (WAM) policies across manipulation demands remains to be thoroughly evaluated. I...
+2. **Key Technical Contributions:** From Abstract: n this report, we evaluate GPT-6-Astra on EBench as the core of an agent that controls a robot through an agent harness under the same visual and proprioceptive observation protocol as post-trained policies. We study two agent configurations: direct control, in which the agent generates waypoint com
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models](http://arxiv.org/abs/2610.35829v1)
+**arXiv ID:** `2610.35829v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35829v1) | **Published:** 2026-10-26
+**Authors:** Amine Lbath, Massih-Reza Amini
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** A vulnerability costs more to fix the later it is discovered. As coding agents generate code faster than developers can review it, software needs a first line of defense screening each new function in real time. LLM agents have recently become capable of finding real-world vulnerabilities by working...
+2. **Key Technical Contributions:** From Abstract:  as a security expert would: they run analysis tools, explore the surrounding code, test hypotheses and weigh the evidence before forming their own judgement. This reasoning, however, spans many model calls, so that each verdict takes minutes of compute, far too long for real-time screening. Faster 
+3. **Methodology & Architecture:** Categories: cs.CR, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** CONCLUSION
-This paper presented a systematic measurement study of
-the energy economics of LLM-based code self-optimization,
-covering inference and execution cost across 11 open-source
-models, four decoding configurations, and 1,000 EffiBench
-problems. The central question was whether performance-
-optimized code produced by LLM self-refinement is also
-energy-efficient relative to canonical solutions.
-Optimized code consumes more execution energy than the
-canonical reference in 42 of 44 model-variant pairs; the two
-exceptions achieve only marginal gains, with break-even points
-requiring millions of executions. Performance optimization
-and energy efficiency are not aligned even within the refine-
-ment trajectory: more than half of all configur
+REVAdetects vulnerabilities by probing an LLM’s internal
+representations of a function and its security context in a single
+forward pass. On PrimeVul’s held-out test set, it matches or
+exceeds agentic detectors run on the same LLM, with fewer
+false positives, in about one second per function and at a small
+fraction of their cost. An LLM’s internal representations thus
+carry more information about vulnerabilities than its verdicts,
+and reading them enables real-time screening of every function
+as it is written.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection](http://arxiv.org/abs/2610.32969v1)
-**arXiv ID:** `2610.32969v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32969v1) | **Published:** 2026-10-23
-**Authors:** Amber Xie, Jiawei Fu, Xiaofeng Guo, Carmelo Sferrazza, Guanya Shi et al.
+### [Learning When to Commit: Schedule Distillation for Fast Diffusion Language Models](http://arxiv.org/abs/2610.35804v1)
+**arXiv ID:** `2610.35804v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35804v1) | **Published:** 2026-10-26
+**Authors:** Aidar Myrzakhan, Zhiqiang Shen
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to...
-2. **Key Technical Contributions:** From Abstract:  collect, but their motions must be estimated and retargeted to the robot, and they do not directly provide robot actions. In this paper, we introduce DexPort, a portable data-collection interface for high-DoF robot hands. It uses the same hand hardware for collection and deployment, avoiding a hand
-3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** future work
-may explore extending them with additional skills learned in
-simulation, such as other in-hand manipulation skills, learned
-grasps, and more.
-ACKNOWLEDGMENT
-The authors would like to thank Keyshawn King and
-V olodymyr Behma for data collection and support, and
-Andrew Wright for initial hardware designs. We also thank
-Tingfan Wu, Anas Houssaini, Jensen Gao, and the FAR team
-for feedback and support.
+1. **Core Problem & Thesis:** Diffusion large language models (dLLMs) can generate multiple tokens in parallel, but often require many decoding rounds to complete a response. Efficient generation depends not only on which tokens are easy to predict, but also on how committing to them helps predict the remaining positions. A high...
+2. **Key Technical Contributions:** From Abstract: ly predictable token may provide little useful context, while revealing a less predictable token can help several other positions become predictable sooner. We propose dSpark, a new schedule distillation-based framework for learning when to commit tokens for faster diffusion language generation. To 
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [RynnUnify: Towards Unified Embodied Brain](http://arxiv.org/abs/2610.32965v1)
-**arXiv ID:** `2610.32965v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32965v1) | **Published:** 2026-10-23
-**Authors:** Minghao Zhu, Bohan Hou, Kun Xiang, Zixuan Wang, Yinzhou Tang et al.
+### [I-HITL: Inalienable Human-in-the-Loop](http://arxiv.org/abs/2610.35835v1)
+**arXiv ID:** `2610.35835v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35835v1) | **Published:** 2026-10-26
+**Authors:** Samuel Breckenridge, Dani Vilardell, Wenhao Wang, Fan Zhang, Ari Juels
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of t...
-2. **Key Technical Contributions:** From Abstract: he physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also
-3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Human oversight is a pillar of AI safety. It is often exercised by a human in the loop (HITL) who approves critical actions taken by an AI agent. AI agents' increasing ability to bypass guardrails, though, raises the question of how to enforce HITL robustly. We introduce the concept of inalienable h...
+2. **Key Technical Contributions:** From Abstract: uman-in-the-loop (I-HITL). An I-HITL protocol ensures that an agent can initiate an action only with explicit human approval, even when the human interacts with a system (e.g., a local agentic harness) compromised by the agent. A strong I-HITL protocol additionally ensures such approval even when an
+3. **Methodology & Architecture:** Categories: cs.CR, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms](http://arxiv.org/abs/2610.32945v1)
-**arXiv ID:** `2610.32945v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32945v1) | **Published:** 2026-10-23
-**Authors:** Yuhang Ji, Fasheng Xu, Tianjun Feng
+### [Audit Where Hacks Pay: Budgeted Strong-Verifier Audits Against Reward Hacking in GRPO](http://arxiv.org/abs/2610.35716v1)
+**arXiv ID:** `2610.35716v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35716v1) | **Published:** 2026-10-26
+**Authors:** Shurun Li, Michael Hua Wang, Haibo Zeng, Long Wang
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language model (LLM) platforms introducing advertising must decide how much capability ad revenue should fund and what consumers should pay to avoid ads. We study a monopolistic platform that jointly chooses costly response quality, advertising intensity, and subscription prices when advertisi...
-2. **Key Technical Contributions:** From Abstract: ng reduces user value but better service raises advertising returns. Three findings follow. First, when partly ad-supported and ad-free plans coexist, advertising can finance useful service for consumers who receive none under pure subscription. Lower effective quality in middle plans weakens the al
-3. **Methodology & Architecture:** Categories: econ.TH, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Reinforcement learning with verifiable rewards trains on cheap checks, such as unit tests, that a policy can learn to game, while a stronger check is too expensive to run on every rollout. We study how to spend a limited strong-verifier budget in GRPO, separating which weakly passing rollouts to aud...
+2. **Key Technical Contributions:** From Abstract: it from what reward a caught hack receives. At a fixed policy state with centered advantages, the expected update depends on a design only through each rollout's marginal audit probability and correction; reflecting a caught hack's reward about the failure reward negates the advantages of an all-hac
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-26. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [ZENO: Nonlinear filtering with Zakai Equation Neural Operators](http://arxiv.org/abs/2610.32926v1)
-**arXiv ID:** `2610.32926v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32926v1) | **Published:** 2026-10-23
-**Authors:** Aaditya Prasad, Steven W. Flavell, Brian DePasquale
+### [Learning Force-Reactive Humanoid Loco-Manipulation](http://arxiv.org/abs/2610.35862v1)
+**arXiv ID:** `2610.35862v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.35862v1) | **Published:** 2026-10-26
+**Authors:** Sihang Li, Xiaofeng Guo, Jinkun Cao, Charlie Cheng, Ruihan Yang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** State inference and parameter learning for nonlinear filters is a core computation for scientific machine learning with varied applications in engineering and neuroscience. The unnormalized filtering distribution is governed by the Zakai equation, a stochastic partial differential equation (SPDE) th...
-2. **Key Technical Contributions:** From Abstract: at combines the forward Kolmogorov operator (known as the Fokker-Planck equation) with observed likelihood updates. Although solving these high-dimensional SPDEs is often impossible analytically and intractable numerically, advances in operator learning and physics-informed machine learning have mad
-3. **Methodology & Architecture:** Categories: cs.LG, q-bio.NC. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-23. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Yalda-Embedding: Open Development of a Competitive Persian Retrieval Model](http://arxiv.org/abs/2610.32933v1)
-**arXiv ID:** `2610.32933v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.32933v1) | **Published:** 2026-10-23
-**Authors:** Yalda Taheri, Mohammad Hassan Heydari, Armon Rasooli
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Despite advances in multilingual text representations, effective dense retrieval for Persian remains constrained by the limited availability of language-specific training resources and compact embedding models. We present Yalda Embedding, a 595.8-million-parameter Persian retrieval model adapted fro...
-2. **Key Technical Contributions:** From Abstract: m Qwen3-Embedding-0.6B using more than one million query-document pairs. On eight Persian retrieval tasks from FaMTEB, the model achieves the highest macro-average among the evaluated 0.6B models, scoring 0.5488 and outperforming Qwen3-Embedding-0.6B and F2LLM-v2-0.6B on every task. It also approach
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Many everyday tasks require controlling contact force as well as motion. On a humanoid, this force must often be coordinated across both hands and the whole body, and cannot be specified by kinematic trajectories alone. Therefore, we present FLORE, a framework for learning force-reactive humanoid lo...
+2. **Key Technical Contributions:** From Abstract: co-manipulation. We collect robot-free demonstrations using two force-sensing UMI-style handheld grippers for hand motion and contact wrenches, and wearable trackers for body motion. A force-reactive diffusion policy takes vision, proprioception, and measured wrenches as input, then predicts actions
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.LG, eess.SY. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** CONCLUSION
-We introduced YALDA-EMBEDDING, an openly developed
-Persian retrieval model adapted from Qwen3-Embedding-
-0.6B on more than one million query–document pairs. On
-eight FaMTEB retrieval tasks, it achieves the highest mean
-among the evaluated 0.6B models (0.5488) and outperforms
-both same-scale decoder-based baselines on every task. It
-approaches Qwen3-Embedding-4B, winning on four tasks and
-tying on one, with a macro-average gap of 0.0075.
-The two-stage ablation documents the progression from
-contrastive training to relational distillation. The final distilled
-model improves every task over the non-distilled recipe and
-raises its mean from 0.4813 to 0.5488 while retaining the
-same inference architecture. By releasing weights, traini
+We presented FLORE, a framework for learning
+force-reactive humanoid loco-manipulation from robot-free
+demonstrations that record both motion and contact wrench.
+Our hybrid compliance whole-body controller tracks the
+learned force commands, allowing the humanoid to sustain
+contact, coordinate both hands, and apply force while walk-
+ing and balancing. On three tasks, the force-reactive policy
+succeeds in 80% of rollouts, compared with 26.7% for a
+position-only policy. By making force a shared interface
+between demonstrations, policies, and whole-body control,
+FLOREextends robot-free imitation learning to contact-rich
+skills that motion alone cannot specify.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
