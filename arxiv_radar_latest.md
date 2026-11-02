@@ -1,162 +1,152 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-01 17:28:27 UTC
+**Generated:** 2026-11-02 21:14:38 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Collaborative AI agents for autonomous experimental research with solid-state quantum spins](http://arxiv.org/abs/2610.40589v1)
-**arXiv ID:** `2610.40589v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40589v1) | **Published:** 2026-10-29
-**Authors:** El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai
+### [Latent Reasoning in Continuous Space for Unified Multimodal Models](http://arxiv.org/abs/2610.42149v1)
+**arXiv ID:** `2610.42149v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42149v1) | **Published:** 2026-10-30
+**Authors:** Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee, Minsu Cho, Jinwoo Shin
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems take on several research roles, but may draw conclusions that the evidence does not support. Here, ...
-2. **Key Technical Contributions:** From Abstract: we present an autonomous research laboratory in which agents based on large language models assess one another's work and can stop or redirect investigations. They can generate and reject research questions, require separate theoretical checks and conduct experiments designed to challenge their clai
-3. **Methodology & Architecture:** Categories: cs.AI, cs.MA, quant-ph. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit t...
+2. **Key Technical Contributions:** From Abstract: he test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space, whereas image generation operates in a continuous space. To bridge this gap, we introduce a Latent 
+3. **Methodology & Architecture:** Categories: cs.CV, cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Future Work
+While LARC demonstrates strong empirical gains and clear test-time scaling on various generation
+tasks, several directions remain open for future exploration. First, our framework is currently
+instantiated on UMMs whose image module is a flow-matching head, which generates the image in
+continuous space. Extending the same principle to UMMs with discrete space generation or other
+generative heads is a natural next step. Second, although LARC enables effective test-time scaling,
+the interleaved latent reasoning trajectory introduces additional computation at inference, leading to
+latency overhead compared to the base UMM. Reducing this overhead through efficient decoding
+strategy, distillation, or adaptive latent allocation is a p
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers](http://arxiv.org/abs/2610.40647v1)
-**arXiv ID:** `2610.40647v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40647v1) | **Published:** 2026-10-29
-**Authors:** Jiongfan Yang, Weichen Fan, Haiwen Diao, Zhongang Cai, Ziwei Liu
+### [Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning](http://arxiv.org/abs/2610.42082v1)
+**arXiv ID:** `2610.42082v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42082v1) | **Published:** 2026-10-30
+**Authors:** Lidong Lu, Lidong Zou, Xinyi Mao, Jiaxin Lv, Zhenquan Li et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from gl...
-2. **Key Technical Contributions:** From Abstract: obal exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence. SpecSlot expands each spatial anchor into multiple slots, each assi
-3. **Methodology & Architecture:** Categories: cs.CV, cs.AI, cs.LG, cs.NE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** A panoramic video captures all directions around the camera, but relevant evidence can appear in different directions and at different times. Understanding it requires models to connect observations across the viewing sphere and time. We introduce PanoVideoBench, the first manually annotated benchma...
+2. **Key Technical Contributions:** From Abstract: rk for comprehensive panoramic video understanding. Its 1,000 questions span five categories and 15 question types, with diagnostic annotations for target search and panoramic capabilities. Evaluation of 11 proprietary, open-source, and panoramic-specialized models identifies cross-view tracking and
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Rethinking Neural Thickets Without Weight Perturbations](http://arxiv.org/abs/2610.40649v1)
-**arXiv ID:** `2610.40649v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40649v1) | **Published:** 2026-10-29
-**Authors:** Nicolas Dufour, Elouan Gardès, Amil Dravid, Patrick Pérez, Loic Landrieu
+### [RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](http://arxiv.org/abs/2610.42141v1)
+**arXiv ID:** `2610.42141v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42141v1) | **Published:** 2026-10-30
+**Authors:** Shengguang Wu, Suning Huang, Cherie Ho, Ria Doshi, Hao Zhu et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a sing...
-2. **Key Technical Contributions:** From Abstract: le decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks. This suggests an alternative explanation based on output diversity, validation-based 
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that h...
+2. **Key Technical Contributions:** From Abstract: arness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot's rollouts, diagnoses failures, and iteratively revises the harness around the frozen policy. The harness evolves on a set of episodes for its optimization 
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [VeriCUA: Verification as Agentic Exploration for Computer-Using Agents](http://arxiv.org/abs/2610.40578v1)
-**arXiv ID:** `2610.40578v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40578v1) | **Published:** 2026-10-29
-**Authors:** Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong et al.
+### [Hyperbolic Inverse Reinforcement Learning](http://arxiv.org/abs/2610.42104v1)
+**arXiv ID:** `2610.42104v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42104v1) | **Published:** 2026-10-30
+**Authors:** Iulia Rusu, Anoop Praturu, Sergei Gepshtein, Tatyana Sharpee
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning. Typical automated approaches prompt vision-language models (VLMs) to judge trajectories or generate...
-2. **Key Technical Contributions:** From Abstract:  programs to inspect application state. However, both rely on partial views of complex digital environments. VLM judges are restricted to supplied observations, while generated programs depend on accessible state. These views can omit decisive evidence or leave completion judgments unsupported. Tail
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Inverse reinforcement learning (IRL) seeks to infer the reward function underlying observed behavior, but its predictive accuracy and interpretability depend on how that reward is computed from the underlying features. While prior IRL reward functions have been implemented through a variety of techn...
+2. **Key Technical Contributions:** From Abstract: iques including linear weights, neural networks, or other function approximators, none make assumptions about the geometry of the underlying feature space. Inspired by geometric organization observed in neural circuits, we introduce Hyperbolic inverse reinforcement learning (Hyperbolic IRL), which p
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races](http://arxiv.org/abs/2610.40613v1)
-**arXiv ID:** `2610.40613v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40613v1) | **Published:** 2026-10-29
-**Authors:** Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi et al.
+### [Towards Understanding the Impact of Plasticity Loss on Reinforcement Learning in Stochastic Environments](http://arxiv.org/abs/2610.42100v1)
+**arXiv ID:** `2610.42100v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42100v1) | **Published:** 2026-10-30
+**Authors:** Philipp Bordne, André Biedenkapp
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys, and the acceptance rate is unchanged. It also preserves output diversity and adds no measurable inf...
-2. **Key Technical Contributions:** From Abstract: erence latency. Its predecessor, TextSeal, restores diversity in the Gumbel-max scheme by routing each token to one of two keys via a coin flip. This is suboptimal because the detector averages the scores from both keys without knowing which key was used. TextSeal2 instead merges two or more keys in
-3. **Methodology & Architecture:** Categories: cs.CR, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Deep reinforcement learning (RL) is a powerful framework for sequential decision-making. Despite many high-profile successes in recent years, deep RL is known to be brittle. An emerging line of research attributes this brittleness to a loss of plasticity in neural networks. However, plasticity loss ...
+2. **Key Technical Contributions:** From Abstract: has so far been understudied in stochastic environments. We study this interplay systematically, training SAC agents on three DeepMind Control tasks augmented with controlled levels of observation and action noise. We find that plasticity-preserving methods increase learning robustness on the two ha
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond](http://arxiv.org/abs/2610.40586v1)
-**arXiv ID:** `2610.40586v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40586v1) | **Published:** 2026-10-29
-**Authors:** Yalin E. Sagduyu, Tugba Erpek, Sastry Kompella
+### [ACCT: Asymmetric Cross-LLM Context Transfer](http://arxiv.org/abs/2610.42116v1)
+**arXiv ID:** `2610.42116v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42116v1) | **Published:** 2026-10-30
+**Authors:** Yuzhe Liu, Haolin Tian, Tonghan Wang
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Integrated sensing and communications (ISAC) systems using 5G and beyond signals of opportunity enable joint wireless sensing and communication using shared infrastructure and spectrum resources. While multistatic ISAC can increase sensing coverage with spatially distributed receivers, dense and dyn...
-2. **Key Technical Contributions:** From Abstract: amic clutter can significantly degrade bistatic range and Doppler estimation, leading to errors in target localization and velocity estimation. This paper presents a multistatic ISAC framework with clutter suppression for high-fidelity estimation of target position and velocity. Distributed clutter 
-3. **Methodology & Architecture:** Categories: cs.NI, cs.AI, cs.LG, eess.SP. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** CONCLUSION
-In this paper, we studied clutter suppression in multistatic
-ISAC using 5G NR PRS for bistatic range-Doppler estima-
-tion, target localization, and velocity estimation in dense and
-dynamic clutter environments. We showed that clutter can
-severely degrade sensing accuracy of multistatic ISAC and that
-conventional signal processing methods for clutter suppression
-provide only limited gains under challenging clutter conditions.
-To improve robustness of multistatic ISAC against clutter, we
-introduced DL-based clutter suppression methods to directly
-enhance target responses from clutter-corrupted observations.
-These methods substantially improve clutter suppression and
-reduce sensing errors relative to conventional approaches
-across d
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing](http://arxiv.org/abs/2610.40646v1)
-**arXiv ID:** `2610.40646v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40646v1) | **Published:** 2026-10-29
-**Authors:** Yunchu Zhang, Ray Song, Junhan Jiao, Liyiming Ke, Yuchen Yang et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to auto...
-2. **Key Technical Contributions:** From Abstract: nomously swap and use task-appropriate tools is important for tool-centric manipulation. We introduce SwapBot, a modular, tool-centric end effector system featuring low-cost adapters that quickly convert common household tools into robot end effectors. Rather than pursuing a single universal gripper
-3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** CONCLUSION
-We presented SwapBot, a modular, tool-centric manip-
-ulation system with integrated tactile sensing that im-
-proves demonstration collection and policy learning for long-
-horizon tasks. Tactile feedback proved crucial for both tele-
-operation quality and imitation learning robustness, espe-
-cially with limited data. However, the current system has
-limitations: tactile sensors remain low resolution and prone to
-wear, sensor placement is fixed by human intuition, and pol-
-icy learning depends on predefined task segmentation. Future
-work will explore more durable, higher-resolution sensing,
-data-driven strategies for sensor placement, and autonomous
-policy sequencing without manual subgoal definitions. We
-will also open-source the s
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In](http://arxiv.org/abs/2610.40588v1)
-**arXiv ID:** `2610.40588v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40588v1) | **Published:** 2026-10-29
-**Authors:** Leonidas Raghav
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** When AI agents share channels and credentials, one agent can press another to break its operator's rule, a first step towards collusion. Output filters check only what an agent has already written. Can an overseer tell beforehand that an agent is about to give in? We show that a linear probe on the ...
-2. **Key Technical Contributions:** From Abstract: agent's activations can, in a controlled multi-agent setting. Across six scenarios, a peer presses a target for up to 20 rounds to reveal a secret, such as a deploy token; the target often refuses, then gives in. Read at each model call before its output is written, the probe picks out the one that 
+1. **Core Problem & Thesis:** In real-world deployments, large language model (LLM) systems are increasingly evolving from single-model invocation toward heterogeneous deployments in which different models are dynamically invoked for inference. When the same context is reused across models, however, each newly selected target mo...
+2. **Key Technical Contributions:** From Abstract: del typically has to process it again, repeatedly incurring substantial computational costs. Therefore, we propose ACCT (Asymmetric Cross-LLM Context Transfer), which targets KV cache transfer between models of different scales within the same model family. ACCT transforms the KV cache produced by a
 3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Probing Spatial State Representations in Visual Foundation Models](http://arxiv.org/abs/2610.40636v1)
-**arXiv ID:** `2610.40636v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40636v1) | **Published:** 2026-10-29
-**Authors:** Baiqiao Yin, Zhongang Cai, Ruisi Wang, Qiwei Liang, Lei Yang et al.
+### [Hard Constraint Projection in a Physics Informed Neural Network (Burgers)](http://arxiv.org/abs/2610.42106v1)
+**arXiv ID:** `2610.42106v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42106v1) | **Published:** 2026-10-30
+**Authors:** Miranda J S Horne, Peter K Jimack, Amirul Khan, He Wang
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls for a persistent spatial state that is updated under self-motion and used to guide action. Do visual ...
-2. **Key Technical Contributions:** From Abstract: foundation models provide representations that support such a state? We study this question through four levels of spatial capability---spatial structure, object persistence, predictive spatial update, and actionability---using frozen-feature probes on ten representations under streaming egocentric 
-3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Physics informed machine learning provides a framework to study and simulate fluid dynamics, potentially at a fraction of the computational cost of traditional numerical methods, with the goal of improving the explainability, accuracy and robustness of purely data driven machine learning methods. In...
+2. **Key Technical Contributions:** From Abstract:  this work, we extend the hard constraint projection (HCP) method developed by Chen et al. [Journal of Computational Physics, 445, 110624, 2021] from a linear partial differential equation (PDE) to a nonlinear PDE: the 1D Burgers' equation. To strictly impose a discrete approximation of the governin
+3. **Methodology & Architecture:** Categories: physics.flu-dyn, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Conclusion
+We present preliminary results on the HCP-PINN, a PINN with an unlearnable hard constraint projec-
+tion layer, tested on the 1D Burgers equation, a nonlinear convection-diffusion PDE. The training data
+comprised of solution data only at the spatial and temporal boundaries, and physics collocation points
+(on which the governing equation is weakly enforced) through the domain interior.
+The HCP-PINN and equivalent PINN trained similarly for an initial training period, after which the
+PINN with no HCP appeared to plateau, and the HCP-PINN continued to decline until it converged
+to a lower value than for the PINN. When tested on a grid of points covering the entire space-time
+domain, the HCP-PINN exhibits higher accuracy than the comp
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [From extreme weather to agricultural consequences with agentic AI](http://arxiv.org/abs/2610.40641v1)
-**arXiv ID:** `2610.40641v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.40641v1) | **Published:** 2026-10-29
-**Authors:** Minghan Yu, Mengyu Dai, Yixin Wen, Haizhao Yang
+### [Subquadratic Attention with a Hierarchical Tree-Structured Indexer](http://arxiv.org/abs/2610.42112v1)
+**arXiv ID:** `2610.42112v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42112v1) | **Published:** 2026-10-30
+**Authors:** Leon Lufkin, Cutter Dawes, Alexander Speicher, Kamesh Krishnamurthy, Tomás Figliolia et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and the records that could tell span many sources. We present WxCrop, the first agent that judges agricu...
-2. **Key Technical Contributions:** From Abstract: ltural hazards from physically interpretable weather indices examined by causal analysis, and the first that combines weather and agricultural information to predict crop loss reliably for past and forecast dates. We demonstrate it in Florida on hurricanes, freezes and dry heat, with a loss model ca
-3. **Methodology & Architecture:** Categories: physics.ao-ph, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but they either fail to match attention's expressiveness (e.g., sliding-window or linear attention variant...
+2. **Key Technical Contributions:** From Abstract: s with fixed-size state) or only achieve constant-factor speedups (e.g., sparse attention methods whose indexers themselves scale quadratically). In this paper, we derive an asymptotically subquadratic sparse attention method based on a hierarchical, tree-structured indexer, which we call Zyphra Hie
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Hierarchical World Models with Implicit Dynamics](http://arxiv.org/abs/2610.42146v1)
+**arXiv ID:** `2610.42146v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42146v1) | **Published:** 2026-10-30
+**Authors:** Gaoyue Zhou, Yvonne Wu, Zichen Jeff Cui, Nicolas Ballas, Mido Assran et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative errors and search complexity. Existing hierarchical methods often use rigid macro-actions or latent ski...
+2. **Key Technical Contributions:** From Abstract: lls, leading to brittle representations and limited fine-grained control. We introduce ID-WM (Implicit Dynamics World Models), a hierarchical world model that decouples state-space reachability from local control. Our framework utilizes a high-level model to sample feasible transitions across the st
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Flide: Accelerating Decision Inference with Exact State Forking](http://arxiv.org/abs/2610.42148v1)
+**arXiv ID:** `2610.42148v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.42148v1) | **Published:** 2026-10-30
+**Authors:** Bobo Li, Jiajia Song, Hao Fei, Wynne Hsu, Mong Li Lee
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existing generation-oriented inference engines fail to support these workloads effectively, suffering from ...
+2. **Key Technical Contributions:** From Abstract: severe prefix recomputation overheads or distorted output probabilities. To address this challenge, we propose Flide, an efficient and exact inference engine that decouples the logical tree structure of a decision request from its physical execution within a single flattened token stream. Through Fo
+3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-10-30. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
