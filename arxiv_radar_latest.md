@@ -1,151 +1,163 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-03 18:54:37 UTC
+**Generated:** 2026-11-04 19:11:55 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Strategist: Evolving Reasoning with Agents](http://arxiv.org/abs/2611.03618v1)
-**arXiv ID:** `2611.03618v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03618v1) | **Published:** 2026-11-02
-**Authors:** Taiming Lu, Qi Xu, Zhigang Hua, Zhuang Liu
+### [HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation](http://arxiv.org/abs/2611.05319v1)
+**arXiv ID:** `2611.05319v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05319v1) | **Published:** 2026-11-03
+**Authors:** Zhen Tao, Xun Zhou, Xuhui Chen, Ziyue Qiao, Qingqiang Sun
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** A model is only half of an AI agent system. The other half is the inference strategy: the reasoning procedure that turns model calls into a response. Today that second half is written by hand, and the experience of building one strategy never carries to the next. We introduce Strategist, a meta-agen...
-2. **Key Technical Contributions:** From Abstract: t that evolves inference strategies across tasks. Each strategy is written as a blueprint,executable code that other strategies can reuse, and together the blueprints form a library. Given a task and a small development set, Strategist retrieves related blueprints, writes candidate strategies, tests
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** In LLM-based recommendation, memory acts as a user-level agent in a memory-augmented backbone. Yet users and items remain asymmetric: only the user is given a structured profile; it enters a bandwidth-limited reranker prompt; and it is frozen after warmup. We recast LLM-based recommendation as an ag...
+2. **Key Technical Contributions:** From Abstract: entic-communication process in four stages: BUILD a self-description, TRANSMIT it along the collaborative graph, UNDERSTAND the other side, and SYNC it from the next interaction. This formulation reveals three unresolved communication challenges: the item side never produces a comparable self-descri
+3. **Methodology & Architecture:** Categories: cs.IR, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Four Bridges: Measuring Deception Propensity in a Multi-Agent Game](http://arxiv.org/abs/2611.03600v1)
-**arXiv ID:** `2611.03600v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03600v1) | **Published:** 2026-11-02
-**Authors:** Raphael Casey, Michael Simeone, Alberto Tosato, Florian Ernst, Kemal El Moujahid et al.
+### [From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](http://arxiv.org/abs/2611.05376v1)
+**arXiv ID:** `2611.05376v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05376v1) | **Published:** 2026-11-03
+**Authors:** Hao Fei
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** AI agents are increasingly deployed in settings where they interact and coordinate with other agents, yet honesty is mostly measured in single-turn, single-agent benchmarks that pressure the model to deceive. We study deception that emerges in multi-agent interaction without any instruction to decei...
-2. **Key Technical Contributions:** From Abstract: ve. We introduce Kradle, a platform for evaluating AI models, and Four Bridges, an information asymmetry game in which four agents distribute across four rooms: one is the death room, the others hold food worth more if not shared. One agent, the informed agent, knows which room is the death room and
-3. **Methodology & Architecture:** Categories: cs.AI, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation](http://arxiv.org/abs/2611.03584v1)
-**arXiv ID:** `2611.03584v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03584v1) | **Published:** 2026-11-02
-**Authors:** Utkarsh A. Mishra, Alperen Degirmenci, Yongxin Chen, Danfei Xu, Tucker Hermans et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Open-world robotic mobile manipulation requires acting in physical environments with only partial information. While recent Large Vision-Language Model (LVLM) agents show strong open-world reasoning capabilities, existing architectures that rely on direct tool calling struggle with geometric uncerta...
-2. **Key Technical Contributions:** From Abstract: inty and thus are limited to fully-observable tabletop environments. In contrast, Task and Motion Planning (TAMP) systems can solve long-horizon tasks under partial observability but incur high computational costs and require closed worlds. We propose \textbf{TAMPAgent}, an agentic planning framewor
-3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [WebHarbor: Docking Real Websites for Evolving GUI Agent Environments](http://arxiv.org/abs/2611.03634v1)
-**arXiv ID:** `2611.03634v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03634v1) | **Published:** 2026-11-02
-**Authors:** Zhaoyang Wang, Qianhui Wu, Boyu Gou, Demi Wang, Jiacheng Zhang et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access restrictions, and limited coverage of authenticated workflows, while existing synthetic environments for training often ...
-2. **Key Technical Contributions:** From Abstract: lack functional depth and visual fidelity. We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control. We build WebHarbor through task-
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Structured Visual Landscape: Generating Preferred Representations in Biological and Artificial Neural Networks](http://arxiv.org/abs/2611.03597v1)
-**arXiv ID:** `2611.03597v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03597v1) | **Published:** 2026-11-02
-**Authors:** Yusong Zhao, Edgar Y. Walker, Hao Wang, Mi Lu
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Understanding how neurons respond to visual stimulus is an important question in both deep learning and neuroscience. It has significant implications for enhancing the interpretability of black-box artificial neural networks and for understanding the visual representation in the human brain. We prop...
-2. **Key Technical Contributions:** Our contributions
-can be outlined as follows:
-• We introduce an activation-regularized prior for VAE [30]
-that organizes its latent space into two distinct clusters,
-corresponding to codes that increase or decrease a target
-brain region’s activation. This design enables easy plug-
-and-play integration with conventional generative models.
-• Our method synthesizes visual representations from speci-
-fied brain regions, showing better performance to regularize
-3. **Methodology & Architecture:** Categories: cs.CV, cs.LG, cs.NE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [D&A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models](http://arxiv.org/abs/2611.03622v1)
-**arXiv ID:** `2611.03622v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03622v1) | **Published:** 2026-11-02
-**Authors:** Marius Memmel, Shawn Yin, Urvi Rutia, Angad Wadhwa, Eldon Li et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Vision-Language Models (VLMs) hold promise for zero-shot video task-progress estimation in robot learning, yet existing frameworks frequently suffer from confirmation bias, hallucinating progress in failed executions due to implicit success assumptions or relative temporal ranking designs. Naive pro...
-2. **Key Technical Contributions:** From Abstract: mpting of frontier models collapses into a binary success detector that fails to capture nuanced, non-linear progress and failures. While post-training approaches can mitigate this through explicit training, they demand expensive real-world robotics data and require computationally intensive post-tr
-3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.CL, cs.LG, eess.SY. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [DiabAgent: Toward Agentic Physiological Control](http://arxiv.org/abs/2611.03601v1)
-**arXiv ID:** `2611.03601v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03601v1) | **Published:** 2026-11-02
-**Authors:** Chengxi Li, Shaoxuan Li, Deyao Hong, Qingle Liu, Yi Huang et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As pretraining scales, medical language models have advanced rapidly in clinical question answering. Their ability to achieve effective physiological control through sustained intervention still lacks systematic quantitative evaluation. Type 1 diabetes provides a concrete setting: impaired insulin s...
-2. **Key Technical Contributions:** contributions:
-1. Weintroduce APC, anagenticcontrolframeworkthattreatshumanphysiologyasaninteractiveenvironment,
-and apply it to glucose control. It acquires information through monitoring devices, delivers medication
-through medical devices, and adjusts decisions from feedback to optimize glucose-control metrics.
-2. We buildDiabetSim, a configurable glucose-control simulator that integrates individual physiology, medical
-devices, events, and observation conditions. It reconstructs the interaction environment faced byAPC and
-provides a foundation for reproducible virtual testing.
-3. We constructSweetBench, a benchmark of 212 glucose-control tasks.APC with Claude Opus 5.5 achieves
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Tracing the Scientific Discovery Capacity of LLMs to Their Training Data](http://arxiv.org/abs/2611.03617v1)
-**arXiv ID:** `2611.03617v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03617v1) | **Published:** 2026-11-02
-**Authors:** Arda Uzunoglu, Mahler Revsine, Michael Schatz, Benjamin Van Durme, Mehrdad Farajtabar et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language models (LLMs) show growing promise for scientific discovery, yet basic questions remain about what enables reliable discovery. How can we trace the scientific discovery capacity of LLMs to their training data? We study this question as one of missing probability mass and develop a the...
-2. **Key Technical Contributions:** From Abstract: oretical account in which monofacts-the facts observed once during training-set the discovery capacity. In materials science and regulatory genomics, we directly manipulate monofact rates in training sets and find that more monofacts consistently yield more discoveries across two open-weight model f
+1. **Core Problem & Thesis:** For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, f...
+2. **Key Technical Contributions:** From Abstract: ail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era o
 3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [FedReady: Bounded Agents for Federation Formation](http://arxiv.org/abs/2611.03586v1)
-**arXiv ID:** `2611.03586v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03586v1) | **Published:** 2026-11-02
-**Authors:** Ziyue Xu, Holger R. Roth, Chester Chen, Peter Cnudde
+### [Adversarial Speculative Reasoning Improves Long Horizon Agents](http://arxiv.org/abs/2611.05345v1)
+**arXiv ID:** `2611.05345v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05345v1) | **Published:** 2026-11-03
+**Authors:** Hongyin Luo, Wei Fang, Lijie Yang, Owen Stepan, Daniel Suit et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Federated learning (FL) runtimes standardize aggregation and deployment, but each new study still requires federation formation: selecting task-eligible sites and preparing their local data and task code for federated training or analysis. This preparation recurs when the target changes, while raw r...
-2. **Key Technical Contributions:** From Abstract: ecords and site-private mappings are excluded from cross-site FL messages. We present FedReady, a system that performs federation formation with bounded LLM agents. Agents propose shared contracts, local adapters, and task code; the runtime owns workflow state and accepts artifacts only after checks
-3. **Methodology & Architecture:** Categories: cs.AI, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold ...
+2. **Key Technical Contributions:** contributions:
+1. We show that speculative verification is lossless in distri-
+bution but not uniform in numerical precision. Noise grows
+with slot position inside a verification block, appearing in
+two frontier models with different draft architectures.
+2. We recast the draft model from an accelerator into an
+allocator of context precision. Draft acceptance decides
+which tokens are committed through low-noise residual
+sampling, a degree of freedom that is traditionally treated
+as irrelevant.
+3. We introduce reverse-direction preference training of the
+draft at decision points, so that the target model writes the
+decisions that shape a long-horizon trajectory.
+4. We improve end-to-end success on long-horizon software-
+engineering agentic ta
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** CONCLUSION
+Speculative decoding has been typically viewed purely as a
+systems optimization to improve the decoding speed since
+rejection sampling does not change the target distribution.
+We argue that the draft can decide what tokens in the context
+are encoded more accurately. An adversarial draft model
+Adversarial Speculative Reasoning Improves Long Horizon Agents11
+utilizes this feature to improve reasoning capability. At deci-
+sion points it proposes reasoning draft that the target model
+should reject, so the target encodes critical decisions more
+precisely from the start of a verification block, while every-
+where else the draft stays an ordinary high-acceptance draft.
+With adversarial draft models, GLM-5.3 and DeepSeek-
+V4.1-Flash gain
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos](http://arxiv.org/abs/2611.03646v1)
-**arXiv ID:** `2611.03646v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.03646v1) | **Published:** 2026-11-02
-**Authors:** Yujiao Shen, Jiahe Song, Haitian Li, Jingkang Yang, Ziwei Liu
+### [LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers](http://arxiv.org/abs/2611.05304v1)
+**arXiv ID:** `2611.05304v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05304v1) | **Published:** 2026-11-03
+**Authors:** Minsoo Cheong, Sungjoo Yoo
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Learning from human data offers a scalable path toward embodied intelligence, yet it requires models to accurately understand fine-grained human actions from egocentric observations. However, existing benchmarks remain limited in action atomicity, temporal precision, and hand-action association. We ...
-2. **Key Technical Contributions:** From Abstract: introduce EgoActionBench, a benchmark that represents continuous human manipulation as temporally localized atomic actions associated with the left hand, right hand, or both hands. EgoActionBench contains 1,407 episodes with 41,132 human-refined action annotations. To evaluate such dense predictions
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-02. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Looped transformers are a parameter-efficient alternative to standard transformers for language modeling. By reapplying the same layers across multiple loop steps, recent looped language models match the performance of non-looped models several times their size. While this architecture effectively r...
+2. **Key Technical Contributions:** From Abstract: educes parameter memory, each loop step still stores its own keys and values, so the key-value (KV) cache grows linearly with the number of loop steps and becomes the main memory bottleneck. We observe that the KV cache of looped models is highly redundant along the loop axis and that the loop steps
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](http://arxiv.org/abs/2611.05320v1)
+**arXiv ID:** `2611.05320v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05320v1) | **Published:** 2026-11-03
+**Authors:** Kewei Zhang, Juncheng Ma, Guodong Lv, Duomin Wang, Feixiang Ruan et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration e...
+2. **Key Technical Contributions:** From Abstract: pisode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views toge
+3. **Methodology & Architecture:** Categories: cs.RO, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution](http://arxiv.org/abs/2611.05313v1)
+**arXiv ID:** `2611.05313v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05313v1) | **Published:** 2026-11-03
+**Authors:** Dian Jin, Jinluan Yang, Kairong Han, Baohong Li, Zijing Hu et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learn...
+2. **Key Technical Contributions:** From Abstract: ing. However, self-generated memories often contain noisy supervision and functionally entangled, redundant, or conflicting knowledge, making direct distillation difficult. Under limited training budgets, these issues can hinder knowledge internalization and even degrade performance. To address this
+3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments](http://arxiv.org/abs/2611.05361v1)
+**arXiv ID:** `2611.05361v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05361v1) | **Published:** 2026-11-03
+**Authors:** Zhipeng Zhong, Matthew Coombes, Cunjia Liu
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Reliable evaluation of visual 3D reconstruction and depth estimation in vegetation-rich outdoor environments is limited by the scarcity of geometric ground-truth data and the cost of complete scanner surveys. We present a LiDARbased reference-generation pipeline for evaluating the zero-shot performa...
+2. **Key Technical Contributions:** From Abstract: nce of feed-forward visual-geometry models alongside conventional structure-from-motion (SfM) methods. The pipeline reuses camera images, LiDAR scans, and reference poses from existing multi-sensor localization datasets to generate per-view depth maps and visible reference point clouds. To address v
+3. **Methodology & Architecture:** Categories: cs.CV, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning](http://arxiv.org/abs/2611.05372v1)
+**arXiv ID:** `2611.05372v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05372v1) | **Published:** 2026-11-03
+**Authors:** Yuhan Liu, Xinqi Liu, Zixuan Dong, Keith W. Ross, Shenji Wan
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Inverse kinematics (IK) converts end-effector pose commands into joint motion, and many vision-language-action (VLA) policies rely on it to act on a given arm and to transfer across embodiments. Precise IK remains laborious: redundancy and singularities complicate the inverse mapping, execution depe...
+2. **Key Technical Contributions:** From Abstract: nds on hand-tuned controllers, and training data on physical robots are costly to collect. We present PolicyIK, a goal-conditioned reinforcement learning policy for high-precision IK. It updates joint-position references from pose feedback and observes its accumulated reference relative to the measu
+3. **Methodology & Architecture:** Categories: cs.RO, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Suppressing Misaligned Behaviors in Language Models, Durably](http://arxiv.org/abs/2611.05358v1)
+**arXiv ID:** `2611.05358v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05358v1) | **Published:** 2026-11-03
+**Authors:** Luxi He, Pengcheng Jiang, Jifan Zhang, Jiawei Han, Danqi Chen
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two model organisms--language models deliberately trained to exhibit a specific misalignment--that differ in what triggers the b...
+2. **Key Technical Contributions:** From Abstract: ehavior. The narrow-trigger organism misbehaves only when the prompt contains a specific cue: it cheats on multiple-choice questions by following a planted hint that points to a wrong answer, and behaves normally otherwise. The broad-trigger organism has no such cue: after fine-tuning on insecure co
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection](http://arxiv.org/abs/2611.05340v1)
+**arXiv ID:** `2611.05340v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.05340v1) | **Published:** 2026-11-03
+**Authors:** Omar Nusrat
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, di...
+2. **Key Technical Contributions:** From Abstract: agnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a grader converts units and applies tolerance bands. From the same inputs, separate checking items test 
+3. **Methodology & Architecture:** Categories: physics.med-ph, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-03. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
