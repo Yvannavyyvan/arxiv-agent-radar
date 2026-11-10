@@ -1,181 +1,159 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-09 21:49:16 UTC
+**Generated:** 2026-11-10 19:09:29 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [On Agentic Manipulation Policies](http://arxiv.org/abs/2611.09892v1)
-**arXiv ID:** `2611.09892v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09892v1) | **Published:** 2026-11-06
-**Authors:** Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji, Jesse T. Gonzalez, Negin Heravi et al.
+### [WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems](http://arxiv.org/abs/2611.12856v1)
+**arXiv ID:** `2611.12856v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12856v1) | **Published:** 2026-11-09
+**Authors:** Zheng Jiang, Fang Niu, Bo Peng, Houde Qian, Wenyi Li et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze age...
-2. **Key Technical Contributions:** From Abstract: ntic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the 
-3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.CV, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent harnesses allow the model to instantiate worker agents and to author the executable workflow that coordinates them, shifting the design of sy...
+2. **Key Technical Contributions:** From Abstract: stem structure from developers to the model at run time. The quality of this organization therefore constitutes a distinct capability, yet existing benchmarks either measure end-to-end task completion or evaluate coordination under structures specified in advance. We formalize this capability as wor
+3. **Methodology & Architecture:** Categories: cs.CL, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Can Agentic Systems Close the Gap in Radiology with Production AI Tools?](http://arxiv.org/abs/2611.09836v1)
-**arXiv ID:** `2611.09836v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09836v1) | **Published:** 2026-11-06
-**Authors:** Aubin Charley, Julien Khlaut, Charles Corbière, Pierre Manceron, Corentin Dancette et al.
+### [Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning](http://arxiv.org/abs/2611.12886v1)
+**arXiv ID:** `2611.12886v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12886v1) | **Published:** 2026-11-09
+**Authors:** Haozhi Yuan, Handong Li, Yifan Zhang, Qianshan Wei
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Radiology AI has developed along two paths: specialized models that perform well on narrow tasks but cover few clinical findings, and generalist models that address a broader range of tasks but remain prone to hallucination and inaccurate measurements. Combining the two through agentic systems offer...
-2. **Key Technical Contributions:** From Abstract: s a route towards comprehensive radiology reporting, but published systems are tied to one modality or body part. We describe a radiology agentic framework that standardizes how an orchestrator calls modular tools to produce a structured report, and use it to measure what such a system can do with t
+1. **Core Problem & Thesis:** Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the ev...
+2. **Key Technical Contributions:** From Abstract: idence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards 
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents](http://arxiv.org/abs/2611.12872v1)
+**arXiv ID:** `2611.12872v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12872v1) | **Published:** 2026-11-09
+**Authors:** Haozhen Zhang, Bohan Liu, Jianzhu Bao, Qingyuan Liu, Haodong Yue et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over compressed memories and expose predefined representations, whic...
+2. **Key Technical Contributions:** From Abstract: h may miss relevant memories and overlook heterogeneous evidence needs across queries. We introduce \textbf{\hivemem}, a multimodal memory framework that interleaves \textbf{\textsc{H}}or\textbf{\textsc{i}}zontal Memory Expansion with \textbf{\textsc{Ve}}rtical Evidence Composition. For horizontal m
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning](http://arxiv.org/abs/2611.12825v1)
+**arXiv ID:** `2611.12825v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12825v1) | **Published:** 2026-11-09
+**Authors:** Jihwan Jeong, Guy Tennenholtz, Yinlam Chow, Chih-Wei Hsu, Craig Boutilier
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** AI systems must often maintain bounded memory of unbounded interaction histories. However, optimizing the memory representation, and its updates, for downstream task utility is difficult for standard reinforcement learning (RL) due to severe credit assignment bottlenecks induced by sparse, delayed r...
+2. **Key Technical Contributions:** From Abstract: ewards. We introduce MaxIM (Maximally Informative Incremental Memory), a framework that formulates incremental summarization as a capacity-constrained, information-theoretic reward-shaping problem. Grounded in value suboptimality bounds, we show that bounding sequential information loss motivates ma
 3. **Methodology & Architecture:** Categories: cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** Limitations
-PARROT reports are fictional, which gives scale and privacy but is not a proxy for real-world
-clinical situations [10]. Evaluation is text-only and every tool call is simulated from the reference
-report, so tool error is excluded by design and broad classes return more than real detectors
-would. The held-out runs use 100 reports, enough for the direction of the effect but not to rank
-the cutoffs. The catalog is a snapshot (FDA decisions to March 2026) built with LLM extraction
-and consolidation, and the main orchestrator is one model; absolute numbers will move with the
-model.
-Can Agentic Systems Close the Gap in Radiology? 13
-5 Conclusion
-Agentic systems can already compose today’s cleared radiology tools into a report, and thi
+G.1 Broader Impacts
+MaxIM introduces a principled approach to bounded memory management in streaming environments.
+On the positive side, this framework enhances the reliability of long-horizon AI agents by actively
+suppressing hallucinations and enforcing factual grounding through recursive consistency. This is
+particularly beneficial for high-stakes applications requiring persistent context—such as educational
+tutoring, accessibility tools, and medical or legal document analysis—where unbounded context
+scaling is computationally prohibitive.
+However, the capability to persistently track dynamically evolving latent states (such as user emotions
+or implicit intents, as demonstrated in our WildChat experiments) poses potential pri
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse](http://arxiv.org/abs/2611.09891v1)
-**arXiv ID:** `2611.09891v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09891v1) | **Published:** 2026-11-06
-**Authors:** Peter Belcak, Greg Heinrich, Saurav Muralidharan, Shizhe Diao, Pavlo Molchanov
+### [World In-Context Learning for Agentic Robot Manipulation](http://arxiv.org/abs/2611.12885v1)
+**arXiv ID:** `2611.12885v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12885v1) | **Published:** 2026-11-09
+**Authors:** Heng Fang, Zehui Guo, Yuehan Zhang, Mingyang Du, Dingkang Liang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very...
-2. **Key Technical Contributions:** From Abstract:  efficiently and with little involvement from language models. We introduce agentic reasoning caching, a method for constructing robust CPU-executable agentic reasoning caches (ARCs) from LLM reasoning traces. ARCs show on-par performance with frontier LLMs across a range of difficult mathematical a
+1. **Core Problem & Thesis:** Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the wor...
+2. **Key Technical Contributions:** From Abstract: ld the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in 
+3. **Methodology & Architecture:** Categories: cs.CV, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](http://arxiv.org/abs/2611.12835v1)
+**arXiv ID:** `2611.12835v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12835v1) | **Published:** 2026-11-09
+**Authors:** Hanxiao Li, Shutong Liu, Yongjia Ma, Jiaming Ji, Juntao Dai et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfu...
+2. **Key Technical Contributions:** From Abstract: lness of underlying reasoning, tool use, and environmental effects. Prior mitigations address this partial observability by predefined evaluator latent belief space or one-shot monitoring, which do not extend to free-form language space and vulnerable to stronger deceptions that evade simple monitor
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs](http://arxiv.org/abs/2611.12883v1)
+**arXiv ID:** `2611.12883v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12883v1) | **Published:** 2026-11-09
+**Authors:** Zhaoying Pan, Shenyu Lu, Jun Hui Wong, Junyi Chai, Xiaoqian Wang
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Multimodal large language models (MLLMs) integrate information across modalities, but become unreliable when those modalities disagree. Under conflicting inputs, MLLMs may favor modalities that are not the most reliable for the task, thus motivating inference-time control of modality arbitration. We...
+2. **Key Technical Contributions:** From Abstract:  identify a small set of attention heads, termed arbitration heads, that causally influence whether predictions follow visual or textual evidence. Building on this, we introduce a lightweight, training-free intervention that biases these heads toward a designated trusted modality at inference time. 
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [DreamLander: A 6-DOF World Model based Reinforcement Learning Planetary Lander](http://arxiv.org/abs/2611.12824v1)
+**arXiv ID:** `2611.12824v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12824v1) | **Published:** 2026-11-09
+**Authors:** George Nehma, Patrick Quinn, Madhur Tiwari, Camilo Riano-Rios
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Soft powered descent landings are becoming evermore important in the field of space exploration and scientific advancement, because of their ability to deliver mission critical payloads, both highly accurately and safely. The high efficiency restriction on planetary landings due to the severely limi...
+2. **Key Technical Contributions:** From Abstract: ted fuel supply results in the need for optimal guidance trajectories and control. Model based reinforcement learning is proving to be an important tool in simplifying the highly complex process of generating optimal guidance trajectories and control. In this work, we present DreamLander, a state of
+3. **Methodology & Architecture:** Categories: cs.RO, math.OC. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Conclusion
+In this work we present DreamLander, a DreamerV3 based MBRL framework capable of a highly precise and
+efficient planetary landing control policy. It has shown to capably learn the dynamics of the EDL problem and then
+formulate a control policy capable of landing the vehicle with pinpoint accuracy. The model trains efficiently on data
+provided in simulation and with the latent imagination it produces. We demonstrated its capability to successfully solve
+the EDL over a large range of initial conditions, and learn a policy that is intuitive. The model based nature of this
+framework also enables the further inclusion of safety based algorithms to be included so that undesired states can
+be avoided, further demonstrating the capabilit
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors](http://arxiv.org/abs/2611.12820v1)
+**arXiv ID:** `2611.12820v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12820v1) | **Published:** 2026-11-09
+**Authors:** Paul Litvak
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** One hundred known errors were planted into 10 open-access psychology papers, and the modified papers were then run through frontier models and two commercial AI review tools. The best single system caught 71 of the 100 errors, while the worst caught 30. Pooling every system's output caught 93. Model...
+2. **Key Technical Contributions:** From Abstract: s are only partly correlated in the errors they find, which makes ensembling a big lever for finding issues in papers. Seven errors could not be caught by any system, and all seven were omissions: information deleted from a paper rather than mistakes inserted into it. Refine.ink contributes more uni
+3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Conclusion
+AI peer review is here whether we like it or not. AI-generated science is also here and will increasingly be a larger 
+and larger portion of new scientific knowledge. That knowledge will quickly outstrip the ability of humans to 
+evaluate it. Amidst that new knowledge (especially at first), there are going to be a considerable number of mistakes. 
+We need to start thinking very carefully about how to surmount the evaluation and human expert attention 
+bottleneck. Training the next generation of scientists with the requisite domain expertise, critical thinking, and AI-
+native thinking is essential if we have any hope of avoiding being drowned in all the new information, or of 
+preventing it from being riddled with errors and mista
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks](http://arxiv.org/abs/2611.12816v1)
+**arXiv ID:** `2611.12816v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12816v1) | **Published:** 2026-11-09
+**Authors:** Tim Schnieders, Tareq Maximilian Gabriel Ahrari, Oliver Petrovic, Christian Brecher
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** The push towards circularity and Re-X principles presents a challenge to SMEs, particularly due to increasing product complexity that impedes the adoption of disassembly automation. This paper introduces and compares two frameworks for extracting disassembly instructions from unstructured informatio...
+2. **Key Technical Contributions:** From Abstract: n sources, such as disassembly manuals. Our goal is to transform natural language text into a structured, curated and machine-readable format. We implemented and tested a rule-based Natural Language Processing (NLP) framework against a generative AI framework leveraging LLMs. The performance of both
 3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Video-Coder: Reinforcing Agentic Coding for Video Generation](http://arxiv.org/abs/2611.09894v1)
-**arXiv ID:** `2611.09894v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09894v1) | **Published:** 2026-11-06
-**Authors:** Chaoyang Wang, Sicheng Gao, Junan Hu, Kunyang Li, Dongyang Chen et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Code...
-2. **Key Technical Contributions:** From Abstract: r, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators. To support this paradigm, we design a dedicated data pipeline and c
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [ZeoBench: A Benchmark for Self-Supervised Learning on 3D Zeolite Representations](http://arxiv.org/abs/2611.09880v1)
-**arXiv ID:** `2611.09880v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09880v1) | **Published:** 2026-11-06
-**Authors:** Aaron Sun, Yachan Liu, Ping Yang, Peng Bai, Subhransu Maji
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Zeolites are an important class of porous crystalline materials with broad applications in gas storage, separations, and catalysis. Although hundreds of thousands of experimentally realized and hypothetical zeolite structures are known, identifying materials optimized for a target application remain...
-2. **Key Technical Contributions:** contributions:
-1. We introduce ZeoBench, a benchmark for SSL on dense 3D grids of all-silica zeolites, built
-from 331k real and hypothetical zeolite structures, with fixed train/validation/test splits.
-2. We standardize six existing downstream adsorption-property prediction tasks with label-
-budget splits, evaluation metrics, and linear-probe and fine-tuning protocols.
-3. We benchmark four SSL objectives, out-of-domain 3D volumetric pretraining, ImageNet-
-pretrained 2D backbones adapted to 3D, hand-crafted descriptors, and supervised baselines.
-4. We show that in-domain SSL substantially improves low-label adsorption prediction, with
-contrastive methods producing the strongest frozen representations and SSL initialization
-improving fine-tun
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning](http://arxiv.org/abs/2611.09872v1)
-**arXiv ID:** `2611.09872v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09872v1) | **Published:** 2026-11-06
-**Authors:** Haoyu Wang, Ru Wang, Yuanyuan Wang, Jiaxian Guo, Mingming Gong
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability remains poorly understood. We analyze majority-vote supervision for TTRL with online Direct Preference Optimization (DPO) and decompose its ...
-2. **Key Technical Contributions:** From Abstract: error into population-majority bias and prompt-dependent finite-rollout variation. Because population-majority bias is generally unidentifiable without external supervision, we focus on mitigating the downstream effects of finite-rollout variation. We propose \emph{Prompt-Conditional Distributionall
-3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Computer-Use Agents Are Embodied Generalists](http://arxiv.org/abs/2611.09847v1)
-**arXiv ID:** `2611.09847v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09847v1) | **Published:** 2026-11-06
-**Authors:** Pranjal Aggarwal, Sean Welleck
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** In many areas of AI, general-purpose models have increasingly replaced handcrafted methods and specialized architectures. We argue that embodied AI is poised for a similar shift. Our key claim is that embodied tasks can be formulated as interaction with digital software. Specifically, we build softw...
-2. **Key Technical Contributions:** From Abstract: are that renders an agent's view of a physical environment on a screen and provides controls for acting in it. A computer-use agent (CUA) can then perform embodied tasks through the same screenshots and keyboard and mouse actions that it uses to operate ordinary software. Using a single CUA design a
-3. **Methodology & Architecture:** Categories: cs.LG, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Scenario Orchestration for Closed-loop Policy Evaluation of Autonomous Driving](http://arxiv.org/abs/2611.09888v1)
-**arXiv ID:** `2611.09888v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09888v1) | **Published:** 2026-11-06
-**Authors:** Frieda Rong, Zhaoyue Wang, Veer Kapadia, Vishaka Rajani, Aren A. Babikian et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Scenario-based simulation is central to evaluating autonomous-driving policies, but a scenario scripted before execution (i.e., with predetermined, fixed actor routes and speeds) may not preserve its intended interaction once the tested ego policy responds in closed loop. Scripted scenarios cannot a...
-2. **Key Technical Contributions:** From Abstract: dapt to unanticipated ego behavior, while learned traffic actors may remain reactive without reliably realizing a particular scenario intent. We introduce a scenario orchestrator that continuously monitors the joint traffic state and adapts non-ego actors through re-timing, re-routing, and role reas
-3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** CONCLUSION
-Closed-loop policy evaluation is subject to closed-loop
-drift. A scenario scripted before execution with predeter-
-mined actor routes, speeds, or behaviors may not preserve
-its intended interaction once the ego policy responds in
-closed loop. Reactive actors are not enough, nor are scenario
-triggers. We address this gap with a scenario orchestrator
-that continuously monitors the joint traffic state and jointly
-adapts non-ego actors through re-timing, re-routing, and role
-reassignment, solving a constrained optimization at each step
-so that the intended interaction remains attainable while
-interventions stay limited and traffic remains feasible.
-Experiments in CARLA, across scenario families and
-ego policies, show that this orches
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation](http://arxiv.org/abs/2611.09864v1)
-**arXiv ID:** `2611.09864v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09864v1) | **Published:** 2026-11-06
-**Authors:** Xun Tu, Minghao Zou, Karthik Desingh
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service robotics and warehouse automation. Despite recent progress, reliably executing these tasks remains ch...
-2. **Key Technical Contributions:** From Abstract: allenging because performance depends on complex robot-object and object-environment interaction dynamics. Existing approaches address this challenge either through model-based methods, which often require accurate dynamics models, or through learning-based methods, which reduce this requirement but
-3. **Methodology & Architecture:** Categories: cs.RO, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** CONCLUSION
-We presented a task-aware grasp selection framework for
-prehensile goal-conditioned large-object loco-manipulation.
-By training one unified manipulation policy across multiple
-initial grasp configurations, the learned critic captures the
-long-horizon utility of different grasp configurations. Dis-
-tilling these values into a lightweight grasp utility network
-enables the robot to select a suitable grasp before physical
-interaction without explicitly estimating privileged physi-
-cal properties of the object. Simulation results demonstrate
-improved rearrangement success over fixed and randomly
-selected grasp configurations. Future work will extend the
-evaluation to additional household objects and real-world
-deployment on the SPOT p
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [BEV3SR: Evidence-Aware 3D Spatial Reasoning from Video](http://arxiv.org/abs/2611.09816v1)
-**arXiv ID:** `2611.09816v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.09816v1) | **Published:** 2026-11-06
-**Authors:** Fan Zhu, Rui Yu
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** 3D spatial reasoning from video remains challenging for VLMs because videos provide sequential, view-local observations rather than persistent metric scene records. Many questions must be answered in a query-specified perspective rather than the observed camera viewpoint, and prompting with a fixed ...
-2. **Key Technical Contributions:** From Abstract: set of RGB views may miss sparse or occluded visual cues. To address these gaps, we introduce BEV3SR, a training-free and backbone-agnostic framework for RGB-D videos with camera parameters. BEV3SR turns video observations into queryable metric bird's-eye-view (BEV) scene memory and formalizes each 
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-06. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
