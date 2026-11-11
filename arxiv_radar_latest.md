@@ -1,159 +1,149 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-10 19:09:29 UTC
+**Generated:** 2026-11-11 19:05:59 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems](http://arxiv.org/abs/2611.12856v1)
-**arXiv ID:** `2611.12856v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12856v1) | **Published:** 2026-11-09
-**Authors:** Zheng Jiang, Fang Niu, Bo Peng, Houde Qian, Wenyi Li et al.
+### [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](http://arxiv.org/abs/2611.14492v1)
+**arXiv ID:** `2611.14492v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14492v1) | **Published:** 2026-11-10
+**Authors:** Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, Rohith Nama, Arushi Gupta et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent harnesses allow the model to instantiate worker agents and to author the executable workflow that coordinates them, shifting the design of sy...
-2. **Key Technical Contributions:** From Abstract: stem structure from developers to the model at run time. The quality of this organization therefore constitutes a distinct capability, yet existing benchmarks either measure end-to-end task completion or evaluate coordination under structures specified in advance. We formalize this capability as wor
-3. **Methodology & Architecture:** Categories: cs.CL, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrac...
+2. **Key Technical Contributions:** From Abstract: e, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often states why it took an action; the tool calls alone do not. ReTrace extracts the condition behind ea
+3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning](http://arxiv.org/abs/2611.12886v1)
-**arXiv ID:** `2611.12886v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12886v1) | **Published:** 2026-11-09
-**Authors:** Haozhi Yuan, Handong Li, Yifan Zhang, Qianshan Wei
+### [Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents](http://arxiv.org/abs/2611.14511v1)
+**arXiv ID:** `2611.14511v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14511v1) | **Published:** 2026-11-10
+**Authors:** Megha Srivastava, Michael H. Lim, Allison M. Keys, Pranav Murugan, Nate Gruver
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the ev...
-2. **Key Technical Contributions:** From Abstract: idence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards 
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across ...
+2. **Key Technical Contributions:** From Abstract: diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecu
+3. **Methodology & Architecture:** Categories: cs.LG, q-bio.QM. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents](http://arxiv.org/abs/2611.12872v1)
-**arXiv ID:** `2611.12872v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12872v1) | **Published:** 2026-11-09
-**Authors:** Haozhen Zhang, Bohan Liu, Jianzhu Bao, Qingyuan Liu, Haodong Yue et al.
+### [Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents](http://arxiv.org/abs/2611.14493v1)
+**arXiv ID:** `2611.14493v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14493v1) | **Published:** 2026-11-10
+**Authors:** Howard Zhang, Chuck Arvin, Logan Brown, Mihir Bhatia, Neelu Choudhary et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over compressed memories and expose predefined representations, whic...
-2. **Key Technical Contributions:** From Abstract: h may miss relevant memories and overlook heterogeneous evidence needs across queries. We introduce \textbf{\hivemem}, a multimodal memory framework that interleaves \textbf{\textsc{H}}or\textbf{\textsc{i}}zontal Memory Expansion with \textbf{\textsc{Ve}}rtical Evidence Composition. For horizontal m
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based ...
+2. **Key Technical Contributions:** Contributions
+Agentic systems exhibit stochastic behavior [2] and execute com-
+plex multi-step workflows involving tool usage, SQL generation,
+and human interaction [4] that resist simple correctness checks.
+Three evaluation paradigms have emerged (LLM-as-a-Judge, de-
+terministic heuristics, and hybrid approaches), yet no systematic
+comparison exists of how they perform across stability, detection,
+and discovery for agentic systems.
+We present a three-phase comparative evaluation of three frame-
+works: Strands Evals (trace-based LLM judge), PromptFoo (text-only
+LLM judge with red-teaming), and Agenta (deterministic heuristics).
+We evaluate on two supply chain analytics agents and address three
+research questions:
+• RQ1 (Stability):How stabl
+3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning](http://arxiv.org/abs/2611.12825v1)
-**arXiv ID:** `2611.12825v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12825v1) | **Published:** 2026-11-09
-**Authors:** Jihwan Jeong, Guy Tennenholtz, Yinlam Chow, Chih-Wei Hsu, Craig Boutilier
+### [Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training](http://arxiv.org/abs/2611.14519v1)
+**arXiv ID:** `2611.14519v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14519v1) | **Published:** 2026-11-10
+**Authors:** Emre Kutlusan, Yongmin Li
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** AI systems must often maintain bounded memory of unbounded interaction histories. However, optimizing the memory representation, and its updates, for downstream task utility is difficult for standard reinforcement learning (RL) due to severe credit assignment bottlenecks induced by sparse, delayed r...
-2. **Key Technical Contributions:** From Abstract: ewards. We introduce MaxIM (Maximally Informative Incremental Memory), a framework that formulates incremental summarization as a capacity-constrained, information-theoretic reward-shaping problem. Grounded in value suboptimality bounds, we show that bounding sequential information loss motivates ma
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Limitations
-G.1 Broader Impacts
-MaxIM introduces a principled approach to bounded memory management in streaming environments.
-On the positive side, this framework enhances the reliability of long-horizon AI agents by actively
-suppressing hallucinations and enforcing factual grounding through recursive consistency. This is
-particularly beneficial for high-stakes applications requiring persistent context—such as educational
-tutoring, accessibility tools, and medical or legal document analysis—where unbounded context
-scaling is computationally prohibitive.
-However, the capability to persistently track dynamically evolving latent states (such as user emotions
-or implicit intents, as demonstrated in our WildChat experiments) poses potential pri
+1. **Core Problem & Thesis:** Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they will replace models trained for each task. Most comparisons, however, use data from the training distribution and a single task-specific baseline whos...
+2. **Key Technical Contributions:** From Abstract: e configuration is rarely justified, and therefore provide limited evidence of performance at new clinical sites. It also remains unclear how much of a foundation model must be adapted, and what determines this. We adapted a foundation model, DINOv2, with strategies ranging from tuning only its bias
+3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [World In-Context Learning for Agentic Robot Manipulation](http://arxiv.org/abs/2611.12885v1)
-**arXiv ID:** `2611.12885v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12885v1) | **Published:** 2026-11-09
-**Authors:** Heng Fang, Zehui Guo, Yuehan Zhang, Mingyang Du, Dingkang Liang et al.
+### [AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models](http://arxiv.org/abs/2611.14515v1)
+**arXiv ID:** `2611.14515v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14515v1) | **Published:** 2026-11-10
+**Authors:** Zijian Zhang, Rizhen Hu, Jiangweizhi Peng, Shiyang Li, Sujay Bhatt et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the wor...
-2. **Key Technical Contributions:** From Abstract: ld the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in 
-3. **Methodology & Architecture:** Categories: cs.CV, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way...
+2. **Key Technical Contributions:** From Abstract:  to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information 
+3. **Methodology & Architecture:** Categories: cs.LG, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](http://arxiv.org/abs/2611.12835v1)
-**arXiv ID:** `2611.12835v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12835v1) | **Published:** 2026-11-09
-**Authors:** Hanxiao Li, Shutong Liu, Yongjia Ma, Jiaming Ji, Juntao Dai et al.
+### [FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking](http://arxiv.org/abs/2611.14477v1)
+**arXiv ID:** `2611.14477v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14477v1) | **Published:** 2026-11-10
+**Authors:** Arjun Rao, Nishant Gopinath
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfu...
-2. **Key Technical Contributions:** From Abstract: lness of underlying reasoning, tool use, and environmental effects. Prior mitigations address this partial observability by predefined evaluator latent belief space or one-shot monitoring, which do not extend to free-form language space and vulnerable to stronger deceptions that evade simple monitor
+1. **Core Problem & Thesis:** Text-to-SQL systems over large pooled catalogs must first retrieve the tables a question needs. We compare against the published table recall of RASL, which uses Claude 3.5 models to extract keywords and select tables, on pooled BIRD, Spider, and Fiben catalogs. FERN (Feature-Engineered Ranking with...
+2. **Key Technical Contributions:** From Abstract:  No generative LLM) instead fuses three frozen retrievers into 100 candidates, describes each with up to 120 features, and reorders them with LightGBM rankers fitted once on BIRD's training questions. On Spider, where it was not fitted, its candidate pool alone reaches RASL's published recall at fif
+3. **Methodology & Architecture:** Categories: cs.IR, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](http://arxiv.org/abs/2611.14514v1)
+**arXiv ID:** `2611.14514v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14514v1) | **Published:** 2026-11-10
+**Authors:** Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternati...
+2. **Key Technical Contributions:** From Abstract: ve the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which replaces the single hypothesis with a contrast set, a scientific question paired with mutually exclusive and collectively exhaustive competing explanations. Each experiment is scored by how its evidence 
+3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Accurate predictions of properties of energetic materials with tabular foundation models](http://arxiv.org/abs/2611.14462v1)
+**arXiv ID:** `2611.14462v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14462v1) | **Published:** 2026-11-10
+**Authors:** Vagn Krister Nes Glomsrud, Mathias Bynke, Lars Henry Berge Olsen, Dennis Christensen
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** We use TabPFN, a recently developed tabular foundation model, to predict three properties of energetic materials: impact sensitivity, decomposition temperature and crystal density. Without any hyperparameter tuning, TabPFN outperforms the best published models for all three properties. It also subst...
+2. **Key Technical Contributions:** From Abstract: antially outperforms a wide range of established machine-learning models, including tuned gradient boosting (XGBoost), random forests and Gaussian processes. This holds both when the models are given hand-crafted molecular descriptors and when they are given learned representations from Chemprop's m
 3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs](http://arxiv.org/abs/2611.12883v1)
-**arXiv ID:** `2611.12883v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12883v1) | **Published:** 2026-11-09
-**Authors:** Zhaoying Pan, Shenyu Lu, Jun Hui Wong, Junyi Chai, Xiaoqian Wang
+### [Emergent Biological Capabilities in a Foundation Model for Molecular Interactions](http://arxiv.org/abs/2611.14504v1)
+**arXiv ID:** `2611.14504v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14504v1) | **Published:** 2026-11-10
+**Authors:** Adi Mashiach
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Multimodal large language models (MLLMs) integrate information across modalities, but become unreliable when those modalities disagree. Under conflicting inputs, MLLMs may favor modalities that are not the most reliable for the task, thus motivating inference-time control of modality arbitration. We...
-2. **Key Technical Contributions:** From Abstract:  identify a small set of attention heads, termed arbitration heads, that causally influence whether predictions follow visual or textual evidence. Building on this, we introduce a lightweight, training-free intervention that biases these heads toward a designated trusted modality at inference time. 
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Foundation models trained on large unlabeled corpora develop emergent capabilities, tasks that go beyond the training objective. We extend this paradigm to multimodal biology with Bonbon, a foundation model for molecular interactions trained on approximately 3.2 trillion tokens of paired protein-lig...
+2. **Key Technical Contributions:** From Abstract: and sequences. From a single representation space, Bonbon exhibits three zero-shot emergent capabilities at hierarchical levels of resolution: functional (mechanism of action), residue (binding site localization, including orthosteric/allosteric discrimination), and bond (covalent versus non-covalen
+3. **Methodology & Architecture:** Categories: cs.LG, q-bio.BM. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [DreamLander: A 6-DOF World Model based Reinforcement Learning Planetary Lander](http://arxiv.org/abs/2611.12824v1)
-**arXiv ID:** `2611.12824v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12824v1) | **Published:** 2026-11-09
-**Authors:** George Nehma, Patrick Quinn, Madhur Tiwari, Camilo Riano-Rios
+### [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](http://arxiv.org/abs/2611.14487v1)
+**arXiv ID:** `2611.14487v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14487v1) | **Published:** 2026-11-10
+**Authors:** Muhan Gao, Hangxiao Zhu, Xinqi Su, Yu Zhang, Daniel Khashabi et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Soft powered descent landings are becoming evermore important in the field of space exploration and scientific advancement, because of their ability to deliver mission critical payloads, both highly accurately and safely. The high efficiency restriction on planetary landings due to the severely limi...
-2. **Key Technical Contributions:** From Abstract: ted fuel supply results in the need for optimal guidance trajectories and control. Model based reinforcement learning is proving to be an important tool in simplifying the highly complex process of generating optimal guidance trajectories and control. In this work, we present DreamLander, a state of
-3. **Methodology & Architecture:** Categories: cs.RO, math.OC. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Conclusion
-In this work we present DreamLander, a DreamerV3 based MBRL framework capable of a highly precise and
-efficient planetary landing control policy. It has shown to capably learn the dynamics of the EDL problem and then
-formulate a control policy capable of landing the vehicle with pinpoint accuracy. The model trains efficiently on data
-provided in simulation and with the latent imagination it produces. We demonstrated its capability to successfully solve
-the EDL over a large range of initial conditions, and learn a policy that is intuitive. The model based nature of this
-framework also enables the further inclusion of safety based algorithms to be included so that undesired states can
-be avoided, further demonstrating the capabilit
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors](http://arxiv.org/abs/2611.12820v1)
-**arXiv ID:** `2611.12820v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12820v1) | **Published:** 2026-11-09
-**Authors:** Paul Litvak
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** One hundred known errors were planted into 10 open-access psychology papers, and the modified papers were then run through frontier models and two commercial AI review tools. The best single system caught 71 of the 100 errors, while the worst caught 30. Pooling every system's output caught 93. Model...
-2. **Key Technical Contributions:** From Abstract: s are only partly correlated in the errors they find, which makes ensembling a big lever for finding issues in papers. Seven errors could not be caught by any system, and all seven were omissions: information deleted from a paper rather than mistakes inserted into it. Refine.ink contributes more uni
-3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Conclusion
-AI peer review is here whether we like it or not. AI-generated science is also here and will increasingly be a larger 
-and larger portion of new scientific knowledge. That knowledge will quickly outstrip the ability of humans to 
-evaluate it. Amidst that new knowledge (especially at first), there are going to be a considerable number of mistakes. 
-We need to start thinking very carefully about how to surmount the evaluation and human expert attention 
-bottleneck. Training the next generation of scientists with the requisite domain expertise, critical thinking, and AI-
-native thinking is essential if we have any hope of avoiding being drowned in all the new information, or of 
-preventing it from being riddled with errors and mista
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Automated Knowledge Acquisition Pipeline for Disassembly Instructions: A Comparison of NLP and Generative AI Frameworks](http://arxiv.org/abs/2611.12816v1)
-**arXiv ID:** `2611.12816v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.12816v1) | **Published:** 2026-11-09
-**Authors:** Tim Schnieders, Tareq Maximilian Gabriel Ahrari, Oliver Petrovic, Christian Brecher
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** The push towards circularity and Re-X principles presents a challenge to SMEs, particularly due to increasing product complexity that impedes the adoption of disassembly automation. This paper introduces and compares two frameworks for extracting disassembly instructions from unstructured informatio...
-2. **Key Technical Contributions:** From Abstract: n sources, such as disassembly manuals. Our goal is to transform natural language text into a structured, curated and machine-readable format. We implemented and tested a rule-based Natural Language Processing (NLP) framework against a generative AI framework leveraging LLMs. The performance of both
+1. **Core Problem & Thesis:** Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the...
+2. **Key Technical Contributions:** From Abstract:  format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML 2026 papers, Re-Search tracks how a model's idea evolves as it asks questions and receives binary o
 3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-09. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
