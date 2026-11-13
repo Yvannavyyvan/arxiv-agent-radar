@@ -1,149 +1,179 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-12 19:23:40 UTC
+**Generated:** 2026-11-13 19:01:37 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows](http://arxiv.org/abs/2611.14492v1)
-**arXiv ID:** `2611.14492v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14492v1) | **Published:** 2026-11-10
-**Authors:** Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, Rohith Nama, Arushi Gupta et al.
+### [Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon](http://arxiv.org/abs/2611.17294v1)
+**arXiv ID:** `2611.17294v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17294v1) | **Published:** 2026-11-12
+**Authors:** Haozhe Wang, Lina Chen, Fanqi Wan, Qi Han, Yinmin Zhang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrac...
-2. **Key Technical Contributions:** From Abstract: e, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often states why it took an action; the tool calls alone do not. ReTrace extracts the condition behind ea
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** On-device inference requires kernels that make effective use of local accelerators. Efficient training and evaluation of models that generate Apple Metal kernels benefit from native macOS tools and concurrent agent sessions. These sessions alternate between model requests, development commands, and ...
+2. **Key Technical Contributions:** From Abstract: GPU execution, leaving GPU capacity idle for much of a rollout. We present Metal Sandbox, infrastructure that combines restricted per-instance file access, native command execution, and command-level scheduling across interconnected Macs. Each agent retains its workspace and private development envi
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL, cs.DC. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents](http://arxiv.org/abs/2611.14511v1)
-**arXiv ID:** `2611.14511v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14511v1) | **Published:** 2026-11-10
-**Authors:** Megha Srivastava, Michael H. Lim, Allison M. Keys, Pranav Murugan, Nate Gruver
+### [Goal Encoding in LLMs](http://arxiv.org/abs/2611.17297v1)
+**arXiv ID:** `2611.17297v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17297v1) | **Published:** 2026-11-12
+**Authors:** Arnab Sen Sharma, Eric Todd, Sheridan Feucht, Andy Arditi, Rohit Gandikota et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across ...
-2. **Key Technical Contributions:** From Abstract: diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecu
-3. **Methodology & Architecture:** Categories: cs.LG, q-bio.QM. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior ...
+2. **Key Technical Contributions:** CONTRIBUTIONS
+Internally an autoregressive transformer language model M has L layers. We write the residual
+stream at layer ℓ and position t as hℓ t = hℓ−1 t + mℓ t + P j aℓj t , where mℓ t is the output of the MLP and
+aℓj t is the contribution of the j-th attention head. Setting aside normalization and positional encoding,
+an attention head’s contribution to the residual stream is
+aℓj t =
+
+X
+i≤t
+Attn(qt, K)ivi
+
+ W ℓj O , Attn(qt, K) = softmax
+ qtK ⊤ √dhead  (1)
+with query qt = hℓ−1 t W ℓj Q and keys K = {k1, ...kt}, where ki = hℓ−1 i W ℓj K . Affinity of query and
+key states determine the mixture over the value states vi = hℓ−1 i W ℓj V , which is then projected with
+the output weights W ℓj O and added to the residual stream.
+2.2 SEQ
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** LIMITATIONS
+Selection of goal attributes. We operationalize goals through three attributes drawing from Bratman
+(1987)’s planning theory: pre-commitment, plasticity and persistence (Section 1). The literature also
+describes other goal attributes such as pro-activeness (whether an agent sets its own goals rather than
+only responding to its environment; Wooldridge & Jennings (1995); Barandiaran et al. (2009)), and
+deliberate adoption (the agent decides whether to pursue a goal at all; Bratman (1987); Frankfurt
+(1971)). We have not included these attributes in this study, as it is unclear how to operationalize
+them in LLMs.
+Persistence. We focus on temporal persistence, the retention of a goal-encoding throughout its
+execution across multiple 
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents](http://arxiv.org/abs/2611.14493v1)
-**arXiv ID:** `2611.14493v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14493v1) | **Published:** 2026-11-10
-**Authors:** Howard Zhang, Chuck Arvin, Logan Brown, Mihir Bhatia, Neelu Choudhary et al.
+### [LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds](http://arxiv.org/abs/2611.17267v1)
+**arXiv ID:** `2611.17267v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17267v1) | **Published:** 2026-11-12
+**Authors:** Pengcheng Zhou, Xuanyu Liu, Yanchen Yin, Tianjie Ju, Bobo Li et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based ...
-2. **Key Technical Contributions:** Contributions
-Agentic systems exhibit stochastic behavior [2] and execute com-
-plex multi-step workflows involving tool usage, SQL generation,
-and human interaction [4] that resist simple correctness checks.
-Three evaluation paradigms have emerged (LLM-as-a-Judge, de-
-terministic heuristics, and hybrid approaches), yet no systematic
-comparison exists of how they perform across stability, detection,
-and discovery for agentic systems.
-We present a three-phase comparative evaluation of three frame-
-works: Strands Evals (trace-based LLM judge), PromptFoo (text-only
-LLM judge with red-teaming), and Agenta (deterministic heuristics).
-We evaluate on two supply chain analytics agents and address three
-research questions:
-• RQ1 (Stability):How stabl
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training](http://arxiv.org/abs/2611.14519v1)
-**arXiv ID:** `2611.14519v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14519v1) | **Published:** 2026-11-10
-**Authors:** Emre Kutlusan, Yongmin Li
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they will replace models trained for each task. Most comparisons, however, use data from the training distribution and a single task-specific baseline whos...
-2. **Key Technical Contributions:** From Abstract: e configuration is rarely justified, and therefore provide limited evidence of performance at new clinical sites. It also remains unclear how much of a foundation model must be adapted, and what determines this. We adapted a foundation model, DINOv2, with strategies ranging from tuning only its bias
-3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models](http://arxiv.org/abs/2611.14515v1)
-**arXiv ID:** `2611.14515v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14515v1) | **Published:** 2026-11-10
-**Authors:** Zijian Zhang, Rizhen Hu, Jiangweizhi Peng, Shiyang Li, Sujay Bhatt et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way...
-2. **Key Technical Contributions:** From Abstract:  to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information 
-3. **Methodology & Architecture:** Categories: cs.LG, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking](http://arxiv.org/abs/2611.14477v1)
-**arXiv ID:** `2611.14477v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14477v1) | **Published:** 2026-11-10
-**Authors:** Arjun Rao, Nishant Gopinath
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Text-to-SQL systems over large pooled catalogs must first retrieve the tables a question needs. We compare against the published table recall of RASL, which uses Claude 3.5 models to extract keywords and select tables, on pooled BIRD, Spider, and Fiben catalogs. FERN (Feature-Engineered Ranking with...
-2. **Key Technical Contributions:** From Abstract:  No generative LLM) instead fuses three frozen retrievers into 100 candidates, describes each with up to 120 features, and reorders them with LightGBM rankers fitted once on BIRD's training questions. On Spider, where it was not fitted, its candidate pool alone reaches RASL's published recall at fif
-3. **Methodology & Architecture:** Categories: cs.IR, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations](http://arxiv.org/abs/2611.14514v1)
-**arXiv ID:** `2611.14514v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14514v1) | **Published:** 2026-11-10
-**Authors:** Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternati...
-2. **Key Technical Contributions:** From Abstract: ve the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which replaces the single hypothesis with a contrast set, a scientific question paired with mutually exclusive and collectively exhaustive competing explanations. Each experiment is scored by how its evidence 
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Accurate predictions of properties of energetic materials with tabular foundation models](http://arxiv.org/abs/2611.14462v1)
-**arXiv ID:** `2611.14462v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14462v1) | **Published:** 2026-11-10
-**Authors:** Vagn Krister Nes Glomsrud, Mathias Bynke, Lars Henry Berge Olsen, Dennis Christensen
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** We use TabPFN, a recently developed tabular foundation model, to predict three properties of energetic materials: impact sensitivity, decomposition temperature and crystal density. Without any hyperparameter tuning, TabPFN outperforms the best published models for all three properties. It also subst...
-2. **Key Technical Contributions:** From Abstract: antially outperforms a wide range of established machine-learning models, including tuned gradient boosting (XGBoost), random forests and Gaussian processes. This holds both when the models are given hand-crafted molecular descriptors and when they are given learned representations from Chemprop's m
-3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Emergent Biological Capabilities in a Foundation Model for Molecular Interactions](http://arxiv.org/abs/2611.14504v1)
-**arXiv ID:** `2611.14504v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14504v1) | **Published:** 2026-11-10
-**Authors:** Adi Mashiach
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Foundation models trained on large unlabeled corpora develop emergent capabilities, tasks that go beyond the training objective. We extend this paradigm to multimodal biology with Bonbon, a foundation model for molecular interactions trained on approximately 3.2 trillion tokens of paired protein-lig...
-2. **Key Technical Contributions:** From Abstract: and sequences. From a single representation space, Bonbon exhibits three zero-shot emergent capabilities at hierarchical levels of resolution: functional (mechanism of action), residue (binding site localization, including orthosteric/allosteric discrimination), and bond (covalent versus non-covalen
-3. **Methodology & Architecture:** Categories: cs.LG, q-bio.BM. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game](http://arxiv.org/abs/2611.14487v1)
-**arXiv ID:** `2611.14487v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.14487v1) | **Published:** 2026-11-10
-**Authors:** Muhan Gao, Hangxiao Zhu, Xinqi Su, Yu Zhang, Daniel Khashabi et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the...
-2. **Key Technical Contributions:** From Abstract:  format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML 2026 papers, Re-Search tracks how a model's idea evolves as it asks questions and receives binary o
+1. **Core Problem & Thesis:** We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed g...
+2. **Key Technical Contributions:** From Abstract: eographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire 
 3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-10. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** conclusion 
+that the trip cannot finish within 56 minutes.
+Why this failure. The updated evidence reaches the explanation 
+and arithmetic, yet the actual Boolean decision retains the earlier 
+answer.
+Ground truth: feasible: false. The updated trip exceeds 56 
+minutes.
+Figure 45: Decision Inertia in Task-Only Mobility Planning
+(Claude Opus 5). The traffic update changes the route calculation
+and written conclusion, but the final Boolean feasibility judgment
+remains true.
+53
+Constraint-Preserving Replanning Failure: re-
+pairing one dependency leaves another unre-
+solved.
+Figure 46 shows Grok 4.5 responding to The But-
+tery’s closure by selecting Flat Iron Victoria for
+eight diners. The model explicitly notices that
+Flat Iron’s maximum party s
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research](http://arxiv.org/abs/2611.17332v1)
+**arXiv ID:** `2611.17332v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17332v1) | **Published:** 2026-11-12
+**Authors:** Jie Wang, Tong Zhu, JiaHao Kuang, Zhe Xu, Yunkai Chai et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document...
+2. **Key Technical Contributions:** From Abstract:  which ideas succeeded, which were abandoned, and why. In academia, limited compute and inconsistent baselines often restrict evaluations to small-scale, single-point comparisons, making it difficult to establish whether improvements hold at larger scales or translate into broader impact. ArchSpace 
+3. **Methodology & Architecture:** Categories: cs.CL, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [AgentSSL: Can MLE Agents Leverage Unlabeled Data?](http://arxiv.org/abs/2611.17323v1)
+**arXiv ID:** `2611.17323v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17323v1) | **Published:** 2026-11-12
+**Authors:** Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson, Jennifer J. Sun
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested ...
+2. **Key Technical Contributions:** From Abstract: in realistic regimes where labeled data is scarce but unlabeled data is abundant. In this work, we introduce Agentic Semi-Supervised Learning (AgentSSL), framing SSL as a program search problem and studying how agents navigate this space under limited supervision. We find that even under weak feedba
+3. **Methodology & Architecture:** Categories: cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces](http://arxiv.org/abs/2611.17314v1)
+**arXiv ID:** `2611.17314v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17314v1) | **Published:** 2026-11-12
+**Authors:** Abigail L. Tenenbaum, R. Thomas McCoy
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Humans can learn rapidly from limited experience, while neural networks typically require extensive training. In this work, we investigate what properties of a neural network can enable it to learn rapidly. We study neural networks that have been optimized via meta-learning, a technique that exposes...
+2. **Key Technical Contributions:** From Abstract:  a network to many related functions to facilitate its subsequent learning of similar functions. Prior work has shown that these meta-learned networks can learn new functions rapidly, but how they do so remains unclear. To investigate their internal structure, we take inspiration from classic work d
+3. **Methodology & Architecture:** Categories: cs.LG, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs](http://arxiv.org/abs/2611.17280v1)
+**arXiv ID:** `2611.17280v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17280v1) | **Published:** 2026-11-12
+**Authors:** Gautam Galada, Supreeth Shastri, Sagnik Ray Choudhury
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** We propose Synthesis Smuggling, a novel threat model in which an adversarial LLM infers sensitive information about a user from routine assistance-seeking interactions and steganographically encodes that into innocuous-looking model-generated content. The user may then unknowingly transmit that info...
+2. **Key Technical Contributions:** From Abstract: rmation by sharing the generated artifact, say as an email, social-media post, or message, through ordinary communication channels. An adversary monitoring these channels can discover this information. We demonstrate this threat by training two open-weight models to infer gender and age-group labels
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems](http://arxiv.org/abs/2611.17239v1)
+**arXiv ID:** `2611.17239v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17239v1) | **Published:** 2026-11-12
+**Authors:** Hannah Li
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** In interactive systems where users engage with LLMs, users are adaptive and, after observing LLM responses, can change their prompting strategy, as well as the type and difficulty of subsequent tasks. Thus model responses can influence the set of prompts on which the model is subsequently evaluated....
+2. **Key Technical Contributions:** From Abstract:  We study the implications of this user adaptivity and prompt endogeneity for the evaluation of LLMs. We define two classes of estimands for comparing models: the common-distribution effect, which compares model performance on the same distribution of prompts, and the induced-distribution effect, wh
+3. **Methodology & Architecture:** Categories: stat.ME, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Negative-Only Policy Optimization for One-Sided Verifiable Rewards](http://arxiv.org/abs/2611.17287v1)
+**arXiv ID:** `2611.17287v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17287v1) | **Published:** 2026-11-12
+**Authors:** Jiacheng Xu, Shuo He, Fuxiang Zhang, Chaojie Wang, Bo An
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this reg...
+2. **Key Technical Contributions:** From Abstract: ime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts 
+3. **Methodology & Architecture:** Categories: cs.LG, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Learning When Diffusion Language Models Should Regenerate](http://arxiv.org/abs/2611.17320v1)
+**arXiv ID:** `2611.17320v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.17320v1) | **Published:** 2026-11-12
+**Authors:** Minhae Oh, Jeonghye Kim, Jinwoo Koo, Yeongoon Kim, Jimin Seo et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error u...
+2. **Key Technical Contributions:** From Abstract: sually reproduces it when the surrounding context remains fixed. These findings motivate DiVR , a verifier that predicts whether a partially generated sequence will reach a correct answer. Trained on the final correctness of the model's own trajectories, DiVR decides when to regenerate a block and w
+3. **Methodology & Architecture:** Categories: cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-12. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
