@@ -1,149 +1,136 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-17 20:18:38 UTC
+**Generated:** 2026-11-18 14:38:37 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](http://arxiv.org/abs/2611.21577v1)
-**arXiv ID:** `2611.21577v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21577v1) | **Published:** 2026-11-16
-**Authors:** Zeynab Anbiaee, Sajjad Dadkhah, Ali A. Ghorbani
+### [Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance](http://arxiv.org/abs/2611.23142v1)
+**arXiv ID:** `2611.23142v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23142v1) | **Published:** 2026-11-17
+**Authors:** Lorenzo Masoero
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language model (LLM) applications increasingly act as agents that select and invoke external tools. The Model Context Protocol (MCP) standardizes this interaction by allowing clients to compose tools advertised by multiple servers. However, tool metadata used for discovery and selection is not...
-2. **Key Technical Contributions:** From Abstract: , by itself, necessarily bound to a verified provider identity. This paper studies this gap as tool-provider misbinding: a failure in which a request intended for a legitimate provider is instead resolved to an attacker-controlled tool. The attacker does not compromise the host, LLM, legitimate serv
-3. **Methodology & Architecture:** Categories: cs.CR, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Conclusion
-This paper studied tool-provider misbinding in MCP-
-based LLM agents. We showed that MCP tool metadata,
-including name, description, and schema, is not only doc-
-umentation but also part of the selection surface used by
-LLM-based clients. When this metadata is not bound to
-a verified provider identity, a semantically plausible tool
-can be selected from the wrong provider. We formulated
-this problem as an attacker-controlled tool-selection task
-and evaluated it in a controlled MCP environment across
-five LLM-based clients. Our results show that misbinding is
-strongest when exact-name collision, task-aligned descrip-
-tion, and compatible schema reinforce one another. Robust-
-ness and sensitivity experiments further show that a sing
+1. **Core Problem & Thesis:** The "AI revolution" has enabled teams across the technology industry to deliver software features at unprecedented velocity. While code evolves faster than ever, customer-facing documentation often struggles to stay up to speed. As users increasingly rely on LLM-based agents that consume documentati...
+2. **Key Technical Contributions:** From Abstract: on as their primary interface, the impact of this documentation gap worsens: stale information propagates and is treated as authoritative. Signals for identifying where documentation has fallen behind already exist in abundance, both explicit (e.g., resolved support tickets revealing what documentat
+3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents](http://arxiv.org/abs/2611.21541v1)
-**arXiv ID:** `2611.21541v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21541v1) | **Published:** 2026-11-16
-**Authors:** Brian T. Weston, Alondra Torres Contreras, Aldair E. Gongora
+### [Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI](http://arxiv.org/abs/2611.23106v1)
+**arXiv ID:** `2611.23106v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23106v1) | **Published:** 2026-11-17
+**Authors:** Giovanni Adorni, Daniele Grosso
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** We introduce SciResearch-Eval, an interactive benchmark of scientific judgment built on a standard laboratory problem: measuring a material's thermal properties by heating it and fitting a heat-conduction simulator. An agent designs its own experiments, uses a supplied simulator that may be under-re...
-2. **Key Technical Contributions:** From Abstract: solved or physically wrong, and reports each property with a 95% interval. To our knowledge it is the first benchmark to combine agent-designed experiments, a deliberately flawed simulator, and proper scoring of calibrated intervals against exact ground truth. On a held-out split (93 tasks, 9 models
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, physics.comp-ph. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Generative Artificial Intelligence is transforming the role of natural language in computational systems. In classical Natural Language Processing (NLP), language was treated as an object of computation: something to analyse, classify, translate, or generate. Large Language Models (LLMs) challenge t...
+2. **Key Technical Contributions:** From Abstract: his perspective, enabling natural language to function increasingly as an executable cognitive medium through which humans structure reasoning, orchestrate problem solving, and regulate hybrid human/AI workflows. This paper introduces Natural Language Programming (NLPg) as a theoretical and epistemo
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent](http://arxiv.org/abs/2611.21598v1)
-**arXiv ID:** `2611.21598v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21598v1) | **Published:** 2026-11-16
-**Authors:** Blas Eugenio Vicco Zarate, Miguel Hernán Vicco
+### [Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching](http://arxiv.org/abs/2611.23229v1)
+**arXiv ID:** `2611.23229v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23229v1) | **Published:** 2026-11-17
+**Authors:** Giannis Daras, Marios Papachristou, Adam Klivans, Antonio Torralba, Constantinos Daskalakis
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Continual reinforcement learning requires adaptation to changing conditions while preserving performance under previously encountered dynamics. It was investigated whether specialists generated by evolutionary search can provide a reusable memory when combined with environment detection and failure-...
-2. **Key Technical Contributions:** From Abstract: driven search. The Evolutionary Neuroplastic Agent (ENA) evolves small neural networks without gradients, archives selected policies by detected dynamic regime, and retrieves them through Bayesian policy reuse. The architecture was evaluated in non-stationary CartPole and HalfCheetah environments. I
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.NE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrop...
+2. **Key Technical Contributions:** From Abstract: hic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In our method, a "frozen" version of the pre-trained model serves as a noisy teacher that the fine-tun
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization](http://arxiv.org/abs/2611.21605v1)
-**arXiv ID:** `2611.21605v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21605v1) | **Published:** 2026-11-16
-**Authors:** Huawei Lin, Jinting Liu, Tongyan Wang, Xuyang Chen, Ruihua Shi et al.
+### [Higher-Scoring Coding Models Did Not Get More Work Done](http://arxiv.org/abs/2611.23216v1)
+**arXiv ID:** `2611.23216v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23216v1) | **Published:** 2026-11-17
+**Authors:** Yining Hua
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward ...
-2. **Key Technical Contributions:** From Abstract: as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves t
+1. **Core Problem & Thesis:** New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to ...
+2. **Key Technical Contributions:** From Abstract: switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where the people and projects stayed the same and only the model changed, so we could isolate the effect 
+3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU](http://arxiv.org/abs/2611.23205v1)
+**arXiv ID:** `2611.23205v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23205v1) | **Published:** 2026-11-17
+**Authors:** Mehmet Altan Toksöz
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 sign...
+2. **Key Technical Contributions:** From Abstract: al-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by deterministic checkers, the pass rate rises from 18/66 to
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.SE, eess.SP. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition](http://arxiv.org/abs/2611.23192v1)
+**arXiv ID:** `2611.23192v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23192v1) | **Published:** 2026-11-17
+**Authors:** Almog Anschel, Sarah Keren
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an e...
+2. **Key Technical Contributions:** From Abstract: xplicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous trajectory prefixes where such knowledge is most needed. We present WoRD (Waypoint Recognition with Diffu
+3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [What's in a Tree ? Hierarchical $n$-gram models as controlled approximators of language](http://arxiv.org/abs/2611.23093v1)
+**arXiv ID:** `2611.23093v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23093v1) | **Published:** 2026-11-17
+**Authors:** Aritra Das, Francesco Cagnetta, Darshil Doshi, Victor V. Albert, Maissam Barkeshli et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Hierarchical models have been proposed as synthetic settings for studying language. However, their relevance to realistic language corpora remains underexplored. In this work, we introduce tree-grams, autoregressive generative $n$-gram models that build the conditional probability tensor $p(x_n \mid...
+2. **Key Technical Contributions:** From Abstract:  x_{1:n-1})$ through a hierarchical composition of order-2 and order-3 tensors. $n$ controls the maximal context window, whereas a rank hyperparameter $d$ controls model capacity, yielding an interpretable and systematically scalable family of approximators of language. We show how tree-grams outper
+3. **Methodology & Architecture:** Categories: cs.CL, cond-mat.dis-nn, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Do LLM Agents Still Need to Be Told How to Self-Improve?](http://arxiv.org/abs/2611.23219v1)
+**arXiv ID:** `2611.23219v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23219v1) | **Published:** 2026-11-17
+**Authors:** Shobhita Sundaram, Cansu Sancaktar, Phillip Isola
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-im...
+2. **Key Technical Contributions:** From Abstract: prove? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a comp
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Reading Scene States: Uncovering Safety Failures in Vision-Language Models](http://arxiv.org/abs/2611.23206v1)
+**arXiv ID:** `2611.23206v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23206v1) | **Published:** 2026-11-17
+**Authors:** Tongxi Wu, Yuyang Cheng, Jiacheng Xian, Menglin Yang, Kai Chen et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objective. We identify this \textbf{scene-state safety vulnerability} and introduce \textbf{SceneSafetyBench}, comprising 375 image--question pairs ...
+2. **Key Technical Contributions:** From Abstract: spanning Initial, Medium, and Ultimate scene states and five visual presentations. Across eight VLMs, scene-state inputs elicit harmful assistance with attack success rates (ASRs) of 45.6--72.3\%. Comparative analysis across three VLMs shows that scene-state inputs most closely resemble QR-related i
 3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Benchmarking memory and nonlinear processing capacity of quantum recurrent neural networks for time series prediction](http://arxiv.org/abs/2611.21552v1)
-**arXiv ID:** `2611.21552v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21552v1) | **Published:** 2026-11-16
-**Authors:** José Daniel Viqueira, Andrés Gómez, David Mera
+### [Structure--Residual Inductive Biases for Language Model Pretraining](http://arxiv.org/abs/2611.23197v1)
+**arXiv ID:** `2611.23197v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23197v1) | **Published:** 2026-11-17
+**Authors:** Hai Huang, Bartosz Żuk, Rassul Magauin, Jiaxin Huang, Xue Liu
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Quantum machine learning has emerged as a promising approach to time series prediction. While quantum reservoir computing has been widely explored for this setting, variational quantum models tailored to sequential data remain comparatively understudied, largely because they are difficult to train. ...
-2. **Key Technical Contributions:** From Abstract: In this work, we present a rigorous benchmark of variational quantum recurrent neural networks (QRNNs) on time series prediction tasks, focusing on two key capabilities: memory and nonlinear processing. We introduce a task-driven methodology that quantifies model capacity, enabling an intuitive and 
-3. **Methodology & Architecture:** Categories: quant-ph, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [When Do Histology Foundation Models Need Geometric Test-Time Augmentation?](http://arxiv.org/abs/2611.21565v1)
-**arXiv ID:** `2611.21565v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21565v1) | **Published:** 2026-11-16
-**Authors:** Lars Chen, Valentino F. Foit, Dorry Segev, Michal Mankowski
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Test-time augmentation (TTA) aggregates model predictions across multiple transformed views of an input during inference. Because histology images lack a canonical orientation, $D_4$ TTA---pooling across the 8 rotations and reflections of a square---is a standard default in computational pathology. ...
-2. **Key Technical Contributions:** From Abstract: However, the rise of self-supervised histology foundation models (FMs) with inherent rotational invariance calls its continued utility into question. We benchmark 9 histology FMs and 6 general-purpose models across four patch-level and two whole-slide image (WSI) datasets. We find that $D_4$ TTA rem
-3. **Methodology & Architecture:** Categories: cs.CV, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests](http://arxiv.org/abs/2611.21545v1)
-**arXiv ID:** `2611.21545v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21545v1) | **Published:** 2026-11-16
-**Authors:** Arunkumar V
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Language models increasingly write the explanations people receive when a rule system denies their request. If several rules deny the request independently, an explanation can name a true reason and still leave the person denied after they fix it. We call the missing property recourse validity: chan...
-2. **Key Technical Contributions:** From Abstract: ging what the explanation cites, without changing what was asked for, can flip the decision. We compute it exactly, and a hitting-set argument predicts from the policy alone when a correct reason fails. In six of seven rule systems ported from access control and US benefit eligibility, a single corr
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.CY. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [ONAM: Fitting Orthogonal Neural Additive Models for Post-Hoc Interpretability of Black-Box Predictions](http://arxiv.org/abs/2611.21550v1)
-**arXiv ID:** `2611.21550v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21550v1) | **Published:** 2026-11-16
-**Authors:** David Köhler, Matthias Schmid
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Modern machine learning models, such as artificial neural networks, achieve high predictive performance through increasingly complex black-box architectures, limiting their use in settings where transparency, interpretability, and fairness are required. Here we present the R package ONAM, which prov...
-2. **Key Technical Contributions:** From Abstract: ides a novel and practical implementation of functional decomposition, a technique to facilitate the interpretability of black-box models through structured effect representations. ONAM implements an algorithmic framework for the post-hoc decomposition of predictions into components associated with 
-3. **Methodology & Architecture:** Categories: stat.ML, cs.LG, stat.ME. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Latent Lattice Language Models](http://arxiv.org/abs/2611.21608v1)
-**arXiv ID:** `2611.21608v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21608v1) | **Published:** 2026-11-16
-**Authors:** Shivam Duggal, Zongze Wu, William T. Freeman, Antonio Torralba, Richard Zhang et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Language models typically increase per-token computation through deeper or looped layers and latent reasoning steps, while richer residual connections improve information flow across layers. We instead increase computational capacity: the number of active computational states a model maintains. We i...
-2. **Key Technical Contributions:** From Abstract: ntroduce the Lattice of Latents, a set of per-layer horizontal latent streams that run recurrently along time, alongside the vertical residual stream that flows through depth. Like hyper-connections, mHC, and attention or value residuals, the Lattice enhances the residual stream, but rather than add
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle](http://arxiv.org/abs/2611.21538v1)
-**arXiv ID:** `2611.21538v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.21538v1) | **Published:** 2026-11-16
-**Authors:** Arunkumar V, Manoranjan Gandhudi, Gangadharan G. R., Arun Prakash, S. Senthilkumar
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Reinforcement learning from verifiable rewards inherits whatever its verifier gets wrong. Outside mathematics and code the verifier is a proxy, a rubric, a learned judge or a hand-written checker, and its distance from the true objective is never measured, so a rising reward cannot be told apart fro...
-2. **Key Technical Contributions:** From Abstract: m a hack. We build a setting where the true reward is exactly computable at the process level: executable authorization policies over 124,416 contexts admit an oracle that lists every minimal sufficient reason for every decision. We compile these policies into exact process rewards, degrade the veri
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-16. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which ...
+2. **Key Technical Contributions:** From Abstract: a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regular
+3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
