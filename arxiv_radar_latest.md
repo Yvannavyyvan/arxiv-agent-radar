@@ -1,31 +1,18 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-18 14:38:37 UTC
+**Generated:** 2026-11-18 19:49:04 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance](http://arxiv.org/abs/2611.23142v1)
-**arXiv ID:** `2611.23142v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23142v1) | **Published:** 2026-11-17
-**Authors:** Lorenzo Masoero
+### [Do LLM Agents Still Need to Be Told How to Self-Improve?](http://arxiv.org/abs/2611.23219v1)
+**arXiv ID:** `2611.23219v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23219v1) | **Published:** 2026-11-17
+**Authors:** Shobhita Sundaram, Cansu Sancaktar, Phillip Isola
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** The "AI revolution" has enabled teams across the technology industry to deliver software features at unprecedented velocity. While code evolves faster than ever, customer-facing documentation often struggles to stay up to speed. As users increasingly rely on LLM-based agents that consume documentati...
-2. **Key Technical Contributions:** From Abstract: on as their primary interface, the impact of this documentation gap worsens: stale information propagates and is treated as authoritative. Signals for identifying where documentation has fallen behind already exist in abundance, both explicit (e.g., resolved support tickets revealing what documentat
-3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI](http://arxiv.org/abs/2611.23106v1)
-**arXiv ID:** `2611.23106v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23106v1) | **Published:** 2026-11-17
-**Authors:** Giovanni Adorni, Daniele Grosso
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Generative Artificial Intelligence is transforming the role of natural language in computational systems. In classical Natural Language Processing (NLP), language was treated as an object of computation: something to analyse, classify, translate, or generate. Large Language Models (LLMs) challenge t...
-2. **Key Technical Contributions:** From Abstract: his perspective, enabling natural language to function increasingly as an executable cognitive medium through which humans structure reasoning, orchestrate problem solving, and regulate hybrid human/AI workflows. This paper introduces Natural Language Programming (NLPg) as a theoretical and epistemo
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-im...
+2. **Key Technical Contributions:** From Abstract: prove? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a comp
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
@@ -44,15 +31,41 @@
 
 ---
 
-### [Higher-Scoring Coding Models Did Not Get More Work Done](http://arxiv.org/abs/2611.23216v1)
-**arXiv ID:** `2611.23216v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23216v1) | **Published:** 2026-11-17
-**Authors:** Yining Hua
+### [VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs](http://arxiv.org/abs/2611.23153v1)
+**arXiv ID:** `2611.23153v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23153v1) | **Published:** 2026-11-17
+**Authors:** Chengqian Ma, Yuanze Zeng, Hongyu Wang, Mingfeng Lin, YiCheng Xiao et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to ...
-2. **Key Technical Contributions:** From Abstract: switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where the people and projects stayed the same and only the model changed, so we could isolate the effect 
-3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Video question answering under tight frame budgets requires preserving localized motion and event order, yet current video multimodal large language models (MLLMs) reduce comprehension to static multi-image reasoning by discarding unselected frames and encoding keyframes independently: (1) Spatially...
+2. **Key Technical Contributions:** From Abstract: , whole-frame pooling dilutes small moving targets into static backgrounds; (2) Temporally, dropping intermediate frames or averaging tokens erases inter-frame motion, confusing direction, speed, and order. We propose VIVID (Visual Inter-frame Variations and Individual Dynamics), which moves beyond 
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents](http://arxiv.org/abs/2611.23202v1)
+**arXiv ID:** `2611.23202v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23202v1) | **Published:** 2026-11-17
+**Authors:** Viet K. Nguyen, Mohammad I. Husain
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, exec...
+2. **Key Technical Contributions:** From Abstract: ution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate 
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** CONCLUSION
+Secure collaboration among autonomous AI agents requires
+trust mechanisms that extend beyond traditional network au-
+thentication and API credentials. Although Public Key Infras-
+tructure (PKI) provides a foundation for establishing crypto-
+graphic identities, agentic AI introduces additional require-
+ments, including verification of model and prompt integrity,
+fine-grained tool authorization, cross-organizational trust, and
+accountability for autonomous actions. To address these re-
+quirements, we introduced the Agent Trust Infrastructure
+(ATI), a framework-independent architecture comprising five
+complementary security planes enforced through a reference
+monitor operating outside the agent’s language model.
+Our experimental eva
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
@@ -65,6 +78,45 @@
 1. **Core Problem & Thesis:** Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 sign...
 2. **Key Technical Contributions:** From Abstract: al-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by deterministic checkers, the pass rate rises from 18/66 to
 3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.SE, eess.SP. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models](http://arxiv.org/abs/2611.23228v1)
+**arXiv ID:** `2611.23228v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23228v1) | **Published:** 2026-11-17
+**Authors:** Rui Ning, Om Chabra, Hari Balakrishnan
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gate...
+2. **Key Technical Contributions:** From Abstract: d DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent up
+3. **Methodology & Architecture:** Categories: cs.CV, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Learning Grounded Reasoning from Human Gaze](http://arxiv.org/abs/2611.23209v1)
+**arXiv ID:** `2611.23209v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23209v1) | **Published:** 2026-11-17
+**Authors:** Gabriel Sarch, Declan Campbell, Nicholas Budny, Kia Ghods, Katerina Fragkiadaki et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Human visual reasoning is driven by systematic exploration and extraction of task-relevant visual evidence. Human gaze provides a window into this process, making gaze a useful source of guidance for visually-grounded reasoning in vision-language models (VLMs). However, human gaze also includes nois...
+2. **Key Technical Contributions:** From Abstract: e and redundancies that may transfer poorly to VLMs. In this work, we investigate how human gaze data can be effectively leveraged to improve visual reasoning in VLMs, while maintaining alignment with human behavior. We collect 7,109 human gaze trials from a diverse and challenging set of visual rea
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Higher-Scoring Coding Models Did Not Get More Work Done](http://arxiv.org/abs/2611.23216v1)
+**arXiv ID:** `2611.23216v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23216v1) | **Published:** 2026-11-17
+**Authors:** Yining Hua
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to ...
+2. **Key Technical Contributions:** From Abstract: switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where the people and projects stayed the same and only the model changed, so we could isolate the effect 
+3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
@@ -83,53 +135,14 @@
 
 ---
 
-### [What's in a Tree ? Hierarchical $n$-gram models as controlled approximators of language](http://arxiv.org/abs/2611.23093v1)
-**arXiv ID:** `2611.23093v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23093v1) | **Published:** 2026-11-17
-**Authors:** Aritra Das, Francesco Cagnetta, Darshil Doshi, Victor V. Albert, Maissam Barkeshli et al.
+### [Inference after coding agents](http://arxiv.org/abs/2611.23174v1)
+**arXiv ID:** `2611.23174v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23174v1) | **Published:** 2026-11-17
+**Authors:** Florian Gunsilius, David Van Dijcke, Kaspar Wüthrich
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Hierarchical models have been proposed as synthetic settings for studying language. However, their relevance to realistic language corpora remains underexplored. In this work, we introduce tree-grams, autoregressive generative $n$-gram models that build the conditional probability tensor $p(x_n \mid...
-2. **Key Technical Contributions:** From Abstract:  x_{1:n-1})$ through a hierarchical composition of order-2 and order-3 tensors. $n$ controls the maximal context window, whereas a rank hyperparameter $d$ controls model capacity, yielding an interpretable and systematically scalable family of approximators of language. We show how tree-grams outper
-3. **Methodology & Architecture:** Categories: cs.CL, cond-mat.dis-nn, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Do LLM Agents Still Need to Be Told How to Self-Improve?](http://arxiv.org/abs/2611.23219v1)
-**arXiv ID:** `2611.23219v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23219v1) | **Published:** 2026-11-17
-**Authors:** Shobhita Sundaram, Cansu Sancaktar, Phillip Isola
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-im...
-2. **Key Technical Contributions:** From Abstract: prove? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a comp
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Reading Scene States: Uncovering Safety Failures in Vision-Language Models](http://arxiv.org/abs/2611.23206v1)
-**arXiv ID:** `2611.23206v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23206v1) | **Published:** 2026-11-17
-**Authors:** Tongxi Wu, Yuyang Cheng, Jiacheng Xian, Menglin Yang, Kai Chen et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objective. We identify this \textbf{scene-state safety vulnerability} and introduce \textbf{SceneSafetyBench}, comprising 375 image--question pairs ...
-2. **Key Technical Contributions:** From Abstract: spanning Initial, Medium, and Ultimate scene states and five visual presentations. Across eight VLMs, scene-state inputs elicit harmful assistance with attack success rates (ASRs) of 45.6--72.3\%. Comparative analysis across three VLMs shows that scene-state inputs most closely resemble QR-related i
-3. **Methodology & Architecture:** Categories: cs.CV, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Structure--Residual Inductive Biases for Language Model Pretraining](http://arxiv.org/abs/2611.23197v1)
-**arXiv ID:** `2611.23197v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23197v1) | **Published:** 2026-11-17
-**Authors:** Hai Huang, Bartosz Żuk, Rassul Magauin, Jiaxin Huang, Xue Liu
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which ...
-2. **Key Technical Contributions:** From Abstract: a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through boundary carriers while preserving local autoregressive computation. Continuous Concept (CC) regular
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Empirical research is changing rapidly as AI coding agents are becoming increasingly proficient in every step of it, from writing code to manipulating data. We argue that while the potential of coding agents for science is vast, their use in hypothesis testing poses a substantial threat to classical...
+2. **Key Technical Contributions:** From Abstract:  inference, as these agents enable a supercharged form of selective inference. In particular, we argue that coding agents carrying out empirical research introduce a new type of post-selection inference that combines human-like, open-ended search over an implicit space of estimators with programmati
+3. **Methodology & Architecture:** Categories: stat.ME, cs.AI, econ.EM. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
