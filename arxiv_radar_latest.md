@@ -1,149 +1,185 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-18 19:49:04 UTC
+**Generated:** 2026-11-19 19:49:11 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Do LLM Agents Still Need to Be Told How to Self-Improve?](http://arxiv.org/abs/2611.23219v1)
-**arXiv ID:** `2611.23219v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23219v1) | **Published:** 2026-11-17
-**Authors:** Shobhita Sundaram, Cansu Sancaktar, Phillip Isola
+### [Learning to Interact in Multi-Agent Self-Play for Controllable Autonomous Driving Scenario Generation](http://arxiv.org/abs/2611.24876v1)
+**arXiv ID:** `2611.24876v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24876v1) | **Published:** 2026-11-18
+**Authors:** Beyazit Yalcinkaya, Ethan Pronovost, Maximilian Naumann, Marcell Vazquez-Chanlatte
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-im...
-2. **Key Technical Contributions:** From Abstract: prove? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a comp
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching](http://arxiv.org/abs/2611.23229v1)
-**arXiv ID:** `2611.23229v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23229v1) | **Published:** 2026-11-17
-**Authors:** Giannis Daras, Marios Papachristou, Adam Klivans, Antonio Torralba, Constantinos Daskalakis
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrop...
-2. **Key Technical Contributions:** From Abstract: hic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In our method, a "frozen" version of the pre-trained model serves as a noisy teacher that the fine-tun
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs](http://arxiv.org/abs/2611.23153v1)
-**arXiv ID:** `2611.23153v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23153v1) | **Published:** 2026-11-17
-**Authors:** Chengqian Ma, Yuanze Zeng, Hongyu Wang, Mingfeng Lin, YiCheng Xiao et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Video question answering under tight frame budgets requires preserving localized motion and event order, yet current video multimodal large language models (MLLMs) reduce comprehension to static multi-image reasoning by discarding unselected frames and encoding keyframes independently: (1) Spatially...
-2. **Key Technical Contributions:** From Abstract: , whole-frame pooling dilutes small moving targets into static backgrounds; (2) Temporally, dropping intermediate frames or averaging tokens erases inter-frame motion, confusing direction, speed, and order. We propose VIVID (Visual Inter-frame Variations and Individual Dynamics), which moves beyond 
-3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents](http://arxiv.org/abs/2611.23202v1)
-**arXiv ID:** `2611.23202v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23202v1) | **Published:** 2026-11-17
-**Authors:** Viet K. Nguyen, Mohammad I. Husain
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, exec...
-2. **Key Technical Contributions:** From Abstract: ution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate 
-3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+1. **Core Problem & Thesis:** Large-scale, multi-agent self-play trains robust driving policies effectively in simulation, but controlling these models to generate specific, safety-critical edge cases remains a key challenge. Existing goal-conditioned self-play frameworks rely primarily on static map-location goals and fail to r...
+2. **Key Technical Contributions:** From Abstract: eliably produce complex agent interactions such as aggressive tailgating or adversarial cut-offs. These agent interactions are necessary for rigorous autonomous vehicle (AV) testing. To address this, we present an extended multi-agent self-play framework that introduces agent-relative dynamic goals.
+3. **Methodology & Architecture:** Categories: cs.RO, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
 4. **Key Results & Findings:** CONCLUSION
-Secure collaboration among autonomous AI agents requires
-trust mechanisms that extend beyond traditional network au-
-thentication and API credentials. Although Public Key Infras-
-tructure (PKI) provides a foundation for establishing crypto-
-graphic identities, agentic AI introduces additional require-
-ments, including verification of model and prompt integrity,
-fine-grained tool authorization, cross-organizational trust, and
-accountability for autonomous actions. To address these re-
-quirements, we introduced the Agent Trust Infrastructure
-(ATI), a framework-independent architecture comprising five
-complementary security planes enforced through a reference
-monitor operating outside the agent’s language model.
-Our experimental eva
+We extend goal-conditioned multi-agent self-play with
+agent-relative goals. This addition is opt-in, introducing min-
+imal interface changes without altering the core reward struc-
+ture or training algorithm. Training on a mixture of static and
+agent-relative goals yields a single controllable policy capable
+of executing novel behaviors while maintaining baseline capa-
+bilities. Consequently, these lightweight additions yield more
+controllable policies capable of executing a broader spectrum
+of scenarios relevant to AV testing.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU](http://arxiv.org/abs/2611.23205v1)
-**arXiv ID:** `2611.23205v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23205v1) | **Published:** 2026-11-17
-**Authors:** Mehmet Altan Toksöz
+### [PrismRestore: A Compact Restoration Toolbox for Agentic Image Restoration](http://arxiv.org/abs/2611.24915v1)
+**arXiv ID:** `2611.24915v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24915v1) | **Published:** 2026-11-18
+**Authors:** Zhaocheng Yu, Kui Jiang, Jing Cao, Yiang Chen, Xiaocheng Feng et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 sign...
-2. **Key Technical Contributions:** From Abstract: al-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters through OpenVINO. On held-out variants scored by deterministic checkers, the pass rate rises from 18/66 to
-3. **Methodology & Architecture:** Categories: cs.LG, cs.AI, cs.SE, eess.SP. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models](http://arxiv.org/abs/2611.23228v1)
-**arXiv ID:** `2611.23228v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23228v1) | **Published:** 2026-11-17
-**Authors:** Rui Ning, Om Chabra, Hari Balakrishnan
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gate...
-2. **Key Technical Contributions:** From Abstract: d DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent up
-3. **Methodology & Architecture:** Categories: cs.CV, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
-5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
-
----
-
-### [Learning Grounded Reasoning from Human Gaze](http://arxiv.org/abs/2611.23209v1)
-**arXiv ID:** `2611.23209v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23209v1) | **Published:** 2026-11-17
-**Authors:** Gabriel Sarch, Declan Campbell, Nicholas Budny, Kia Ghods, Katerina Fragkiadaki et al.
-
-#### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Human visual reasoning is driven by systematic exploration and extraction of task-relevant visual evidence. Human gaze provides a window into this process, making gaze a useful source of guidance for visually-grounded reasoning in vision-language models (VLMs). However, human gaze also includes nois...
-2. **Key Technical Contributions:** From Abstract: e and redundancies that may transfer poorly to VLMs. In this work, we investigate how human gaze data can be effectively leveraged to improve visual reasoning in VLMs, while maintaining alignment with human behavior. We collect 7,109 human gaze trials from a diverse and challenging set of visual rea
+1. **Core Problem & Thesis:** Agentic image restoration composes operations to handle mixed degradations, yet its toolbox often requires storing multiple restoration networks. We propose PrismRestore, which constructs a compact bank of callable restoration actions from a single frozen all-in-one model. Our approach builds on tas...
+2. **Key Technical Contributions:** From Abstract: k-dependent yet overlapping channel responses in the shared model. An offline task-prior search uses activation and gradient statistics to group channels with similar response profiles, then searches task-specific modulation coefficients over non-representative channels while leaving representative 
 3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+4. **Key Results & Findings:** Conclusion
+We presented PrismRestore, a compact agentic image
+restoration framework built upon a shared-backbone tool-
+box. By leveraging task-specific channel modulation, our
+offline prior search constructs multiple callable restoration
+actions from a single frozen all-in-one model, substantially
+reducing toolbox storage overhead. A GRPO-trained pol-
+icy enables adaptive action composition according to evolv-
+ing image states, with quality-grouped and process-aware
+rewards supporting sequential optimization. Extensive ex-
+periments on synthetic and real-world benchmarks demon-
+strate improved restoration performance over the evaluated
+all-in-one baselines and competitive restoration quality rel-
+8
+ative to multi-model agents, alongside red
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Higher-Scoring Coding Models Did Not Get More Work Done](http://arxiv.org/abs/2611.23216v1)
-**arXiv ID:** `2611.23216v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23216v1) | **Published:** 2026-11-17
-**Authors:** Yining Hua
+### [Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses](http://arxiv.org/abs/2611.24924v1)
+**arXiv ID:** `2611.24924v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24924v1) | **Published:** 2026-11-18
+**Authors:** Jiahang Lin, Jiahao Chen, Yiding Wang, Shichun Liu, Chengjun Pan et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to ...
-2. **Key Technical Contributions:** From Abstract: switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where the people and projects stayed the same and only the model changed, so we could isolate the effect 
-3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and validation. However, existing harness evolution methods often overlook implicit requirements and interaction needs, while using a single evolution agent to modify the harness and benchmar...
+2. **Key Technical Contributions:** contributions:
+• We propose AHE-Beta, a harness evolution framework centered on user requirements. It combines
+user-driven evaluation, team-based modification, and requirement-driven selection to identify
+unmet needs, develop general fixes, and merge changes that resolve verified requirements.
+• We show that requirement-centered harness evolution improves pass@1, user rating, and token
+efficiency on held-out tasks. AHE-Beta raises pass@1 from 21.9% to 33.3% over Base Harness,
+surpassing Claude Code, Meta-Harness, and AHE. Gains across all four domains and transfer to
+other models without further evolution support the generality of the evolved harness.
+3. **Methodology & Architecture:** Categories: cs.SE, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition](http://arxiv.org/abs/2611.23192v1)
-**arXiv ID:** `2611.23192v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23192v1) | **Published:** 2026-11-17
-**Authors:** Almog Anschel, Sarah Keren
+### [Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling](http://arxiv.org/abs/2611.24849v1)
+**arXiv ID:** `2611.24849v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24849v1) | **Published:** 2026-11-18
+**Authors:** Eugene Agichtein, Charles L. A. Clarke, Kaustubh Dhole, William Stern
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an e...
-2. **Key Technical Contributions:** From Abstract: xplicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous trajectory prefixes where such knowledge is most needed. We present WoRD (Waypoint Recognition with Diffu
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Large language model (LLM) judges have become a common way to create large-scale relevance judgments for retrieval evaluation. However, each judgment requires a potentially expensive call to a frontier model, and the judgments are hard to interpret and may not be reproducible. In this paper, we ask ...
+2. **Key Technical Contributions:** From Abstract: whether an LLM can write a readable program for each topic that replaces its per-document judgments. To address these issues, we propose ExecJudges, a method for generating fast, inspectable and scalable judges for automatic relevance labeling. Specifically, ExecJudges uses a frontier LLM to turn as
+3. **Methodology & Architecture:** Categories: cs.IR, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Inference after coding agents](http://arxiv.org/abs/2611.23174v1)
-**arXiv ID:** `2611.23174v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.23174v1) | **Published:** 2026-11-17
-**Authors:** Florian Gunsilius, David Van Dijcke, Kaspar Wüthrich
+### [Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation](http://arxiv.org/abs/2611.24908v1)
+**arXiv ID:** `2611.24908v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24908v1) | **Published:** 2026-11-18
+**Authors:** Samet Demir, Zafer Dogan
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Empirical research is changing rapidly as AI coding agents are becoming increasingly proficient in every step of it, from writing code to manipulating data. We argue that while the potential of coding agents for science is vast, their use in hypothesis testing poses a substantial threat to classical...
-2. **Key Technical Contributions:** From Abstract:  inference, as these agents enable a supercharged form of selective inference. In particular, we argue that coding agents carrying out empirical research introduce a new type of post-selection inference that combines human-like, open-ended search over an implicit space of estimators with programmati
-3. **Methodology & Architecture:** Categories: stat.ME, cs.AI, econ.EM. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-11-17. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** We study two-layer neural networks trained by stochastic gradient descent (SGD) on a multi-index teacher model, focusing on how first-layer parameters orthogonal to the teacher subspace affect generalization. We decompose the first-layer weights into a signal component aligned with the teacher and a...
+2. **Key Technical Contributions:** From Abstract: n orthogonal complement, and analyze their joint SGD dynamics together with the second layer in the proportional limit. We show that although SGD updates to the complement are initially isotropic, the training dynamics induce teacher-dependent spectral spikes in the complement Gram matrix. This emer
+3. **Methodology & Architecture:** Categories: stat.ML, cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** conclusion
+with T ◦-stopping removed.
+The self-consistency
+1 + τ Kτ (
+p
+B(m) + 1) + δ ≤ B(m), 2 + τ Kτ ( √ B∗ + 1) + δ ≤ B∗, (88)
+is solvable at constants B(m), B∗ = O((τ Kτ )2 + δ2 + 1) (LHS grows only as √ B). Telescoping
+the w- and u-recursions and bounding the martingale by δ on the high-probability event yields
+wT (m) ∧t ≤ B(m) and uT (r) ∧t ≤ B∗ for all t ≤ Tmax. Since wT (m) > B(m) if T (m) < Tmax, and
+likewise for u, this gives T (m) = T (r) = Tmax. With w0 = O(1/n) from ∥mi,0∥2 ∼ χ2 k⋆ /n and
+u0 = 1 + o(1) from ∥f ⊥ i,0∥2 ∼ χ2 n−k⋆ /n, w0 ≤ 1 and u0 ≤ 2 with probability 1 − o(1).
+Conclusion. Setting Bτ := Cτ + B(m) + B∗ — a constant depending only on
+(τ, α, ηa, ηf , λ, k⋆, Lg , ∥g∥∞, ∥σ∥∞, ∥σ′∥∞, ∥σ′′∥∞, Ksg) — proves the lemma, es
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [On Evaluating User Simulators for Interactive Agents](http://arxiv.org/abs/2611.24892v1)
+**arXiv ID:** `2611.24892v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24892v1) | **Published:** 2026-11-18
+**Authors:** Hengguang Zhou, I-Hung Hsu, Li Chen, Priyanshi Shrivastava, Anastasios Angelopoulos et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** User simulators offer a scalable way to evaluate interactive agents, but how to assess their quality remains underexplored. In particular, it is unclear whether existing user simulator evaluation frameworks reliably detect meaningful failures in simulated user behavior. This uncertainty makes it dif...
+2. **Key Technical Contributions:** From Abstract: ficult to interpret simulator evaluation. To understand what a high benchmark score tells us about simulator quality, we (meta-)evaluate the metrics themselves. To instantiate this meta-evaluation, we deliberately perturb simulated replays to induce failures such as altered goals, omitted constraint
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Choosing What to Observe: Budget-Paired Counterfactual Audits for Credible Evaluation of Visual Agents](http://arxiv.org/abs/2611.24867v1)
+**arXiv ID:** `2611.24867v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24867v1) | **Published:** 2026-11-18
+**Authors:** Ruiqi Liu, Jinming Li, Mo Wang, Yang Lu, Yanlan Kang
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Visual agents that read dense documents must ration a finite observation budget across candidate regions, yet answer accuracy conflates where an agent looks, how it adapts to the reads that remain, and how it an?swers once observation stops. We introduce budget-paired counterfactual audits, an evalu...
+2. **Key Technical Contributions:** contributions:
+• Budget- and value-paired counterfactual tests that separate horizon-sensitive planning from fixed-role
+heuristics under identical public evidence.
+• Exact trajectory return accounting that decomposes end-to-end accuracy loss into stepwise acquisition
+loss and terminal decision loss.
+• An empirical audit across controlled decisions, complete rollouts and natural forms, showing that
+later-read routing dominates policy loss and that natural-document gains depend on reference definitions
+and whole-image comparators.
+3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling](http://arxiv.org/abs/2611.24940v1)
+**arXiv ID:** `2611.24940v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24940v1) | **Published:** 2026-11-18
+**Authors:** Junjie Ye, Yiqi Zhao, Muchen Xu, Celina Shiyu Wang, Hao Dong et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) show the value of joint future-and-action generation for control, yet inherit the heavy cost of video generators. Recent lat...
+2. **Key Technical Contributions:** From Abstract: ent-space policies avoid pixel generation, yet typically align intermediate features or rely on frozen target encoders, decoupling future prediction from the VLM's native feature space. $Z$-sight instead predicts the future directly in the visual token space in which its VLM perceives the present. C
+3. **Methodology & Architecture:** Categories: cs.RO, cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws](http://arxiv.org/abs/2611.24877v1)
+**arXiv ID:** `2611.24877v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24877v1) | **Published:** 2026-11-18
+**Authors:** Zhiyu Liu, Xinyu Yang
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** Large language models (LLMs) are used to explain clinical prediction models, on the promise that they can say what a model computes, find its faults and even reveal new knowledge in it. We tested the three promises where the answers could be checked. From the International Stroke Trial we trained fo...
+2. **Key Technical Contributions:** From Abstract: ur kinds of model (logistic regression, explainable boosting machine, gradient-boosted trees, neural network) for two outcomes on patients randomised earlier, planted one flaw in each of 24 copies (an under-predicted subgroup, a reversed risk factor or an implausible step) and mixed them with the 8 
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
+5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
+
+---
+
+### [Unified Law for Visual Tasks (The Four Laws of Computer Vision)](http://arxiv.org/abs/2611.24917v1)
+**arXiv ID:** `2611.24917v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.24917v1) | **Published:** 2026-11-18
+**Authors:** Sen Fang, Yalin Feng, Yancheng Zhang, Yanxin Zhang, Zonglin Lyu et al.
+
+#### 5-Point Executive Dossier:
+1. **Core Problem & Thesis:** In this paper, we propose a Unified Law for Visual Tasks, which could be further divided into Four Laws of Computer Vision, with the goal of enabling a single framework or method to uniformly train on and perform nearly all visual tasks. Our starting point is an inspiration and hypothesis: if the wo...
+2. **Key Technical Contributions:** From Abstract: rld information is encoded into image, which we call World Snapshots, then image processing is world processing, and image generation is World Snapshot generation. Furthermore, if all visual and visualization tasks can be reformulated as generation tasks, then a unified method, World Snapshot Models
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-18. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
