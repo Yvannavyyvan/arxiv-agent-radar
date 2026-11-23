@@ -1,136 +1,149 @@
 # arXiv AI & Computer Science Research Radar
-**Generated:** 2026-11-23 16:33:49 UTC
+**Generated:** 2026-11-23 23:10:55 UTC
 **Target Categories:** cs.AI, cs.LG, cs.CL, cs.CV, cs.RO, cs.MA, cs.NE, stat.ML, cs.SE, cs.CR, cs.DC, cs.IR
 **High-Yield Papers Analyzed:** 10
 
 ---
 
-### [Governed Memory: A Production Architecture for Multi-Agent Workflows](http://arxiv.org/abs/2603.17787v1)
-**arXiv ID:** `2603.17787v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2603.17787v1) | **Published:** 2026-03-18
-**Authors:** Hamed Taheri
+### [StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning](http://arxiv.org/abs/2611.27915v1)
+**arXiv ID:** `2611.27915v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27915v1) | **Published:** 2026-11-20
+**Authors:** Chi Yan, Guoyang Zhao, Wentao Yuan, Yixiao Ge, Yanning Zhou et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Enterprise AI deploys dozens of autonomous agent nodes across workflows, each acting on the same entities with no shared memory and no common governance. We identify five structural challenges arising from this memory governance gap: memory silos across agent workflows; governance fragmentation acro...
-2. **Key Technical Contributions:** From Abstract: ss teams and tools; unstructured memories unusable by downstream systems; redundant context delivery in autonomous multi-step executions; and silent quality degradation without feedback loops. We present Governed Memory, a shared memory and governance layer addressing this gap through four mechanism
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-03-18. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer 3D scene structure from one or more images without known camera calibration or cross-view geometric constraints...
+2. **Key Technical Contributions:** From Abstract: . This makes metric 3D inference inherently ambiguous and leaves it unclear whether their spatial predictions are grounded in visual evidence or driven primarily by semantic priors. In contrast, calibrated stereo provides explicit cross-view geometry that resolves this ambiguity and offers a more re
+3. **Methodology & Architecture:** Categories: cs.CV, cs.AI, cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Mesh Memory Protocol: Semantic Infrastructure for Multi-Agent LLM Systems](http://arxiv.org/abs/2604.19540v1)
-**arXiv ID:** `2604.19540v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2604.19540v1) | **Published:** 2026-04-21
-**Authors:** Hongwei Xu
+### [TEA-Bench-BR: Can Coding Agents Turn a Branching Clinical Specification into Correct Code?](http://arxiv.org/abs/2611.27895v1)
+**arXiv ID:** `2611.27895v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27895v1) | **Published:** 2026-11-20
+**Authors:** Marcio Andre de Souza Estevam
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Teams of LLM agents increasingly collaborate on tasks spanning days or weeks: multi-day data-generation sprints where generator, reviewer, and auditor agents coordinate in real time on overlapping batches; specialists carrying findings forward across session restarts; product decisions compounding o...
-2. **Key Technical Contributions:** From Abstract: ver many review rounds. This requires agents to share, evaluate, and combine each other's cognitive state in real time across sessions. We call this cross-session agent-to-agent cognitive collaboration, distinct from parallel agent execution. To enable it, three problems must be solved together. (P1
-3. **Methodology & Architecture:** Categories: cs.MA, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-04-21. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Coding agents increasingly implement rules written by domain experts, and bugs in such code are silent: it runs and returns a plausible answer. We introduce TEA-Bench-BR, a benchmark built on the Brazilian pathway for early autism (TEA) screening: three fictitious instruments with the structure of r...
+2. **Key Technical Contributions:** From Abstract: eal ones, a multi-professional referral flow, and export to FHIR R4 with the national RNDS profiles, all specified in Portuguese. A generator samples each task's parameters (144 tasks, 6,798 hidden cases), and the hidden cases kill all 1,955 non-equivalent mutants of the reference. With Gemma 4 as t
+3. **Methodology & Architecture:** Categories: cs.SE, cs.AI, cs.CL. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [AgenticSCR: An Autonomous Agentic Secure Code Review for Immature Vulnerabilities Detection](http://arxiv.org/abs/2601.19138v2)
-**arXiv ID:** `2601.19138v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2601.19138v2) | **Published:** 2026-01-27
-**Authors:** Wachiraphan Charoenwet, Kla Tantithamthavorn, Patanamon Thongtanunam, Hong Yi Lin, Minwoo Jeong et al.
+### [QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers](http://arxiv.org/abs/2611.27901v1)
+**arXiv ID:** `2611.27901v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27901v1) | **Published:** 2026-11-20
+**Authors:** Zunhai Su, Keyu Fan, Ruishan Guo, Zhongzhu Zhou, Jingzehua Xu et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Secure code review is critical during pre-integration, where Atlassian developers rely on lightweight analysis tools, while deep security assessment is deferred to later stages, delaying feedback and increasing remediation costs. Existing static analyzers are often noisy and struggle with context-de...
-2. **Key Technical Contributions:** From Abstract: pendent or partially manifested vulnerabilities, while static large language model (LLM) reviewers are constrained by context windows and lack tool interaction. Agentic AI, which combines LLMs with code navigation, shows promise; however, its effectiveness for early-stage secure code review remains 
-3. **Methodology & Architecture:** Categories: cs.CR, cs.AI, cs.LG, cs.SE. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-01-27. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Streaming visual geometry transformers retain historical key-value (KV) states as cross-view geometric memory, but growing caches constrain long-sequence inference. We systematically characterize KV quantization in streaming geometry and uncover two linked challenges: Nonuniform Geometric Sensitivit...
+2. **Key Technical Contributions:** From Abstract: y and Cache-Geometry Mismatch. Quantization sensitivity varies across precision choices and cache locations, while perturbed retrieval changes geometry-head inputs and propagates through subsequent predictions and KV writes. Guided by these findings, we propose QuantStream3D, to our knowledge the fi
+3. **Methodology & Architecture:** Categories: cs.CV. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](http://arxiv.org/abs/2606.08340v1)
-**arXiv ID:** `2606.08340v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2606.08340v1) | **Published:** 2026-06-06
-**Authors:** Kale-ab Abebe Tessera, Andras Szecsenyi, Cameron Barker, Alexander Rutherford, Davide Paglieri et al.
+### [Real-time neuromorphic audio and vision perception for autonomous robotic applications: Integration and experimental evaluation on a rover platform](http://arxiv.org/abs/2611.27953v1)
+**arXiv ID:** `2611.27953v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27953v1) | **Published:** 2026-11-20
+**Authors:** Guillem Fustier-Castillo, Ruben Ribes-Serrano, Javier Naranjo-Alcazar, Vicent Ortiz-Castello, Pedro Zuccarello
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As language models are increasingly deployed as autonomous agents, they must coordinate with others over long horizons in open-ended interactive tasks. Yet existing evaluations rarely test these demands together, instead emphasising single-agent tasks, short interactions, or highly structured multi-...
-2. **Key Technical Contributions:** From Abstract: agent settings. We introduce $alem$, a JAX-based benchmark for open-ended multi-agent coordination built on Craftax-like dynamics. Alem embeds procedurally generated coordination tasks, soft specialisation, communication, and controllable coordination difficulty into a long-horizon survival world wi
-3. **Methodology & Architecture:** Categories: cs.AI, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-06-06. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for mobile robots, where perception must run continuously under tight latency and energy constraints. However, most neuromorphic solutions are still evaluated offline or on isolated benchmarks, a...
+2. **Key Technical Contributions:** From Abstract: nd their integration into complete robotic systems remains largely unexplored. In this technical report, a four-wheel rover platform is presented that combines three real-time perception pipelines: a classical audio tagging pipeline based on Pretrained Audio Neural Networks (PANNs) running on an NVI
+3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [From Single Chatbots to Governed Agent Ecosystems: An Agentic AI Pattern Catalogue and Orchestration Framework for Mission-Critical Hospital Information Management Systems](http://arxiv.org/abs/2608.07627v1)
-**arXiv ID:** `2608.07627v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2608.07627v1) | **Published:** 2026-08-07
-**Authors:** Manideep Dhar, Ritwik Singh, Sharat Chandra Kumar Manikonda
+### [Model Carving: Training Transformers That Optimize Their Own Topology](http://arxiv.org/abs/2611.27962v1)
+**arXiv ID:** `2611.27962v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27962v1) | **Published:** 2026-11-20
+**Authors:** Kaden Zheng, Pratyusha Sharma
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Hospitals are racing to embed AI, while coping with the surge in adaptation of the technology in other industries, into the triage management, documentation, scheduling, and revenue-cycle workflows, yet most deployments remain as fragmented pilots that stall at the edge of production, exposing patie...
-2. **Key Technical Contributions:** From Abstract: nts and institutions to operational fragility, ungoverned risk, and mounting technical debt. At the same time, the global AI-in-healthcare market is projected to exceed nearly USD 1 trillion by 2034, according to the report of Fortune Business Insights, amplifying the financial consequences of archi
-3. **Methodology & Architecture:** Categories: cs.AI, cs.CL, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-08-07. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of attention and MLP sublayers at every layer, in the same order, and optimizes the weights within. This uniformity is a convention rather than a...
+2. **Key Technical Contributions:** From Abstract:  principled design choice, and it is likely suboptimal: the best architecture for a given task may be smaller, more efficient, and far from uniform. We believe that, ideally, training itself should shape the model's topology. To this end, we introduce Model Carving, which learns both a Transformer's
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation](http://arxiv.org/abs/2605.29861v2)
-**arXiv ID:** `2605.29861v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2605.29861v2) | **Published:** 2026-05-28
-**Authors:** Chenghao Zhang, Guanting Dong, Yufan Liu, Tong Zhao, Xiaoxi Li et al.
+### [A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning](http://arxiv.org/abs/2611.27978v1)
+**arXiv ID:** `2611.27978v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27978v1) | **Published:** 2026-11-20
+**Authors:** Hari Sitaula, Joseph Opitz
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large Language Models (LLMs) have advanced autonomous agents from deep search, which retrieves concise factual answers, to deep research, which synthesizes scattered evidence into long-form reports. However, verifiable multimodal deep research remains challenging due to open-ended synthesis without ...
-2. **Key Technical Contributions:** From Abstract: deterministic ground truth and the need to interleave textual arguments with visual evidence. We propose Ptah, a multi-agent harness for interleaved report generation. Ptah orchestrates the lifecycle from user query to rendered web report through planning, research, and writing stages, where special
-3. **Methodology & Architecture:** Categories: cs.CL, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-05-28. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fundamental price data, macroeconomic indicators, and engineered technical features. We benchmark three model families, namely linear regression, vanilla recurrent neural networks (RNN)...
+2. **Key Technical Contributions:** From Abstract: , and long short-term memory networks (LSTM), within a unified preprocessing and chronological evaluation pipeline. A central contribution of this work is a methodological audit of common practices in the deep-learning-for-stock-prediction literature. We identify three sources of result inflation th
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [An Empirical Study of Multi-Agent Collaboration for Automated Research](http://arxiv.org/abs/2603.29632v2)
-**arXiv ID:** `2603.29632v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2603.29632v2) | **Published:** 2026-03-31
-**Authors:** Yang Shen, Zhenyi Yi, Ziyi Zhao, Lijun Sun, Dongyang Li et al.
+### [SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement](http://arxiv.org/abs/2611.27919v1)
+**arXiv ID:** `2611.27919v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27919v1) | **Published:** 2026-11-20
+**Authors:** Huaze Tang, Runqing Miao, Tianren Peng, Lam Nguyen, Chao Wang et al.
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** As AI agents evolve, the community is rapidly shifting from single Large Language Models (LLMs) to Multi-Agent Systems (MAS) to overcome cognitive bottlenecks in automated research. However, the optimal multi-agent coordination framework for these autonomous agents remains largely unexplored. In thi...
-2. **Key Technical Contributions:** From Abstract: s paper, we present a systematic empirical study investigating the comparative efficacy of distinct multi-agent structures for automated machine learning optimization. Utilizing a rigorously controlled, execution-based testbed equipped with Git worktree isolation and explicit global memory, we bench
-3. **Methodology & Architecture:** Categories: cs.MA, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-03-31. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Reward-independent representations enable reinforcement learning agents to reuse knowledge across tasks, but limited representation capacity raises three fundamental questions: what statistical dependence should these representations capture, which components of that dependence should be retained fo...
+2. **Key Technical Contributions:** From Abstract: r policy improvement, and how does discarding the remaining components affect decision-making? We address these questions through canonical dependence analysis. For a reference policy, we construct an action-centered, positive-lag canonical dependence matrix (CDM) that isolates the additional predic
+3. **Methodology & Architecture:** Categories: cs.LG, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [Security Considerations for Multi-agent Systems](http://arxiv.org/abs/2603.09002v2)
-**arXiv ID:** `2603.09002v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2603.09002v2) | **Published:** 2026-03-09
-**Authors:** Tam Nguyen, Moses Ndebugre, Dheeraj Arremsetty
+### [Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search](http://arxiv.org/abs/2611.27910v1)
+**arXiv ID:** `2611.27910v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27910v1) | **Published:** 2026-11-20
+**Authors:** Aadharsh Kannan, Robert Bruckner, Philip A. Bernstein
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Multi-agent artificial intelligence systems or MAS are systems of autonomous agents that exercise delegated tool authority, share persistent memory, and coordinate via inter-agent communication. MAS introduces qualitatively distinct security vulnerabilities from those documented for singular AI mode...
-2. **Key Technical Contributions:** From Abstract: ls. Existing security and governance frameworks were not designed for these emerging attack surfaces. This study systematically characterizes the threat landscape of MAS and quantitatively evaluates 16 security frameworks for AI against it. A four-phase methodology is proposed: constructing a deep t
-3. **Methodology & Architecture:** Categories: cs.CR, cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-03-09. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Business data systems must determine whether records refer to the same entity and retrieve records satisfying requests whose decisive properties are implicit. As agents act on these records, both tasks require auditable reasons. Dense embeddings perform well but offer opaque coordinates, cannot be f...
+2. **Key Technical Contributions:** From Abstract: iltered by meaning, and require corpus re-encoding to add new properties. We propose interpretable embeddings built from decision columns: each column stores a decision model's calibrated answer to a natural-language question, with outcomes yes, no, or not stated. A record's embedding is its answers
+3. **Methodology & Architecture:** Categories: cs.IR, cs.AI, cs.DB. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability](http://arxiv.org/abs/2610.04672v2)
-**arXiv ID:** `2610.04672v2` | **PDF:** [View PDF](https://arxiv.org/pdf/2610.04672v2) | **Published:** 2026-10-03
-**Authors:** Qizhi Chu, Zekai Yu, Sijie Wen, Yang Liu, Chen Qian et al.
+### [Interactive Semi-Parametric On-Track Learning for Vehicle Dynamics in Autonomous Racing](http://arxiv.org/abs/2611.27932v1)
+**arXiv ID:** `2611.27932v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27932v1) | **Published:** 2026-11-20
+**Authors:** Jungbin Kim, Youngim Nam, Cheolhyeon Kwon
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Large language models (LLMs) have progressively evolved into the core of autonomous agents. Building on this progress, LLM-based multi-agent systems (MAS) coordinate multiple agents into a synergistic team to accomplish complex tasks that exceed the capabilities of individual agents. The effectivene...
-2. **Key Technical Contributions:** From Abstract: ss of such systems depends not only on the agents themselves, but also on how collaboration mechanisms are designed and organized. Note that real-world collaboration is typically partially observable, where each agent can only access partial information about the environment due to physical or priva
-3. **Methodology & Architecture:** Categories: cs.AI. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-10-03. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Autonomous racing requires an accurate vehicle dynamics model near the limits of handling, yet a mismatch between the nominal and actual dynamics inevitably remains. To reduce this mismatch, existing methods learn from on-track data, i.e., data collected while the vehicle drives on the track under r...
+2. **Key Technical Contributions:** From Abstract: acing conditions, by adapting the physical parameters of the nominal model or by learning a residual that captures the remaining mismatch. However, these on-track learning methods typically handle either the physical parameters or the residual separately, which restricts their ability to resolve the
+3. **Methodology & Architecture:** Categories: cs.RO. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** CONCLUSION
+This paper has presented an interactive framework for
+semi-parametric dynamics learning from on-track data in
+autonomous racing. The framework recursively updates the
+physical parameters via NLS and the residual model via sparse
+GP regression in turn under a single shared prediction-error
+objective. To account for their mutual dependence, each update
+is guided by the latest update of the other model. Since
+an update of either model is accepted only if it does not
+increase the shared objective, the objective never increases
+and is guaranteed to converge over the recursion. Numerical
+simulations and hardware experiments on a 1/10-scale vehicle
+showed that the proposed framework outperforms the base-
+lines, given the same limited on
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
 
-### [VirusCascade: Hijacking Collaborative Reflection in LLM-Powered Recommender Agents](http://arxiv.org/abs/2609.38270v1)
-**arXiv ID:** `2609.38270v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2609.38270v1) | **Published:** 2026-09-29
-**Authors:** Yurong Hao, Wen Zhou, Guowei Guan, Tiantong Wu, Fuyao Zhang et al.
+### [Renormalized Entropy from Symmetries: Simplicity Bias and Neural Heat Death](http://arxiv.org/abs/2611.27889v1)
+**arXiv ID:** `2611.27889v1` | **PDF:** [View PDF](https://arxiv.org/pdf/2611.27889v1) | **Published:** 2026-11-20
+**Authors:** Vasco Portilheiro, Samuel Liebana, Andrew Saxe, Peter Orbanz
 
 #### 5-Point Executive Dossier:
-1. **Core Problem & Thesis:** Advancing beyond traditional static scoring models, LLM-powered agentic recommender systems (LLM-ARS) instantiate users and items as autonomous agents, whose semantic states are dynamically refined through a recurrent process known as collaborative reflection. While this mechanism improves recommend...
-2. **Key Technical Contributions:** From Abstract: ation quality, it simultaneously introduces a systemic vulnerability: adversarial evidence injected into a single agent can be rationalised into a legitimate preference narrative, written back into memory, and propagated to other agents through interaction contexts. We term the local rationalisation
-3. **Methodology & Architecture:** Categories: cs.CR, cs.LG, cs.MA. Focused on AI architecture, computational models, and algorithmic implementation.
-4. **Key Results & Findings:** Published on 2026-09-29. Detailed empirical evaluation provided in full manuscript.
+1. **Core Problem & Thesis:** Neural networks have parameter symmetries: parameter transformations that do not affect the represented function. How do these symmetries affect the functions that neural networks ultimately learn? We study the implicit bias arising from these symmetries by calculating the equilibrium distribution o...
+2. **Key Technical Contributions:** From Abstract: ver represented functions under Langevin dynamics with Gaussian regularization. To isolate the effect of symmetries on this distribution, we study the limit in which the strength of the regularization is taken to zero. In certain cases, we show that the zero-regularization and infinite-time limits c
+3. **Methodology & Architecture:** Categories: cs.LG. Focused on AI architecture, computational models, and algorithmic implementation.
+4. **Key Results & Findings:** Published on 2026-11-20. Detailed empirical evaluation provided in full manuscript.
 5. **Limitations & Radar Notes:** Assessed against specific benchmark environments; real-world scalability and safety guarantees require ongoing evaluation.
 
 ---
